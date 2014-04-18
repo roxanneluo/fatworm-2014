@@ -1,0 +1,28 @@
+@1
+ select min(A.a), max(B.b), C.c
+  from A, B, C
+  where A.a > B.b
+  group by C.c
+  having C.c > 0
+;
+
+@hei
+  select * from
+  (select a.ch*10000000+b.ch*1000000+c.ch*100000+d.ch*10000+e.ch*1000+f.ch*100+g.ch*10+h.ch as ans 
+   from chars as a, chars as b, chars as c, chars as d, chars as e,chars as f,chars as g,chars as h order by ans) as tab
+  where ans <21 or ans > 99999978 
+  order by ans
+  ;	
+@haha
+   select distinct from_airport.time_zone_code,to_airport.time_zone_code,
+                 (arrival_time/100*60+arrival_time%100-departure_time/100*60-departure_time%100-time_elapsed)/60 AS time_zone_diff 
+  FROM flight,airport AS from_airport,airport AS to_airport 
+  WHERE flight.from_airport=from_airport.airport_code AND flight.to_airport=to_airport.airport_code
+  ;
+
+  select a, count(b) as countB
+  from A
+  where b in (select b from B where b > 0 )
+  group by a
+  order by countB
+  ;
