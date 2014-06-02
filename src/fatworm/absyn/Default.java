@@ -1,6 +1,6 @@
 package fatworm.absyn;
 
-public class Default extends Constant {
+public class Default extends Expr {
 	public String toString() {
 		return "DEFAULT";
 	}

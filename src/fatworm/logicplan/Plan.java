@@ -1,7 +1,13 @@
 package fatworm.logicplan;
 
+import fatworm.driver.Schema;
+
 public abstract class Plan {
 	public Plan parent = null;
+	public Schema schema = null;
+	
+	public String alias = null;
+	
 	public Plan(Plan parent) {
 		this.parent = parent;
 	}

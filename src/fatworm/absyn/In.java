@@ -2,17 +2,16 @@ package fatworm.absyn;
 
 import fatworm.logicplan.Plan;
 
-public class In extends Expr {
-	public Expr expr;
-	public Plan table;
-	public In(Expr col, Plan t) {
-		expr = col;
-		table = t;
+public class In extends BQExpr {
+	public Column col;
+	public In(Column col, Plan t) {
+		super(t);
+		this.col = col;
 	}
 	
 	public String getString(String tabs) {
 		String prevTabs = decTab(tabs);
-		return "\n"+tabs+expr+" IN {\n"+table.getString(tabs+"\t")+"\n"+tabs+"}\n"+prevTabs;
+		return "\n"+tabs+col+" IN {\n"+plan.getString(tabs+"\t")+"\n"+tabs+"}\n"+prevTabs;
 	}
 	
 }

@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g 2014-04-16 23:02:14
+// $ANTLR 3.4 /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g 2014-05-31 10:39:03
  package fatworm.parser; 
 
 import org.antlr.runtime.*;
@@ -162,7 +162,7 @@ public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
     public String[] getTokenNames() { return FatwormParser.tokenNames; }
-    public String getGrammarFileName() { return "/Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g"; }
+    public String getGrammarFileName() { return "/Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g"; }
 
 
     public static class statement_return extends ParserRuleReturnScope {
@@ -172,7 +172,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "statement"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:32:1: statement : ( database_statement | table_statement | insert_statement | delete_statement | update_statement | index_statement | select_statement );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:32:1: statement : ( database_statement | table_statement | insert_statement | delete_statement | update_statement | index_statement | select_statement );
     public final FatwormParser.statement_return statement() throws RecognitionException {
         FatwormParser.statement_return retval = new FatwormParser.statement_return();
         retval.start = input.LT(1);
@@ -200,7 +200,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 1) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:33:3: ( database_statement | table_statement | insert_statement | delete_statement | update_statement | index_statement | select_statement )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:33:3: ( database_statement | table_statement | insert_statement | delete_statement | update_statement | index_statement | select_statement )
             int alt1=7;
             switch ( input.LA(1) ) {
             case CREATE:
@@ -263,7 +263,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt1) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:33:5: database_statement
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:33:5: database_statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -278,7 +278,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:34:5: table_statement
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:34:5: table_statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -293,7 +293,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:35:5: insert_statement
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:35:5: insert_statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -308,7 +308,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:36:5: delete_statement
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:36:5: delete_statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -323,7 +323,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:37:5: update_statement
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:37:5: update_statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -338,7 +338,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:38:5: index_statement
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:38:5: index_statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -353,7 +353,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:39:5: select_statement
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:39:5: select_statement
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -402,7 +402,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "database_statement"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:42:1: database_statement : ( CREATE DATABASE db_name -> ^( CREATE_DATABASE db_name ) | USE db_name -> ^( USE_DATABASE db_name ) | DROP DATABASE db_name -> ^( DROP_DATABASE db_name ) );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:42:1: database_statement : ( CREATE DATABASE db_name -> ^( CREATE_DATABASE db_name ) | USE db_name -> ^( USE_DATABASE db_name ) | DROP DATABASE db_name -> ^( DROP_DATABASE db_name ) );
     public final FatwormParser.database_statement_return database_statement() throws RecognitionException {
         FatwormParser.database_statement_return retval = new FatwormParser.database_statement_return();
         retval.start = input.LT(1);
@@ -436,7 +436,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 2) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:43:3: ( CREATE DATABASE db_name -> ^( CREATE_DATABASE db_name ) | USE db_name -> ^( USE_DATABASE db_name ) | DROP DATABASE db_name -> ^( DROP_DATABASE db_name ) )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:43:3: ( CREATE DATABASE db_name -> ^( CREATE_DATABASE db_name ) | USE db_name -> ^( USE_DATABASE db_name ) | DROP DATABASE db_name -> ^( DROP_DATABASE db_name ) )
             int alt2=3;
             switch ( input.LA(1) ) {
             case CREATE:
@@ -465,7 +465,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt2) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:43:5: CREATE DATABASE db_name
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:43:5: CREATE DATABASE db_name
                     {
                     CREATE8=(Token)match(input,CREATE,FOLLOW_CREATE_in_database_statement200); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_CREATE.add(CREATE8);
@@ -497,7 +497,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 44:5: -> ^( CREATE_DATABASE db_name )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:44:8: ^( CREATE_DATABASE db_name )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:44:8: ^( CREATE_DATABASE db_name )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -518,7 +518,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:45:5: USE db_name
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:45:5: USE db_name
                     {
                     USE11=(Token)match(input,USE,FOLLOW_USE_in_database_statement222); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_USE.add(USE11);
@@ -546,7 +546,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 46:5: -> ^( USE_DATABASE db_name )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:46:8: ^( USE_DATABASE db_name )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:46:8: ^( USE_DATABASE db_name )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -567,7 +567,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:47:5: DROP DATABASE db_name
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:47:5: DROP DATABASE db_name
                     {
                     DROP13=(Token)match(input,DROP,FOLLOW_DROP_in_database_statement242); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_DROP.add(DROP13);
@@ -599,7 +599,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 48:5: -> ^( DROP_DATABASE db_name )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:48:8: ^( DROP_DATABASE db_name )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:48:8: ^( DROP_DATABASE db_name )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -654,7 +654,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "table_statement"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:51:1: table_statement : ( CREATE TABLE tbl_name '(' create_definition ( ',' create_definition )* ')' -> ^( CREATE_TABLE tbl_name ( create_definition )* ) | DROP TABLE tbl_name ( ',' tbl_name )* -> ^( DROP_TABLE ( tbl_name )* ) );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:51:1: table_statement : ( CREATE TABLE tbl_name '(' create_definition ( ',' create_definition )* ')' -> ^( CREATE_TABLE tbl_name ( create_definition )* ) | DROP TABLE tbl_name ( ',' tbl_name )* -> ^( DROP_TABLE ( tbl_name )* ) );
     public final FatwormParser.table_statement_return table_statement() throws RecognitionException {
         FatwormParser.table_statement_return retval = new FatwormParser.table_statement_return();
         retval.start = input.LT(1);
@@ -701,7 +701,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 3) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:52:3: ( CREATE TABLE tbl_name '(' create_definition ( ',' create_definition )* ')' -> ^( CREATE_TABLE tbl_name ( create_definition )* ) | DROP TABLE tbl_name ( ',' tbl_name )* -> ^( DROP_TABLE ( tbl_name )* ) )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:52:3: ( CREATE TABLE tbl_name '(' create_definition ( ',' create_definition )* ')' -> ^( CREATE_TABLE tbl_name ( create_definition )* ) | DROP TABLE tbl_name ( ',' tbl_name )* -> ^( DROP_TABLE ( tbl_name )* ) )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -721,7 +721,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt5) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:52:5: CREATE TABLE tbl_name '(' create_definition ( ',' create_definition )* ')'
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:52:5: CREATE TABLE tbl_name '(' create_definition ( ',' create_definition )* ')'
                     {
                     CREATE16=(Token)match(input,CREATE,FOLLOW_CREATE_in_table_statement271); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_CREATE.add(CREATE16);
@@ -749,7 +749,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_create_definition.add(create_definition20.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:52:49: ( ',' create_definition )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:52:49: ( ',' create_definition )*
                     loop3:
                     do {
                         int alt3=2;
@@ -762,7 +762,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:52:50: ',' create_definition
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:52:50: ',' create_definition
                     	    {
                     	    char_literal21=(Token)match(input,110,FOLLOW_110_in_table_statement282); if (state.failed) return retval; 
                     	    if ( state.backtracking==0 ) stream_110.add(char_literal21);
@@ -803,7 +803,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 53:5: -> ^( CREATE_TABLE tbl_name ( create_definition )* )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:53:8: ^( CREATE_TABLE tbl_name ( create_definition )* )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:53:8: ^( CREATE_TABLE tbl_name ( create_definition )* )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -812,7 +812,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_tbl_name.nextTree());
 
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:53:32: ( create_definition )*
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:53:32: ( create_definition )*
                         while ( stream_create_definition.hasNext() ) {
                             adaptor.addChild(root_1, stream_create_definition.nextTree());
 
@@ -831,7 +831,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:54:5: DROP TABLE tbl_name ( ',' tbl_name )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:54:5: DROP TABLE tbl_name ( ',' tbl_name )*
                     {
                     DROP24=(Token)match(input,DROP,FOLLOW_DROP_in_table_statement309); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_DROP.add(DROP24);
@@ -848,7 +848,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_tbl_name.add(tbl_name26.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:54:25: ( ',' tbl_name )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:54:25: ( ',' tbl_name )*
                     loop4:
                     do {
                         int alt4=2;
@@ -861,7 +861,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:54:26: ',' tbl_name
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:54:26: ',' tbl_name
                     	    {
                     	    char_literal27=(Token)match(input,110,FOLLOW_110_in_table_statement316); if (state.failed) return retval; 
                     	    if ( state.backtracking==0 ) stream_110.add(char_literal27);
@@ -898,14 +898,14 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 55:5: -> ^( DROP_TABLE ( tbl_name )* )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:55:8: ^( DROP_TABLE ( tbl_name )* )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:55:8: ^( DROP_TABLE ( tbl_name )* )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
                         (Object)adaptor.create(DROP_TABLE, "DROP_TABLE")
                         , root_1);
 
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:55:21: ( tbl_name )*
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:55:21: ( tbl_name )*
                         while ( stream_tbl_name.hasNext() ) {
                             adaptor.addChild(root_1, stream_tbl_name.nextTree());
 
@@ -958,7 +958,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "create_definition"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:58:1: create_definition : ( col_name data_type ( column_definition_suffix )* -> ^( CREATE_DEFINITION col_name data_type ( column_definition_suffix )* ) | PRIMARY KEY '(' col_name ')' -> ^( PRIMARY_KEY col_name ) );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:58:1: create_definition : ( col_name data_type ( column_definition_suffix )* -> ^( CREATE_DEFINITION col_name data_type ( column_definition_suffix )* ) | PRIMARY KEY '(' col_name ')' -> ^( PRIMARY_KEY col_name ) );
     public final FatwormParser.create_definition_return create_definition() throws RecognitionException {
         FatwormParser.create_definition_return retval = new FatwormParser.create_definition_return();
         retval.start = input.LT(1);
@@ -994,7 +994,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 4) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:59:3: ( col_name data_type ( column_definition_suffix )* -> ^( CREATE_DEFINITION col_name data_type ( column_definition_suffix )* ) | PRIMARY KEY '(' col_name ')' -> ^( PRIMARY_KEY col_name ) )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:59:3: ( col_name data_type ( column_definition_suffix )* -> ^( CREATE_DEFINITION col_name data_type ( column_definition_suffix )* ) | PRIMARY KEY '(' col_name ')' -> ^( PRIMARY_KEY col_name ) )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1014,7 +1014,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt7) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:59:5: col_name data_type ( column_definition_suffix )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:59:5: col_name data_type ( column_definition_suffix )*
                     {
                     pushFollow(FOLLOW_col_name_in_create_definition346);
                     col_name29=col_name();
@@ -1030,7 +1030,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_data_type.add(data_type30.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:59:24: ( column_definition_suffix )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:59:24: ( column_definition_suffix )*
                     loop6:
                     do {
                         int alt6=2;
@@ -1043,7 +1043,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:59:24: column_definition_suffix
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:59:24: column_definition_suffix
                     	    {
                     	    pushFollow(FOLLOW_column_definition_suffix_in_create_definition350);
                     	    column_definition_suffix31=column_definition_suffix();
@@ -1062,7 +1062,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: data_type, column_definition_suffix, col_name
+                    // elements: column_definition_suffix, col_name, data_type
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -1076,7 +1076,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 60:5: -> ^( CREATE_DEFINITION col_name data_type ( column_definition_suffix )* )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:60:8: ^( CREATE_DEFINITION col_name data_type ( column_definition_suffix )* )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:60:8: ^( CREATE_DEFINITION col_name data_type ( column_definition_suffix )* )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1087,7 +1087,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_data_type.nextTree());
 
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:60:47: ( column_definition_suffix )*
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:60:47: ( column_definition_suffix )*
                         while ( stream_column_definition_suffix.hasNext() ) {
                             adaptor.addChild(root_1, stream_column_definition_suffix.nextTree());
 
@@ -1106,7 +1106,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:61:5: PRIMARY KEY '(' col_name ')'
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:61:5: PRIMARY KEY '(' col_name ')'
                     {
                     PRIMARY32=(Token)match(input,PRIMARY,FOLLOW_PRIMARY_in_create_definition374); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_PRIMARY.add(PRIMARY32);
@@ -1146,7 +1146,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 62:5: -> ^( PRIMARY_KEY col_name )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:62:8: ^( PRIMARY_KEY col_name )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:62:8: ^( PRIMARY_KEY col_name )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1201,7 +1201,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "data_type"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:65:1: data_type : ( INT ^| FLOAT ^| CHAR ^ '(' ! INTEGER_LITERAL ')' !| DATETIME ^| BOOLEAN ^| DECIMAL ^ '(' ! INTEGER_LITERAL ( ',' ! INTEGER_LITERAL )? ')' !| TIMESTAMP ^| VARCHAR ^ '(' ! INTEGER_LITERAL ')' !);
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:65:1: data_type : ( INT ^| FLOAT ^| CHAR ^ '(' ! INTEGER_LITERAL ')' !| DATETIME ^| BOOLEAN ^| DECIMAL ^ '(' ! INTEGER_LITERAL ( ',' ! INTEGER_LITERAL )? ')' !| TIMESTAMP ^| VARCHAR ^ '(' ! INTEGER_LITERAL ')' !);
     public final FatwormParser.data_type_return data_type() throws RecognitionException {
         FatwormParser.data_type_return retval = new FatwormParser.data_type_return();
         retval.start = input.LT(1);
@@ -1253,7 +1253,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 5) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:66:3: ( INT ^| FLOAT ^| CHAR ^ '(' ! INTEGER_LITERAL ')' !| DATETIME ^| BOOLEAN ^| DECIMAL ^ '(' ! INTEGER_LITERAL ( ',' ! INTEGER_LITERAL )? ')' !| TIMESTAMP ^| VARCHAR ^ '(' ! INTEGER_LITERAL ')' !)
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:66:3: ( INT ^| FLOAT ^| CHAR ^ '(' ! INTEGER_LITERAL ')' !| DATETIME ^| BOOLEAN ^| DECIMAL ^ '(' ! INTEGER_LITERAL ( ',' ! INTEGER_LITERAL )? ')' !| TIMESTAMP ^| VARCHAR ^ '(' ! INTEGER_LITERAL ')' !)
             int alt9=8;
             switch ( input.LA(1) ) {
             case INT:
@@ -1307,7 +1307,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt9) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:66:5: INT ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:66:5: INT ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1323,7 +1323,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:67:5: FLOAT ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:67:5: FLOAT ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1339,7 +1339,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:68:5: CHAR ^ '(' ! INTEGER_LITERAL ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:68:5: CHAR ^ '(' ! INTEGER_LITERAL ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1367,7 +1367,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:69:5: DATETIME ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:69:5: DATETIME ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1383,7 +1383,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:70:5: BOOLEAN ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:70:5: BOOLEAN ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1399,7 +1399,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:71:5: DECIMAL ^ '(' ! INTEGER_LITERAL ( ',' ! INTEGER_LITERAL )? ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:71:5: DECIMAL ^ '(' ! INTEGER_LITERAL ( ',' ! INTEGER_LITERAL )? ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1422,7 +1422,7 @@ public TreeAdaptor getTreeAdaptor() {
                     adaptor.addChild(root_0, INTEGER_LITERAL47_tree);
                     }
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:71:35: ( ',' ! INTEGER_LITERAL )?
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:71:35: ( ',' ! INTEGER_LITERAL )?
                     int alt8=2;
                     int LA8_0 = input.LA(1);
 
@@ -1431,7 +1431,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt8) {
                         case 1 :
-                            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:71:36: ',' ! INTEGER_LITERAL
+                            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:71:36: ',' ! INTEGER_LITERAL
                             {
                             char_literal48=(Token)match(input,110,FOLLOW_110_in_data_type459); if (state.failed) return retval;
 
@@ -1454,7 +1454,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:72:5: TIMESTAMP ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:72:5: TIMESTAMP ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1470,7 +1470,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:73:5: VARCHAR ^ '(' ! INTEGER_LITERAL ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:73:5: VARCHAR ^ '(' ! INTEGER_LITERAL ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1532,7 +1532,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "column_definition_suffix"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:76:1: column_definition_suffix : ( ( NOT )? NULL ^| DEFAULT ^ const_value | AUTO_INCREMENT ^);
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:76:1: column_definition_suffix : ( ( NOT )? NULL ^| DEFAULT ^ const_value | AUTO_INCREMENT ^);
     public final FatwormParser.column_definition_suffix_return column_definition_suffix() throws RecognitionException {
         FatwormParser.column_definition_suffix_return retval = new FatwormParser.column_definition_suffix_return();
         retval.start = input.LT(1);
@@ -1556,7 +1556,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 6) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:77:3: ( ( NOT )? NULL ^| DEFAULT ^ const_value | AUTO_INCREMENT ^)
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:77:3: ( ( NOT )? NULL ^| DEFAULT ^ const_value | AUTO_INCREMENT ^)
             int alt11=3;
             switch ( input.LA(1) ) {
             case NOT:
@@ -1586,12 +1586,12 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt11) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:77:5: ( NOT )? NULL ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:77:5: ( NOT )? NULL ^
                     {
                     root_0 = (Object)adaptor.nil();
 
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:77:5: ( NOT )?
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:77:5: ( NOT )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -1600,7 +1600,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt10) {
                         case 1 :
-                            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:77:5: NOT
+                            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:77:5: NOT
                             {
                             NOT56=(Token)match(input,NOT,FOLLOW_NOT_in_column_definition_suffix502); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -1627,7 +1627,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:78:5: DEFAULT ^ const_value
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:78:5: DEFAULT ^ const_value
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1650,7 +1650,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:79:5: AUTO_INCREMENT ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:79:5: AUTO_INCREMENT ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -1700,7 +1700,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "insert_statement"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:82:1: insert_statement : ( INSERT INTO tbl_name values_clause -> ^( INSERT_VALUES tbl_name values_clause ) | INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause -> ^( INSERT_COLUMNS tbl_name ( col_name )* values_clause ) | INSERT INTO tbl_name '(' subquery ')' -> ^( INSERT_SUBQUERY tbl_name subquery ) );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:82:1: insert_statement : ( INSERT INTO tbl_name values_clause -> ^( INSERT_VALUES tbl_name values_clause ) | INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause -> ^( INSERT_COLUMNS tbl_name ( col_name )* values_clause ) | INSERT INTO tbl_name '(' subquery ')' -> ^( INSERT_SUBQUERY tbl_name subquery ) );
     public final FatwormParser.insert_statement_return insert_statement() throws RecognitionException {
         FatwormParser.insert_statement_return retval = new FatwormParser.insert_statement_return();
         retval.start = input.LT(1);
@@ -1760,7 +1760,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 7) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:83:3: ( INSERT INTO tbl_name values_clause -> ^( INSERT_VALUES tbl_name values_clause ) | INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause -> ^( INSERT_COLUMNS tbl_name ( col_name )* values_clause ) | INSERT INTO tbl_name '(' subquery ')' -> ^( INSERT_SUBQUERY tbl_name subquery ) )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:83:3: ( INSERT INTO tbl_name values_clause -> ^( INSERT_VALUES tbl_name values_clause ) | INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause -> ^( INSERT_COLUMNS tbl_name ( col_name )* values_clause ) | INSERT INTO tbl_name '(' subquery ')' -> ^( INSERT_SUBQUERY tbl_name subquery ) )
             int alt13=3;
             int LA13_0 = input.LA(1);
 
@@ -1795,7 +1795,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt13) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:83:5: INSERT INTO tbl_name values_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:83:5: INSERT INTO tbl_name values_clause
                     {
                     INSERT61=(Token)match(input,INSERT,FOLLOW_INSERT_in_insert_statement535); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_INSERT.add(INSERT61);
@@ -1820,7 +1820,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) stream_values_clause.add(values_clause64.getTree());
 
                     // AST REWRITE
-                    // elements: values_clause, tbl_name
+                    // elements: tbl_name, values_clause
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -1834,7 +1834,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 84:5: -> ^( INSERT_VALUES tbl_name values_clause )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:84:8: ^( INSERT_VALUES tbl_name values_clause )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:84:8: ^( INSERT_VALUES tbl_name values_clause )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1857,7 +1857,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:85:5: INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:85:5: INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause
                     {
                     INSERT65=(Token)match(input,INSERT,FOLLOW_INSERT_in_insert_statement561); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_INSERT.add(INSERT65);
@@ -1885,7 +1885,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_col_name.add(col_name69.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:85:39: ( ',' col_name )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:85:39: ( ',' col_name )*
                     loop12:
                     do {
                         int alt12=2;
@@ -1898,7 +1898,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:85:40: ',' col_name
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:85:40: ',' col_name
                     	    {
                     	    char_literal70=(Token)match(input,110,FOLLOW_110_in_insert_statement572); if (state.failed) return retval; 
                     	    if ( state.backtracking==0 ) stream_110.add(char_literal70);
@@ -1932,7 +1932,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) stream_values_clause.add(values_clause73.getTree());
 
                     // AST REWRITE
-                    // elements: values_clause, tbl_name, col_name
+                    // elements: tbl_name, col_name, values_clause
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -1946,7 +1946,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 86:5: -> ^( INSERT_COLUMNS tbl_name ( col_name )* values_clause )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:86:8: ^( INSERT_COLUMNS tbl_name ( col_name )* values_clause )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:86:8: ^( INSERT_COLUMNS tbl_name ( col_name )* values_clause )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -1955,7 +1955,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_tbl_name.nextTree());
 
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:86:34: ( col_name )*
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:86:34: ( col_name )*
                         while ( stream_col_name.hasNext() ) {
                             adaptor.addChild(root_1, stream_col_name.nextTree());
 
@@ -1976,7 +1976,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:87:5: INSERT INTO tbl_name '(' subquery ')'
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:87:5: INSERT INTO tbl_name '(' subquery ')'
                     {
                     INSERT74=(Token)match(input,INSERT,FOLLOW_INSERT_in_insert_statement603); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_INSERT.add(INSERT74);
@@ -2009,7 +2009,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: subquery, tbl_name
+                    // elements: tbl_name, subquery
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2023,7 +2023,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 88:5: -> ^( INSERT_SUBQUERY tbl_name subquery )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:88:8: ^( INSERT_SUBQUERY tbl_name subquery )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:88:8: ^( INSERT_SUBQUERY tbl_name subquery )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2080,7 +2080,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "values_clause"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:91:1: values_clause : VALUES ^ '(' ! value ( ',' ! value )* ')' !;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:91:1: values_clause : VALUES ^ '(' ! value ( ',' ! value )* ')' !;
     public final FatwormParser.values_clause_return values_clause() throws RecognitionException {
         FatwormParser.values_clause_return retval = new FatwormParser.values_clause_return();
         retval.start = input.LT(1);
@@ -2106,8 +2106,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 8) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:92:3: ( VALUES ^ '(' ! value ( ',' ! value )* ')' !)
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:92:5: VALUES ^ '(' ! value ( ',' ! value )* ')' !
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:92:3: ( VALUES ^ '(' ! value ( ',' ! value )* ')' !)
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:92:5: VALUES ^ '(' ! value ( ',' ! value )* ')' !
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2129,7 +2129,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, value82.getTree());
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:92:24: ( ',' ! value )*
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:92:24: ( ',' ! value )*
             loop14:
             do {
                 int alt14=2;
@@ -2142,7 +2142,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt14) {
             	case 1 :
-            	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:92:25: ',' ! value
+            	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:92:25: ',' ! value
             	    {
             	    char_literal83=(Token)match(input,110,FOLLOW_110_in_values_clause649); if (state.failed) return retval;
 
@@ -2199,7 +2199,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "delete_statement"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:95:1: delete_statement : DELETE ^ FROM ! tbl_name ( where_clause )? ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:95:1: delete_statement : DELETE ^ FROM ! tbl_name ( where_clause )? ;
     public final FatwormParser.delete_statement_return delete_statement() throws RecognitionException {
         FatwormParser.delete_statement_return retval = new FatwormParser.delete_statement_return();
         retval.start = input.LT(1);
@@ -2221,8 +2221,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 9) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:96:3: ( DELETE ^ FROM ! tbl_name ( where_clause )? )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:96:5: DELETE ^ FROM ! tbl_name ( where_clause )?
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:96:3: ( DELETE ^ FROM ! tbl_name ( where_clause )? )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:96:5: DELETE ^ FROM ! tbl_name ( where_clause )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2244,7 +2244,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, tbl_name88.getTree());
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:96:28: ( where_clause )?
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:96:28: ( where_clause )?
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -2253,7 +2253,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt15) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:96:28: where_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:96:28: where_clause
                     {
                     pushFollow(FOLLOW_where_clause_in_delete_statement678);
                     where_clause89=where_clause();
@@ -2303,7 +2303,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "update_statement"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:99:1: update_statement : UPDATE ^ tbl_name SET ! update_pair ( ',' ! update_pair )* ( where_clause )? ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:99:1: update_statement : UPDATE ^ tbl_name SET ! update_pair ( ',' ! update_pair )* ( where_clause )? ;
     public final FatwormParser.update_statement_return update_statement() throws RecognitionException {
         FatwormParser.update_statement_return retval = new FatwormParser.update_statement_return();
         retval.start = input.LT(1);
@@ -2331,8 +2331,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 10) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:100:3: ( UPDATE ^ tbl_name SET ! update_pair ( ',' ! update_pair )* ( where_clause )? )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:100:5: UPDATE ^ tbl_name SET ! update_pair ( ',' ! update_pair )* ( where_clause )?
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:100:3: ( UPDATE ^ tbl_name SET ! update_pair ( ',' ! update_pair )* ( where_clause )? )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:100:5: UPDATE ^ tbl_name SET ! update_pair ( ',' ! update_pair )* ( where_clause )?
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2361,7 +2361,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, update_pair93.getTree());
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:100:39: ( ',' ! update_pair )*
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:100:39: ( ',' ! update_pair )*
             loop16:
             do {
                 int alt16=2;
@@ -2374,7 +2374,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt16) {
             	case 1 :
-            	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:100:40: ',' ! update_pair
+            	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:100:40: ',' ! update_pair
             	    {
             	    char_literal94=(Token)match(input,110,FOLLOW_110_in_update_statement703); if (state.failed) return retval;
 
@@ -2394,7 +2394,7 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:100:59: ( where_clause )?
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:100:59: ( where_clause )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -2403,7 +2403,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt17) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:100:59: where_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:100:59: where_clause
                     {
                     pushFollow(FOLLOW_where_clause_in_update_statement710);
                     where_clause96=where_clause();
@@ -2453,7 +2453,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "update_pair"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:103:1: update_pair : col_name '=' value -> ^( UPDATE_PAIR col_name value ) ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:103:1: update_pair : col_name '=' value -> ^( UPDATE_PAIR col_name value ) ;
     public final FatwormParser.update_pair_return update_pair() throws RecognitionException {
         FatwormParser.update_pair_return retval = new FatwormParser.update_pair_return();
         retval.start = input.LT(1);
@@ -2475,8 +2475,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 11) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:104:3: ( col_name '=' value -> ^( UPDATE_PAIR col_name value ) )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:104:5: col_name '=' value
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:104:3: ( col_name '=' value -> ^( UPDATE_PAIR col_name value ) )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:104:5: col_name '=' value
             {
             pushFollow(FOLLOW_col_name_in_update_pair724);
             col_name97=col_name();
@@ -2497,7 +2497,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_value.add(value99.getTree());
 
             // AST REWRITE
-            // elements: value, col_name
+            // elements: col_name, value
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2511,7 +2511,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 105:5: -> ^( UPDATE_PAIR col_name value )
             {
-                // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:105:8: ^( UPDATE_PAIR col_name value )
+                // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:105:8: ^( UPDATE_PAIR col_name value )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -2566,7 +2566,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "index_statement"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:108:1: index_statement : ( CREATE INDEX index_name ON tbl_name '(' col_name ')' -> ^( CREATE_INDEX index_name tbl_name col_name ) | CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')' -> ^( CREATE_UNIQUE_INDEX index_name tbl_name col_name ) | DROP INDEX index_name ON tbl_name -> ^( DROP_INDEX index_name tbl_name ) );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:108:1: index_statement : ( CREATE INDEX index_name ON tbl_name '(' col_name ')' -> ^( CREATE_INDEX index_name tbl_name col_name ) | CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')' -> ^( CREATE_UNIQUE_INDEX index_name tbl_name col_name ) | DROP INDEX index_name ON tbl_name -> ^( DROP_INDEX index_name tbl_name ) );
     public final FatwormParser.index_statement_return index_statement() throws RecognitionException {
         FatwormParser.index_statement_return retval = new FatwormParser.index_statement_return();
         retval.start = input.LT(1);
@@ -2633,7 +2633,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 12) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:109:3: ( CREATE INDEX index_name ON tbl_name '(' col_name ')' -> ^( CREATE_INDEX index_name tbl_name col_name ) | CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')' -> ^( CREATE_UNIQUE_INDEX index_name tbl_name col_name ) | DROP INDEX index_name ON tbl_name -> ^( DROP_INDEX index_name tbl_name ) )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:109:3: ( CREATE INDEX index_name ON tbl_name '(' col_name ')' -> ^( CREATE_INDEX index_name tbl_name col_name ) | CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')' -> ^( CREATE_UNIQUE_INDEX index_name tbl_name col_name ) | DROP INDEX index_name ON tbl_name -> ^( DROP_INDEX index_name tbl_name ) )
             int alt18=3;
             int LA18_0 = input.LA(1);
 
@@ -2668,7 +2668,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt18) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:109:5: CREATE INDEX index_name ON tbl_name '(' col_name ')'
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:109:5: CREATE INDEX index_name ON tbl_name '(' col_name ')'
                     {
                     CREATE100=(Token)match(input,CREATE,FOLLOW_CREATE_in_index_statement755); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_CREATE.add(CREATE100);
@@ -2712,7 +2712,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: tbl_name, index_name, col_name
+                    // elements: tbl_name, col_name, index_name
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2726,7 +2726,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 110:5: -> ^( CREATE_INDEX index_name tbl_name col_name )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:110:8: ^( CREATE_INDEX index_name tbl_name col_name )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:110:8: ^( CREATE_INDEX index_name tbl_name col_name )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2751,7 +2751,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:111:5: CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')'
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:111:5: CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')'
                     {
                     CREATE108=(Token)match(input,CREATE,FOLLOW_CREATE_in_index_statement791); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_CREATE.add(CREATE108);
@@ -2813,7 +2813,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 112:5: -> ^( CREATE_UNIQUE_INDEX index_name tbl_name col_name )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:112:8: ^( CREATE_UNIQUE_INDEX index_name tbl_name col_name )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:112:8: ^( CREATE_UNIQUE_INDEX index_name tbl_name col_name )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2838,7 +2838,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:113:5: DROP INDEX index_name ON tbl_name
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:113:5: DROP INDEX index_name ON tbl_name
                     {
                     DROP117=(Token)match(input,DROP,FOLLOW_DROP_in_index_statement829); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_DROP.add(DROP117);
@@ -2867,7 +2867,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) stream_tbl_name.add(tbl_name121.getTree());
 
                     // AST REWRITE
-                    // elements: index_name, tbl_name
+                    // elements: tbl_name, index_name
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2881,7 +2881,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 114:5: -> ^( DROP_INDEX index_name tbl_name )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:114:8: ^( DROP_INDEX index_name tbl_name )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:114:8: ^( DROP_INDEX index_name tbl_name )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2938,7 +2938,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "select_statement"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:117:1: select_statement : ( SELECT select_expr ( ',' select_expr )* ( select_suffix )* -> ^( SELECT ( select_expr )* ( select_suffix )* ) | SELECT DISTINCT select_expr ( ',' select_expr )* ( select_suffix )* -> ^( SELECT_DISTINCT ( select_expr )* ( select_suffix )* ) );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:117:1: select_statement : ( SELECT select_expr ( ',' select_expr )* ( select_suffix )* -> ^( SELECT ( select_expr )* ( select_suffix )* ) | SELECT DISTINCT select_expr ( ',' select_expr )* ( select_suffix )* -> ^( SELECT_DISTINCT ( select_expr )* ( select_suffix )* ) );
     public final FatwormParser.select_statement_return select_statement() throws RecognitionException {
         FatwormParser.select_statement_return retval = new FatwormParser.select_statement_return();
         retval.start = input.LT(1);
@@ -2978,7 +2978,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 13) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:3: ( SELECT select_expr ( ',' select_expr )* ( select_suffix )* -> ^( SELECT ( select_expr )* ( select_suffix )* ) | SELECT DISTINCT select_expr ( ',' select_expr )* ( select_suffix )* -> ^( SELECT_DISTINCT ( select_expr )* ( select_suffix )* ) )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:3: ( SELECT select_expr ( ',' select_expr )* ( select_suffix )* -> ^( SELECT ( select_expr )* ( select_suffix )* ) | SELECT DISTINCT select_expr ( ',' select_expr )* ( select_suffix )* -> ^( SELECT_DISTINCT ( select_expr )* ( select_suffix )* ) )
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -3010,7 +3010,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt23) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:5: SELECT select_expr ( ',' select_expr )* ( select_suffix )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:5: SELECT select_expr ( ',' select_expr )* ( select_suffix )*
                     {
                     SELECT122=(Token)match(input,SELECT,FOLLOW_SELECT_in_select_statement864); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_SELECT.add(SELECT122);
@@ -3023,7 +3023,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_select_expr.add(select_expr123.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:24: ( ',' select_expr )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:24: ( ',' select_expr )*
                     loop19:
                     do {
                         int alt19=2;
@@ -3036,7 +3036,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt19) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:25: ',' select_expr
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:25: ',' select_expr
                     	    {
                     	    char_literal124=(Token)match(input,110,FOLLOW_110_in_select_statement869); if (state.failed) return retval; 
                     	    if ( state.backtracking==0 ) stream_110.add(char_literal124);
@@ -3058,7 +3058,7 @@ public TreeAdaptor getTreeAdaptor() {
                     } while (true);
 
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:43: ( select_suffix )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:43: ( select_suffix )*
                     loop20:
                     do {
                         int alt20=2;
@@ -3071,7 +3071,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt20) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:43: select_suffix
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:43: select_suffix
                     	    {
                     	    pushFollow(FOLLOW_select_suffix_in_select_statement875);
                     	    select_suffix126=select_suffix();
@@ -3104,21 +3104,21 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 119:5: -> ^( SELECT ( select_expr )* ( select_suffix )* )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:119:8: ^( SELECT ( select_expr )* ( select_suffix )* )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:119:8: ^( SELECT ( select_expr )* ( select_suffix )* )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
                         stream_SELECT.nextNode()
                         , root_1);
 
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:119:17: ( select_expr )*
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:119:17: ( select_expr )*
                         while ( stream_select_expr.hasNext() ) {
                             adaptor.addChild(root_1, stream_select_expr.nextTree());
 
                         }
                         stream_select_expr.reset();
 
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:119:30: ( select_suffix )*
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:119:30: ( select_suffix )*
                         while ( stream_select_suffix.hasNext() ) {
                             adaptor.addChild(root_1, stream_select_suffix.nextTree());
 
@@ -3137,7 +3137,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:120:5: SELECT DISTINCT select_expr ( ',' select_expr )* ( select_suffix )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:120:5: SELECT DISTINCT select_expr ( ',' select_expr )* ( select_suffix )*
                     {
                     SELECT127=(Token)match(input,SELECT,FOLLOW_SELECT_in_select_statement898); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_SELECT.add(SELECT127);
@@ -3154,7 +3154,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_select_expr.add(select_expr129.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:120:33: ( ',' select_expr )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:120:33: ( ',' select_expr )*
                     loop21:
                     do {
                         int alt21=2;
@@ -3167,7 +3167,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt21) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:120:34: ',' select_expr
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:120:34: ',' select_expr
                     	    {
                     	    char_literal130=(Token)match(input,110,FOLLOW_110_in_select_statement905); if (state.failed) return retval; 
                     	    if ( state.backtracking==0 ) stream_110.add(char_literal130);
@@ -3189,7 +3189,7 @@ public TreeAdaptor getTreeAdaptor() {
                     } while (true);
 
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:120:52: ( select_suffix )*
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:120:52: ( select_suffix )*
                     loop22:
                     do {
                         int alt22=2;
@@ -3202,7 +3202,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt22) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:120:52: select_suffix
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:120:52: select_suffix
                     	    {
                     	    pushFollow(FOLLOW_select_suffix_in_select_statement911);
                     	    select_suffix132=select_suffix();
@@ -3221,7 +3221,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: select_expr, select_suffix
+                    // elements: select_suffix, select_expr
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3235,21 +3235,21 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 121:5: -> ^( SELECT_DISTINCT ( select_expr )* ( select_suffix )* )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:121:8: ^( SELECT_DISTINCT ( select_expr )* ( select_suffix )* )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:121:8: ^( SELECT_DISTINCT ( select_expr )* ( select_suffix )* )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
                         (Object)adaptor.create(SELECT_DISTINCT, "SELECT_DISTINCT")
                         , root_1);
 
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:121:26: ( select_expr )*
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:121:26: ( select_expr )*
                         while ( stream_select_expr.hasNext() ) {
                             adaptor.addChild(root_1, stream_select_expr.nextTree());
 
                         }
                         stream_select_expr.reset();
 
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:121:39: ( select_suffix )*
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:121:39: ( select_suffix )*
                         while ( stream_select_suffix.hasNext() ) {
                             adaptor.addChild(root_1, stream_select_suffix.nextTree());
 
@@ -3302,7 +3302,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "select_suffix"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:124:1: select_suffix : ( from_clause | where_clause | group_by_clause | having_clause | order_by_clause );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:124:1: select_suffix : ( from_clause | where_clause | group_by_clause | having_clause | order_by_clause );
     public final FatwormParser.select_suffix_return select_suffix() throws RecognitionException {
         FatwormParser.select_suffix_return retval = new FatwormParser.select_suffix_return();
         retval.start = input.LT(1);
@@ -3326,7 +3326,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 14) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:125:3: ( from_clause | where_clause | group_by_clause | having_clause | order_by_clause )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:125:3: ( from_clause | where_clause | group_by_clause | having_clause | order_by_clause )
             int alt24=5;
             switch ( input.LA(1) ) {
             case FROM:
@@ -3365,7 +3365,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt24) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:125:5: from_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:125:5: from_clause
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3380,7 +3380,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:126:5: where_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:126:5: where_clause
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3395,7 +3395,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:127:5: group_by_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:127:5: group_by_clause
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3410,7 +3410,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:128:5: having_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:128:5: having_clause
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3425,7 +3425,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:129:5: order_by_clause
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:129:5: order_by_clause
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3474,7 +3474,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "from_clause"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:132:1: from_clause : FROM ^ tbl_ref ( ',' ! tbl_ref )* ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:132:1: from_clause : FROM ^ tbl_ref ( ',' ! tbl_ref )* ;
     public final FatwormParser.from_clause_return from_clause() throws RecognitionException {
         FatwormParser.from_clause_return retval = new FatwormParser.from_clause_return();
         retval.start = input.LT(1);
@@ -3496,8 +3496,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 15) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:133:3: ( FROM ^ tbl_ref ( ',' ! tbl_ref )* )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:133:5: FROM ^ tbl_ref ( ',' ! tbl_ref )*
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:133:3: ( FROM ^ tbl_ref ( ',' ! tbl_ref )* )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:133:5: FROM ^ tbl_ref ( ',' ! tbl_ref )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3517,7 +3517,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, tbl_ref139.getTree());
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:133:19: ( ',' ! tbl_ref )*
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:133:19: ( ',' ! tbl_ref )*
             loop25:
             do {
                 int alt25=2;
@@ -3530,7 +3530,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt25) {
             	case 1 :
-            	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:133:20: ',' ! tbl_ref
+            	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:133:20: ',' ! tbl_ref
             	    {
             	    char_literal140=(Token)match(input,110,FOLLOW_110_in_from_clause984); if (state.failed) return retval;
 
@@ -3585,7 +3585,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "where_clause"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:136:1: where_clause : WHERE ^ where_condition ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:136:1: where_clause : WHERE ^ where_condition ;
     public final FatwormParser.where_clause_return where_clause() throws RecognitionException {
         FatwormParser.where_clause_return retval = new FatwormParser.where_clause_return();
         retval.start = input.LT(1);
@@ -3603,8 +3603,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 16) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:137:3: ( WHERE ^ where_condition )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:137:5: WHERE ^ where_condition
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:137:3: ( WHERE ^ where_condition )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:137:5: WHERE ^ where_condition
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3659,7 +3659,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "group_by_clause"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:140:1: group_by_clause : GROUP ^ BY ! col_name ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:140:1: group_by_clause : GROUP ^ BY ! col_name ;
     public final FatwormParser.group_by_clause_return group_by_clause() throws RecognitionException {
         FatwormParser.group_by_clause_return retval = new FatwormParser.group_by_clause_return();
         retval.start = input.LT(1);
@@ -3679,8 +3679,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 17) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:141:3: ( GROUP ^ BY ! col_name )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:141:5: GROUP ^ BY ! col_name
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:141:3: ( GROUP ^ BY ! col_name )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:141:5: GROUP ^ BY ! col_name
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3737,7 +3737,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "having_clause"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:144:1: having_clause : HAVING ^ having_condition ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:144:1: having_clause : HAVING ^ having_condition ;
     public final FatwormParser.having_clause_return having_clause() throws RecognitionException {
         FatwormParser.having_clause_return retval = new FatwormParser.having_clause_return();
         retval.start = input.LT(1);
@@ -3755,8 +3755,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 18) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:145:3: ( HAVING ^ having_condition )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:145:5: HAVING ^ having_condition
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:145:3: ( HAVING ^ having_condition )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:145:5: HAVING ^ having_condition
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3811,7 +3811,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "order_by_clause"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:148:1: order_by_clause : ORDER ^ BY ! order_by_col_name ( ',' ! order_by_col_name )* ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:148:1: order_by_clause : ORDER ^ BY ! order_by_col_name ( ',' ! order_by_col_name )* ;
     public final FatwormParser.order_by_clause_return order_by_clause() throws RecognitionException {
         FatwormParser.order_by_clause_return retval = new FatwormParser.order_by_clause_return();
         retval.start = input.LT(1);
@@ -3835,8 +3835,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 19) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:149:3: ( ORDER ^ BY ! order_by_col_name ( ',' ! order_by_col_name )* )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:149:5: ORDER ^ BY ! order_by_col_name ( ',' ! order_by_col_name )*
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:149:3: ( ORDER ^ BY ! order_by_col_name ( ',' ! order_by_col_name )* )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:149:5: ORDER ^ BY ! order_by_col_name ( ',' ! order_by_col_name )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3858,7 +3858,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, order_by_col_name151.getTree());
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:149:34: ( ',' ! order_by_col_name )*
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:149:34: ( ',' ! order_by_col_name )*
             loop26:
             do {
                 int alt26=2;
@@ -3871,7 +3871,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt26) {
             	case 1 :
-            	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:149:35: ',' ! order_by_col_name
+            	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:149:35: ',' ! order_by_col_name
             	    {
             	    char_literal152=(Token)match(input,110,FOLLOW_110_in_order_by_clause1062); if (state.failed) return retval;
 
@@ -3926,7 +3926,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "order_by_col_name"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:152:1: order_by_col_name : ( col_name ASC ^| col_name DESC ^| col_name );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:152:1: order_by_col_name : ( col_name ASC ^| col_name DESC ^| col_name );
     public final FatwormParser.order_by_col_name_return order_by_col_name() throws RecognitionException {
         FatwormParser.order_by_col_name_return retval = new FatwormParser.order_by_col_name_return();
         retval.start = input.LT(1);
@@ -3950,7 +3950,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 20) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:153:3: ( col_name ASC ^| col_name DESC ^| col_name )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:153:3: ( col_name ASC ^| col_name DESC ^| col_name )
             int alt27=3;
             int LA27_0 = input.LA(1);
 
@@ -3985,7 +3985,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt27) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:153:5: col_name ASC ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:153:5: col_name ASC ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4008,7 +4008,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:154:5: col_name DESC ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:154:5: col_name DESC ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4031,7 +4031,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:155:5: col_name
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:155:5: col_name
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4080,7 +4080,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "select_expr"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:158:1: select_expr : ( value ( AS ^ alias )? | '*' ^);
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:158:1: select_expr : ( value ( AS ^ alias )? | '*' ^);
     public final FatwormParser.select_expr_return select_expr() throws RecognitionException {
         FatwormParser.select_expr_return retval = new FatwormParser.select_expr_return();
         retval.start = input.LT(1);
@@ -4102,7 +4102,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 21) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:159:3: ( value ( AS ^ alias )? | '*' ^)
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:159:3: ( value ( AS ^ alias )? | '*' ^)
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -4122,7 +4122,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt29) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:159:5: value ( AS ^ alias )?
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:159:5: value ( AS ^ alias )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4134,7 +4134,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, value159.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:159:11: ( AS ^ alias )?
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:159:11: ( AS ^ alias )?
                     int alt28=2;
                     int LA28_0 = input.LA(1);
 
@@ -4143,7 +4143,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt28) {
                         case 1 :
-                            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:159:12: AS ^ alias
+                            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:159:12: AS ^ alias
                             {
                             AS160=(Token)match(input,AS,FOLLOW_AS_in_select_expr1114); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -4169,7 +4169,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:160:5: '*' ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:160:5: '*' ^
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4219,7 +4219,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "func"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:163:1: func : ( AVG | COUNT | MIN | MAX | SUM );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:163:1: func : ( AVG | COUNT | MIN | MAX | SUM );
     public final FatwormParser.func_return func() throws RecognitionException {
         FatwormParser.func_return retval = new FatwormParser.func_return();
         retval.start = input.LT(1);
@@ -4235,8 +4235,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 22) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:164:3: ( AVG | COUNT | MIN | MAX | SUM )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:164:3: ( AVG | COUNT | MIN | MAX | SUM )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4293,7 +4293,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "col_name"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:167:1: col_name : ( tbl_name '.' ^)? name ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:167:1: col_name : ( tbl_name '.' ^)? name ;
     public final FatwormParser.col_name_return col_name() throws RecognitionException {
         FatwormParser.col_name_return retval = new FatwormParser.col_name_return();
         retval.start = input.LT(1);
@@ -4313,13 +4313,13 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 23) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:168:3: ( ( tbl_name '.' ^)? name )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:168:5: ( tbl_name '.' ^)? name
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:168:3: ( ( tbl_name '.' ^)? name )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:168:5: ( tbl_name '.' ^)? name
             {
             root_0 = (Object)adaptor.nil();
 
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:168:5: ( tbl_name '.' ^)?
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:168:5: ( tbl_name '.' ^)?
             int alt30=2;
             int LA30_0 = input.LA(1);
 
@@ -4332,7 +4332,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt30) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:168:6: tbl_name '.' ^
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:168:6: tbl_name '.' ^
                     {
                     pushFollow(FOLLOW_tbl_name_in_col_name1169);
                     tbl_name164=tbl_name();
@@ -4397,7 +4397,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "tbl_ref"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:171:1: tbl_ref : ( tbl_name ( AS ^ alias )? | '(' ! subquery ')' ! AS ^ alias );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:171:1: tbl_ref : ( tbl_name ( AS ^ alias )? | '(' ! subquery ')' ! AS ^ alias );
     public final FatwormParser.tbl_ref_return tbl_ref() throws RecognitionException {
         FatwormParser.tbl_ref_return retval = new FatwormParser.tbl_ref_return();
         retval.start = input.LT(1);
@@ -4427,7 +4427,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 24) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:172:3: ( tbl_name ( AS ^ alias )? | '(' ! subquery ')' ! AS ^ alias )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:172:3: ( tbl_name ( AS ^ alias )? | '(' ! subquery ')' ! AS ^ alias )
             int alt32=2;
             int LA32_0 = input.LA(1);
 
@@ -4447,7 +4447,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt32) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:172:5: tbl_name ( AS ^ alias )?
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:172:5: tbl_name ( AS ^ alias )?
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4459,7 +4459,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, tbl_name167.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:172:14: ( AS ^ alias )?
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:172:14: ( AS ^ alias )?
                     int alt31=2;
                     int LA31_0 = input.LA(1);
 
@@ -4468,7 +4468,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt31) {
                         case 1 :
-                            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:172:15: AS ^ alias
+                            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:172:15: AS ^ alias
                             {
                             AS168=(Token)match(input,AS,FOLLOW_AS_in_tbl_ref1192); if (state.failed) return retval;
                             if ( state.backtracking==0 ) {
@@ -4494,7 +4494,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:173:5: '(' ! subquery ')' ! AS ^ alias
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:173:5: '(' ! subquery ')' ! AS ^ alias
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4562,7 +4562,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "tbl_name"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:176:1: tbl_name : name ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:176:1: tbl_name : name ;
     public final FatwormParser.tbl_name_return tbl_name() throws RecognitionException {
         FatwormParser.tbl_name_return retval = new FatwormParser.tbl_name_return();
         retval.start = input.LT(1);
@@ -4578,8 +4578,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 25) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:177:3: ( name )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:177:5: name
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:177:3: ( name )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:177:5: name
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4626,7 +4626,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "alias"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:180:1: alias : ( name | func );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:180:1: alias : ( name | func );
     public final FatwormParser.alias_return alias() throws RecognitionException {
         FatwormParser.alias_return retval = new FatwormParser.alias_return();
         retval.start = input.LT(1);
@@ -4644,7 +4644,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 26) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:181:3: ( name | func )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:181:3: ( name | func )
             int alt33=2;
             int LA33_0 = input.LA(1);
 
@@ -4664,7 +4664,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt33) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:181:5: name
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:181:5: name
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4679,7 +4679,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:182:5: func
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:182:5: func
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -4728,7 +4728,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "index_name"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:185:1: index_name : name ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:185:1: index_name : name ;
     public final FatwormParser.index_name_return index_name() throws RecognitionException {
         FatwormParser.index_name_return retval = new FatwormParser.index_name_return();
         retval.start = input.LT(1);
@@ -4744,8 +4744,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 27) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:186:3: ( name )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:186:5: name
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:186:3: ( name )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:186:5: name
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4792,7 +4792,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "db_name"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:189:1: db_name : name ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:189:1: db_name : name ;
     public final FatwormParser.db_name_return db_name() throws RecognitionException {
         FatwormParser.db_name_return retval = new FatwormParser.db_name_return();
         retval.start = input.LT(1);
@@ -4808,8 +4808,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 28) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:190:3: ( name )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:190:5: name
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:190:3: ( name )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:190:5: name
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4856,7 +4856,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "name"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:193:1: name : ID ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:193:1: name : ID ;
     public final FatwormParser.name_return name() throws RecognitionException {
         FatwormParser.name_return retval = new FatwormParser.name_return();
         retval.start = input.LT(1);
@@ -4872,8 +4872,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 29) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:194:3: ( ID )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:194:5: ID
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:194:3: ( ID )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:194:5: ID
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4921,7 +4921,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "where_condition"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:197:1: where_condition : bool_expr ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:197:1: where_condition : bool_expr ;
     public final FatwormParser.where_condition_return where_condition() throws RecognitionException {
         FatwormParser.where_condition_return retval = new FatwormParser.where_condition_return();
         retval.start = input.LT(1);
@@ -4937,8 +4937,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 30) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:198:3: ( bool_expr )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:198:5: bool_expr
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:198:3: ( bool_expr )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:198:5: bool_expr
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4985,7 +4985,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "having_condition"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:201:1: having_condition : bool_expr ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:201:1: having_condition : bool_expr ;
     public final FatwormParser.having_condition_return having_condition() throws RecognitionException {
         FatwormParser.having_condition_return retval = new FatwormParser.having_condition_return();
         retval.start = input.LT(1);
@@ -5001,8 +5001,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 31) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:202:3: ( bool_expr )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:202:5: bool_expr
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:202:3: ( bool_expr )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:202:5: bool_expr
             {
             root_0 = (Object)adaptor.nil();
 
@@ -5049,7 +5049,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "subquery"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:205:1: subquery : select_statement ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:205:1: subquery : select_statement ;
     public final FatwormParser.subquery_return subquery() throws RecognitionException {
         FatwormParser.subquery_return retval = new FatwormParser.subquery_return();
         retval.start = input.LT(1);
@@ -5065,8 +5065,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 32) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:206:3: ( select_statement )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:206:5: select_statement
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:206:3: ( select_statement )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:206:5: select_statement
             {
             root_0 = (Object)adaptor.nil();
 
@@ -5113,7 +5113,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "bool_expr"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:209:1: bool_expr : logical_or ;
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:209:1: bool_expr : logical_or ;
     public final FatwormParser.bool_expr_return bool_expr() throws RecognitionException {
         FatwormParser.bool_expr_return retval = new FatwormParser.bool_expr_return();
         retval.start = input.LT(1);
@@ -5129,8 +5129,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 33) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:210:3: ( logical_or )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:210:5: logical_or
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:210:3: ( logical_or )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:210:5: logical_or
             {
             root_0 = (Object)adaptor.nil();
 
@@ -5177,7 +5177,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "logical_or"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:213:1: logical_or : ( logical_and ( OR ^ logical_and )+ | logical_and );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:213:1: logical_or : ( logical_and ( OR ^ logical_and )+ | logical_and );
     public final FatwormParser.logical_or_return logical_or() throws RecognitionException {
         FatwormParser.logical_or_return retval = new FatwormParser.logical_or_return();
         retval.start = input.LT(1);
@@ -5199,7 +5199,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 34) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:214:3: ( logical_and ( OR ^ logical_and )+ | logical_and )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:214:3: ( logical_and ( OR ^ logical_and )+ | logical_and )
             int alt35=2;
             int LA35_0 = input.LA(1);
 
@@ -5231,7 +5231,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt35) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:214:5: logical_and ( OR ^ logical_and )+
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:214:5: logical_and ( OR ^ logical_and )+
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5243,7 +5243,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, logical_and185.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:214:17: ( OR ^ logical_and )+
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:214:17: ( OR ^ logical_and )+
                     int cnt34=0;
                     loop34:
                     do {
@@ -5257,7 +5257,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt34) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:214:18: OR ^ logical_and
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:214:18: OR ^ logical_and
                     	    {
                     	    OR186=(Token)match(input,OR,FOLLOW_OR_in_logical_or1353); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -5291,7 +5291,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:215:5: logical_and
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:215:5: logical_and
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5340,7 +5340,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "logical_and"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:218:1: logical_and : ( primary ( AND ^ primary )+ | primary );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:218:1: logical_and : ( primary ( AND ^ primary )+ | primary );
     public final FatwormParser.logical_and_return logical_and() throws RecognitionException {
         FatwormParser.logical_and_return retval = new FatwormParser.logical_and_return();
         retval.start = input.LT(1);
@@ -5362,7 +5362,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 35) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:219:3: ( primary ( AND ^ primary )+ | primary )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:219:3: ( primary ( AND ^ primary )+ | primary )
             int alt37=2;
             int LA37_0 = input.LA(1);
 
@@ -5394,7 +5394,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt37) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:219:5: primary ( AND ^ primary )+
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:219:5: primary ( AND ^ primary )+
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5406,7 +5406,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, primary189.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:219:13: ( AND ^ primary )+
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:219:13: ( AND ^ primary )+
                     int cnt36=0;
                     loop36:
                     do {
@@ -5420,7 +5420,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt36) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:219:14: AND ^ primary
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:219:14: AND ^ primary
                     	    {
                     	    AND190=(Token)match(input,AND,FOLLOW_AND_in_logical_and1380); if (state.failed) return retval;
                     	    if ( state.backtracking==0 ) {
@@ -5454,7 +5454,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:220:5: primary
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:220:5: primary
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5503,7 +5503,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "primary"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:223:1: primary : ( value cop ^ value | NOT EXISTS '(' subquery ')' -> ^( NOT_EXISTS subquery ) | EXISTS ^ '(' ! subquery ')' !| value IN ^ '(' ! subquery ')' !| value cop ANY ^ '(' ! subquery ')' !| value cop ALL ^ '(' ! subquery ')' !| '(' ! bool_expr ')' !);
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:223:1: primary : ( value cop ^ value | NOT EXISTS '(' subquery ')' -> ^( NOT_EXISTS subquery ) | EXISTS ^ '(' ! subquery ')' !| value IN ^ '(' ! subquery ')' !| value cop ANY ^ '(' ! subquery ')' !| value cop ALL ^ '(' ! subquery ')' !| '(' ! bool_expr ')' !);
     public final FatwormParser.primary_return primary() throws RecognitionException {
         FatwormParser.primary_return retval = new FatwormParser.primary_return();
         retval.start = input.LT(1);
@@ -5585,7 +5585,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 36) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:224:3: ( value cop ^ value | NOT EXISTS '(' subquery ')' -> ^( NOT_EXISTS subquery ) | EXISTS ^ '(' ! subquery ')' !| value IN ^ '(' ! subquery ')' !| value cop ANY ^ '(' ! subquery ')' !| value cop ALL ^ '(' ! subquery ')' !| '(' ! bool_expr ')' !)
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:224:3: ( value cop ^ value | NOT EXISTS '(' subquery ')' -> ^( NOT_EXISTS subquery ) | EXISTS ^ '(' ! subquery ')' !| value IN ^ '(' ! subquery ')' !| value cop ANY ^ '(' ! subquery ')' !| value cop ALL ^ '(' ! subquery ')' !| '(' ! bool_expr ')' !)
             int alt38=7;
             switch ( input.LA(1) ) {
             case 106:
@@ -5677,7 +5677,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt38) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:224:5: value cop ^ value
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:224:5: value cop ^ value
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5706,7 +5706,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:225:5: NOT EXISTS '(' subquery ')'
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:225:5: NOT EXISTS '(' subquery ')'
                     {
                     NOT196=(Token)match(input,NOT,FOLLOW_NOT_in_primary1415); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_NOT.add(NOT196);
@@ -5746,7 +5746,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 226:5: -> ^( NOT_EXISTS subquery )
                     {
-                        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:226:8: ^( NOT_EXISTS subquery )
+                        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:226:8: ^( NOT_EXISTS subquery )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -5767,7 +5767,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:227:5: EXISTS ^ '(' ! subquery ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:227:5: EXISTS ^ '(' ! subquery ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5794,7 +5794,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:228:5: value IN ^ '(' ! subquery ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:228:5: value IN ^ '(' ! subquery ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5828,7 +5828,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:229:5: value cop ANY ^ '(' ! subquery ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:229:5: value cop ANY ^ '(' ! subquery ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5869,7 +5869,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:230:5: value cop ALL ^ '(' ! subquery ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:230:5: value cop ALL ^ '(' ! subquery ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5910,7 +5910,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:231:5: '(' ! bool_expr ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:231:5: '(' ! bool_expr ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -5963,7 +5963,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "cop"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:234:1: cop : ( '<' | '>' | '=' | '<=' | '>=' | '<>' );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:234:1: cop : ( '<' | '>' | '=' | '<=' | '>=' | '<>' );
     public final FatwormParser.cop_return cop() throws RecognitionException {
         FatwormParser.cop_return retval = new FatwormParser.cop_return();
         retval.start = input.LT(1);
@@ -5979,8 +5979,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 37) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:235:3: ( '<' | '>' | '=' | '<=' | '>=' | '<>' )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:235:3: ( '<' | '>' | '=' | '<=' | '>=' | '<>' )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:
             {
             root_0 = (Object)adaptor.nil();
 
@@ -6037,7 +6037,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "value"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:238:1: value : ( multiplicative ( ( '+' | '-' ) ^ multiplicative )+ | multiplicative );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:238:1: value : ( multiplicative ( ( '+' | '-' ) ^ multiplicative )+ | multiplicative );
     public final FatwormParser.value_return value() throws RecognitionException {
         FatwormParser.value_return retval = new FatwormParser.value_return();
         retval.start = input.LT(1);
@@ -6059,7 +6059,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 38) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:239:3: ( multiplicative ( ( '+' | '-' ) ^ multiplicative )+ | multiplicative )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:239:3: ( multiplicative ( ( '+' | '-' ) ^ multiplicative )+ | multiplicative )
             int alt40=2;
             int LA40_0 = input.LA(1);
 
@@ -6091,7 +6091,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt40) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:239:5: multiplicative ( ( '+' | '-' ) ^ multiplicative )+
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:239:5: multiplicative ( ( '+' | '-' ) ^ multiplicative )+
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6103,7 +6103,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, multiplicative226.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:239:20: ( ( '+' | '-' ) ^ multiplicative )+
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:239:20: ( ( '+' | '-' ) ^ multiplicative )+
                     int cnt39=0;
                     loop39:
                     do {
@@ -6117,7 +6117,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt39) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:239:21: ( '+' | '-' ) ^ multiplicative
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:239:21: ( '+' | '-' ) ^ multiplicative
                     	    {
                     	    set227=(Token)input.LT(1);
 
@@ -6162,7 +6162,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:240:5: multiplicative
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:240:5: multiplicative
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6211,7 +6211,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "multiplicative"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:243:1: multiplicative : ( atom ( ( '*' | '/' | '%' ) ^ atom )+ | atom );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:243:1: multiplicative : ( atom ( ( '*' | '/' | '%' ) ^ atom )+ | atom );
     public final FatwormParser.multiplicative_return multiplicative() throws RecognitionException {
         FatwormParser.multiplicative_return retval = new FatwormParser.multiplicative_return();
         retval.start = input.LT(1);
@@ -6233,7 +6233,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 39) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:244:3: ( atom ( ( '*' | '/' | '%' ) ^ atom )+ | atom )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:244:3: ( atom ( ( '*' | '/' | '%' ) ^ atom )+ | atom )
             int alt42=2;
             int LA42_0 = input.LA(1);
 
@@ -6265,7 +6265,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt42) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:244:5: atom ( ( '*' | '/' | '%' ) ^ atom )+
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:244:5: atom ( ( '*' | '/' | '%' ) ^ atom )+
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6277,7 +6277,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, atom230.getTree());
 
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:244:10: ( ( '*' | '/' | '%' ) ^ atom )+
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:244:10: ( ( '*' | '/' | '%' ) ^ atom )+
                     int cnt41=0;
                     loop41:
                     do {
@@ -6291,7 +6291,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt41) {
                     	case 1 :
-                    	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:244:11: ( '*' | '/' | '%' ) ^ atom
+                    	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:244:11: ( '*' | '/' | '%' ) ^ atom
                     	    {
                     	    set231=(Token)input.LT(1);
 
@@ -6336,7 +6336,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:245:5: atom
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:245:5: atom
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6385,7 +6385,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "atom"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:248:1: atom : ( '(' ! value ')' !| col_name | const_value | '(' ! subquery ')' !| func ^ '(' ! col_name ')' !| '-' ^ atom );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:248:1: atom : ( '(' ! value ')' !| col_name | const_value | '(' ! subquery ')' !| func ^ '(' ! col_name ')' !| '-' ^ atom );
     public final FatwormParser.atom_return atom() throws RecognitionException {
         FatwormParser.atom_return retval = new FatwormParser.atom_return();
         retval.start = input.LT(1);
@@ -6427,7 +6427,7 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 40) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:249:3: ( '(' ! value ')' !| col_name | const_value | '(' ! subquery ')' !| func ^ '(' ! col_name ')' !| '-' ^ atom )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:249:3: ( '(' ! value ')' !| col_name | const_value | '(' ! subquery ')' !| func ^ '(' ! col_name ')' !| '-' ^ atom )
             int alt43=6;
             switch ( input.LA(1) ) {
             case 106:
@@ -6491,7 +6491,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt43) {
                 case 1 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:249:5: '(' ! value ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:249:5: '(' ! value ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6510,7 +6510,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:250:5: col_name
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:250:5: col_name
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6525,7 +6525,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:251:5: const_value
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:251:5: const_value
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6540,7 +6540,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:252:5: '(' ! subquery ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:252:5: '(' ! subquery ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6559,7 +6559,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:253:5: func ^ '(' ! col_name ')' !
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:253:5: func ^ '(' ! col_name ')' !
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6585,7 +6585,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:254:5: '-' ^ atom
+                    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:254:5: '-' ^ atom
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -6642,7 +6642,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "const_value"
-    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:257:1: const_value : ( INTEGER_LITERAL | STRING_LITERAL | FLOAT_LITERAL | TRUE | FALSE | NULL | DEFAULT );
+    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:257:1: const_value : ( INTEGER_LITERAL | STRING_LITERAL | FLOAT_LITERAL | TRUE | FALSE | NULL | DEFAULT );
     public final FatwormParser.const_value_return const_value() throws RecognitionException {
         FatwormParser.const_value_return retval = new FatwormParser.const_value_return();
         retval.start = input.LT(1);
@@ -6658,8 +6658,8 @@ public TreeAdaptor getTreeAdaptor() {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 41) ) { return retval; }
 
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:258:3: ( INTEGER_LITERAL | STRING_LITERAL | FLOAT_LITERAL | TRUE | FALSE | NULL | DEFAULT )
-            // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:258:3: ( INTEGER_LITERAL | STRING_LITERAL | FLOAT_LITERAL | TRUE | FALSE | NULL | DEFAULT )
+            // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:
             {
             root_0 = (Object)adaptor.nil();
 
@@ -6710,8 +6710,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred1_Fatworm
     public final void synpred1_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:33:5: ( database_statement )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:33:5: database_statement
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:33:5: ( database_statement )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:33:5: database_statement
         {
         pushFollow(FOLLOW_database_statement_in_synpred1_Fatworm151);
         database_statement();
@@ -6726,8 +6726,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred2_Fatworm
     public final void synpred2_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:34:5: ( table_statement )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:34:5: table_statement
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:34:5: ( table_statement )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:34:5: table_statement
         {
         pushFollow(FOLLOW_table_statement_in_synpred2_Fatworm157);
         table_statement();
@@ -6742,8 +6742,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred6_Fatworm
     public final void synpred6_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:38:5: ( index_statement )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:38:5: index_statement
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:38:5: ( index_statement )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:38:5: index_statement
         {
         pushFollow(FOLLOW_index_statement_in_synpred6_Fatworm181);
         index_statement();
@@ -6758,8 +6758,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred25_Fatworm
     public final void synpred25_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:83:5: ( INSERT INTO tbl_name values_clause )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:83:5: INSERT INTO tbl_name values_clause
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:83:5: ( INSERT INTO tbl_name values_clause )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:83:5: INSERT INTO tbl_name values_clause
         {
         match(input,INSERT,FOLLOW_INSERT_in_synpred25_Fatworm535); if (state.failed) return ;
 
@@ -6784,8 +6784,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred27_Fatworm
     public final void synpred27_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:85:5: ( INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:85:5: INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:85:5: ( INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:85:5: INSERT INTO tbl_name '(' col_name ( ',' col_name )* ')' values_clause
         {
         match(input,INSERT,FOLLOW_INSERT_in_synpred27_Fatworm561); if (state.failed) return ;
 
@@ -6805,7 +6805,7 @@ public TreeAdaptor getTreeAdaptor() {
         state._fsp--;
         if (state.failed) return ;
 
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:85:39: ( ',' col_name )*
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:85:39: ( ',' col_name )*
         loop48:
         do {
             int alt48=2;
@@ -6818,7 +6818,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt48) {
         	case 1 :
-        	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:85:40: ',' col_name
+        	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:85:40: ',' col_name
         	    {
         	    match(input,110,FOLLOW_110_in_synpred27_Fatworm572); if (state.failed) return ;
 
@@ -6852,8 +6852,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred32_Fatworm
     public final void synpred32_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:109:5: ( CREATE INDEX index_name ON tbl_name '(' col_name ')' )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:109:5: CREATE INDEX index_name ON tbl_name '(' col_name ')'
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:109:5: ( CREATE INDEX index_name ON tbl_name '(' col_name ')' )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:109:5: CREATE INDEX index_name ON tbl_name '(' col_name ')'
         {
         match(input,CREATE,FOLLOW_CREATE_in_synpred32_Fatworm755); if (state.failed) return ;
 
@@ -6890,8 +6890,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred33_Fatworm
     public final void synpred33_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:111:5: ( CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')' )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:111:5: CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')'
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:111:5: ( CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')' )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:111:5: CREATE UNIQUE INDEX index_name ON tbl_name '(' col_name ')'
         {
         match(input,CREATE,FOLLOW_CREATE_in_synpred33_Fatworm791); if (state.failed) return ;
 
@@ -6930,8 +6930,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred36_Fatworm
     public final void synpred36_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:5: ( SELECT select_expr ( ',' select_expr )* ( select_suffix )* )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:5: SELECT select_expr ( ',' select_expr )* ( select_suffix )*
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:5: ( SELECT select_expr ( ',' select_expr )* ( select_suffix )* )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:5: SELECT select_expr ( ',' select_expr )* ( select_suffix )*
         {
         match(input,SELECT,FOLLOW_SELECT_in_synpred36_Fatworm864); if (state.failed) return ;
 
@@ -6941,7 +6941,7 @@ public TreeAdaptor getTreeAdaptor() {
         state._fsp--;
         if (state.failed) return ;
 
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:24: ( ',' select_expr )*
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:24: ( ',' select_expr )*
         loop49:
         do {
             int alt49=2;
@@ -6954,7 +6954,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt49) {
         	case 1 :
-        	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:25: ',' select_expr
+        	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:25: ',' select_expr
         	    {
         	    match(input,110,FOLLOW_110_in_synpred36_Fatworm869); if (state.failed) return ;
 
@@ -6973,7 +6973,7 @@ public TreeAdaptor getTreeAdaptor() {
         } while (true);
 
 
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:43: ( select_suffix )*
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:43: ( select_suffix )*
         loop50:
         do {
             int alt50=2;
@@ -6986,7 +6986,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt50) {
         	case 1 :
-        	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:118:43: select_suffix
+        	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:118:43: select_suffix
         	    {
         	    pushFollow(FOLLOW_select_suffix_in_synpred36_Fatworm875);
         	    select_suffix();
@@ -7010,8 +7010,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred45_Fatworm
     public final void synpred45_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:153:5: ( col_name ASC )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:153:5: col_name ASC
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:153:5: ( col_name ASC )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:153:5: col_name ASC
         {
         pushFollow(FOLLOW_col_name_in_synpred45_Fatworm1080);
         col_name();
@@ -7028,8 +7028,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred46_Fatworm
     public final void synpred46_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:154:5: ( col_name DESC )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:154:5: col_name DESC
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:154:5: ( col_name DESC )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:154:5: col_name DESC
         {
         pushFollow(FOLLOW_col_name_in_synpred46_Fatworm1089);
         col_name();
@@ -7046,8 +7046,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred53_Fatworm
     public final void synpred53_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:168:6: ( tbl_name '.' )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:168:6: tbl_name '.'
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:168:6: ( tbl_name '.' )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:168:6: tbl_name '.'
         {
         pushFollow(FOLLOW_tbl_name_in_synpred53_Fatworm1169);
         tbl_name();
@@ -7064,8 +7064,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred58_Fatworm
     public final void synpred58_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:214:5: ( logical_and ( OR logical_and )+ )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:214:5: logical_and ( OR logical_and )+
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:214:5: ( logical_and ( OR logical_and )+ )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:214:5: logical_and ( OR logical_and )+
         {
         pushFollow(FOLLOW_logical_and_in_synpred58_Fatworm1350);
         logical_and();
@@ -7073,7 +7073,7 @@ public TreeAdaptor getTreeAdaptor() {
         state._fsp--;
         if (state.failed) return ;
 
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:214:17: ( OR logical_and )+
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:214:17: ( OR logical_and )+
         int cnt53=0;
         loop53:
         do {
@@ -7087,7 +7087,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt53) {
         	case 1 :
-        	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:214:18: OR logical_and
+        	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:214:18: OR logical_and
         	    {
         	    match(input,OR,FOLLOW_OR_in_synpred58_Fatworm1353); if (state.failed) return ;
 
@@ -7118,8 +7118,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred60_Fatworm
     public final void synpred60_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:219:5: ( primary ( AND primary )+ )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:219:5: primary ( AND primary )+
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:219:5: ( primary ( AND primary )+ )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:219:5: primary ( AND primary )+
         {
         pushFollow(FOLLOW_primary_in_synpred60_Fatworm1377);
         primary();
@@ -7127,7 +7127,7 @@ public TreeAdaptor getTreeAdaptor() {
         state._fsp--;
         if (state.failed) return ;
 
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:219:13: ( AND primary )+
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:219:13: ( AND primary )+
         int cnt54=0;
         loop54:
         do {
@@ -7141,7 +7141,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt54) {
         	case 1 :
-        	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:219:14: AND primary
+        	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:219:14: AND primary
         	    {
         	    match(input,AND,FOLLOW_AND_in_synpred60_Fatworm1380); if (state.failed) return ;
 
@@ -7172,8 +7172,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred61_Fatworm
     public final void synpred61_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:224:5: ( value cop value )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:224:5: value cop value
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:224:5: ( value cop value )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:224:5: value cop value
         {
         pushFollow(FOLLOW_value_in_synpred61_Fatworm1404);
         value();
@@ -7200,8 +7200,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred64_Fatworm
     public final void synpred64_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:228:5: ( value IN '(' subquery ')' )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:228:5: value IN '(' subquery ')'
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:228:5: ( value IN '(' subquery ')' )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:228:5: value IN '(' subquery ')'
         {
         pushFollow(FOLLOW_value_in_synpred64_Fatworm1456);
         value();
@@ -7228,8 +7228,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred65_Fatworm
     public final void synpred65_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:229:5: ( value cop ANY '(' subquery ')' )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:229:5: value cop ANY '(' subquery ')'
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:229:5: ( value cop ANY '(' subquery ')' )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:229:5: value cop ANY '(' subquery ')'
         {
         pushFollow(FOLLOW_value_in_synpred65_Fatworm1473);
         value();
@@ -7262,8 +7262,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred66_Fatworm
     public final void synpred66_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:230:5: ( value cop ALL '(' subquery ')' )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:230:5: value cop ALL '(' subquery ')'
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:230:5: ( value cop ALL '(' subquery ')' )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:230:5: value cop ALL '(' subquery ')'
         {
         pushFollow(FOLLOW_value_in_synpred66_Fatworm1492);
         value();
@@ -7296,8 +7296,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred74_Fatworm
     public final void synpred74_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:239:5: ( multiplicative ( ( '+' | '-' ) multiplicative )+ )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:239:5: multiplicative ( ( '+' | '-' ) multiplicative )+
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:239:5: ( multiplicative ( ( '+' | '-' ) multiplicative )+ )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:239:5: multiplicative ( ( '+' | '-' ) multiplicative )+
         {
         pushFollow(FOLLOW_multiplicative_in_synpred74_Fatworm1563);
         multiplicative();
@@ -7305,7 +7305,7 @@ public TreeAdaptor getTreeAdaptor() {
         state._fsp--;
         if (state.failed) return ;
 
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:239:20: ( ( '+' | '-' ) multiplicative )+
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:239:20: ( ( '+' | '-' ) multiplicative )+
         int cnt55=0;
         loop55:
         do {
@@ -7319,7 +7319,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt55) {
         	case 1 :
-        	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:239:21: ( '+' | '-' ) multiplicative
+        	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:239:21: ( '+' | '-' ) multiplicative
         	    {
         	    if ( input.LA(1)==109||input.LA(1)==111 ) {
         	        input.consume();
@@ -7360,8 +7360,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred78_Fatworm
     public final void synpred78_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:244:5: ( atom ( ( '*' | '/' | '%' ) atom )+ )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:244:5: atom ( ( '*' | '/' | '%' ) atom )+
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:244:5: ( atom ( ( '*' | '/' | '%' ) atom )+ )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:244:5: atom ( ( '*' | '/' | '%' ) atom )+
         {
         pushFollow(FOLLOW_atom_in_synpred78_Fatworm1594);
         atom();
@@ -7369,7 +7369,7 @@ public TreeAdaptor getTreeAdaptor() {
         state._fsp--;
         if (state.failed) return ;
 
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:244:10: ( ( '*' | '/' | '%' ) atom )+
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:244:10: ( ( '*' | '/' | '%' ) atom )+
         int cnt56=0;
         loop56:
         do {
@@ -7383,7 +7383,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt56) {
         	case 1 :
-        	    // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:244:11: ( '*' | '/' | '%' ) atom
+        	    // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:244:11: ( '*' | '/' | '%' ) atom
         	    {
         	    if ( input.LA(1)==105||input.LA(1)==108||input.LA(1)==113 ) {
         	        input.consume();
@@ -7424,8 +7424,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred79_Fatworm
     public final void synpred79_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:249:5: ( '(' value ')' )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:249:5: '(' value ')'
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:249:5: ( '(' value ')' )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:249:5: '(' value ')'
         {
         match(input,106,FOLLOW_106_in_synpred79_Fatworm1627); if (state.failed) return ;
 
@@ -7444,8 +7444,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred82_Fatworm
     public final void synpred82_Fatworm_fragment() throws RecognitionException {
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:252:5: ( '(' subquery ')' )
-        // /Users/roxanne/repos/workspace/fatworm/src/fatworm/parser/Fatworm.g:252:5: '(' subquery ')'
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:252:5: ( '(' subquery ')' )
+        // /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g:252:5: '(' subquery ')'
         {
         match(input,106,FOLLOW_106_in_synpred82_Fatworm1651); if (state.failed) return ;
 
