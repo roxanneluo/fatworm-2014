@@ -21,6 +21,7 @@ public class FLOAT extends Field {
 		v = Float.parseFloat(Util.trim(x));
 	}
 	
+	
 	public FLOAT(double f) {
 		this();
 		v = new Float(f);
@@ -40,14 +41,14 @@ public class FLOAT extends Field {
 	}
 	public Field toMe(Field f) throws SQLException {
 		if (f instanceof NULL) return NULL.getInstance();
-		if (f instanceof DECIMAL) return new FLOAT(((DECIMAL)f).v); 
+		if (f instanceof DECIMAL) return new FLOAT(((DECIMAL)f).v.floatValue()); 
 		if (f instanceof FLOAT) return f;
 		if (f instanceof INT) return new FLOAT(((INT)f).v);
 		throw new SQLException("[ERROR] converting "+f.typeValString()+" to "+this.typeValString());
 	}
 	public static Field toFloat(Field f) throws SQLException {
 		if (f instanceof NULL) return NULL.getInstance();
-		if (f instanceof DECIMAL) return new FLOAT(((DECIMAL)f).v); 
+		if (f instanceof DECIMAL) return new FLOAT(((DECIMAL)f).v.floatValue()); 
 		if (f instanceof FLOAT) return f;
 		if (f instanceof INT) return new FLOAT(((INT)f).v);
 		throw new SQLException("[ERROR] converting "+f.typeValString()+" to Float");
@@ -64,5 +65,9 @@ public class FLOAT extends Field {
 	public int compareTo(Field f) {
 		FLOAT b = (FLOAT)f;
 		return v.compareTo(b.v);
+	}
+	
+	public Float getVal() {
+		return v;
 	}
 }

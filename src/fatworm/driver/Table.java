@@ -12,9 +12,14 @@ public class Table {
 	public Schema schema;
 	public ArrayList<Tuple> table = new ArrayList<Tuple>();	// TODO: actually this should be a table scan I think
 	private Random rand;
+	private static int tempNum = 0;
+	
+	public Table() {
+		name = new String("/temp"+(tempNum++));
+	}
 	
 	public Table(String name, Schema schema) {
-		this.name = name;
+		this.name = name.toLowerCase();
 		this.schema = schema;
 	}
 	

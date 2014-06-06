@@ -1,0 +1,125 @@
+# select * from student where malesex = true
+# select 1+2+3+4+5
+15
+;
+# select 1, 1*0, -1-2, -1%10, -(-1-(-1)), 1/2, 0.5+0.314, 0.0001*0.0001 from student
+1	0	-3	-1	0	0.50000	0.81400	1.0000e-08
+1	0	-3	-1	0	0.50000	0.81400	1.0000e-08
+1	0	-3	-1	0	0.50000	0.81400	1.0000e-08
+1	0	-3	-1	0	0.50000	0.81400	1.0000e-08
+;
+# select *, 3*5%11 from student
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false
+;
+# select * from student, fatworm
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	1	ChengYu	C	TangBo	11899
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	10	ChenKailong	H	ChenKailong	21635
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	11	WangHang	H	WangHang	44921
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	12	LuoYuLong	Z	ChenKailong	6957
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	2	JiangXiao	C	TangBo	3187
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	3	TangBo	C	TangBo	51664
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	4	FengZiming	I	ShengMeiLun	11890
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	5	ShengMeilun	I	ShengMeiLun	10528
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	6	ZhangJiapeng	I	.	0
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	7	KangNanXi	I	KangNanXi	12610
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	8	ZhangYan	A	KangNanXi	2343
+1	ChengYu	cy	20	180.00	69.500	1989-08-31 17:17:17.0	2112-08-31 17:17:17.0	true	9	ZhouYujiao	A	KangNanXi	664
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	1	ChengYu	C	TangBo	11899
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	10	ChenKailong	H	ChenKailong	21635
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	11	WangHang	H	WangHang	44921
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	12	LuoYuLong	Z	ChenKailong	6957
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	2	JiangXiao	C	TangBo	3187
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	3	TangBo	C	TangBo	51664
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	4	FengZiming	I	ShengMeiLun	11890
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	5	ShengMeilun	I	ShengMeiLun	10528
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	6	ZhangJiapeng	I	.	0
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	7	KangNanXi	I	KangNanXi	12610
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	8	ZhangYan	A	KangNanXi	2343
+2	JiangXiao	FireDancer	21	175.00	80.000	1989-02-20 02:22:22.0	2222-02-22 02:22:22.0	true	9	ZhouYujiao	A	KangNanXi	664
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	1	ChengYu	C	TangBo	11899
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	10	ChenKailong	H	ChenKailong	21635
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	11	WangHang	H	WangHang	44921
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	12	LuoYuLong	Z	ChenKailong	6957
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	2	JiangXiao	C	TangBo	3187
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	3	TangBo	C	TangBo	51664
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	4	FengZiming	I	ShengMeiLun	11890
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	5	ShengMeilun	I	ShengMeiLun	10528
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	6	ZhangJiapeng	I	.	0
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	7	KangNanXi	I	KangNanXi	12610
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	8	ZhangYan	A	KangNanXi	2343
+3	TangBo	tangbonk1	21	180.30	65.500	1989-01-25 21:32:13.0	8888-12-31 23:59:59.0	true	9	ZhouYujiao	A	KangNanXi	664
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	1	ChengYu	C	TangBo	11899
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	10	ChenKailong	H	ChenKailong	21635
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	11	WangHang	H	WangHang	44921
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	12	LuoYuLong	Z	ChenKailong	6957
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	2	JiangXiao	C	TangBo	3187
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	3	TangBo	C	TangBo	51664
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	4	FengZiming	I	ShengMeiLun	11890
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	5	ShengMeilun	I	ShengMeiLun	10528
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	6	ZhangJiapeng	I	.	0
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	7	KangNanXi	I	KangNanXi	12610
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	8	ZhangYan	A	KangNanXi	2343
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false	9	ZhouYujiao	A	KangNanXi	664
+;
+# select a.id, a.name, student.id, student.name from fatworm as a, student
+1	ChengYu	1	ChengYu
+1	ChengYu	2	JiangXiao
+1	ChengYu	3	TangBo
+1	ChengYu	4	FengZiming
+10	ChenKailong	1	ChengYu
+10	ChenKailong	2	JiangXiao
+10	ChenKailong	3	TangBo
+10	ChenKailong	4	FengZiming
+11	WangHang	1	ChengYu
+11	WangHang	2	JiangXiao
+11	WangHang	3	TangBo
+11	WangHang	4	FengZiming
+12	LuoYuLong	1	ChengYu
+12	LuoYuLong	2	JiangXiao
+12	LuoYuLong	3	TangBo
+12	LuoYuLong	4	FengZiming
+2	JiangXiao	1	ChengYu
+2	JiangXiao	2	JiangXiao
+2	JiangXiao	3	TangBo
+2	JiangXiao	4	FengZiming
+3	TangBo	1	ChengYu
+3	TangBo	2	JiangXiao
+3	TangBo	3	TangBo
+3	TangBo	4	FengZiming
+4	FengZiming	1	ChengYu
+4	FengZiming	2	JiangXiao
+4	FengZiming	3	TangBo
+4	FengZiming	4	FengZiming
+5	ShengMeilun	1	ChengYu
+5	ShengMeilun	2	JiangXiao
+5	ShengMeilun	3	TangBo
+5	ShengMeilun	4	FengZiming
+6	ZhangJiapeng	1	ChengYu
+6	ZhangJiapeng	2	JiangXiao
+6	ZhangJiapeng	3	TangBo
+6	ZhangJiapeng	4	FengZiming
+7	KangNanXi	1	ChengYu
+7	KangNanXi	2	JiangXiao
+7	KangNanXi	3	TangBo
+7	KangNanXi	4	FengZiming
+8	ZhangYan	1	ChengYu
+8	ZhangYan	2	JiangXiao
+8	ZhangYan	3	TangBo
+8	ZhangYan	4	FengZiming
+9	ZhouYujiao	1	ChengYu
+9	ZhouYujiao	2	JiangXiao
+9	ZhouYujiao	3	TangBo
+9	ZhouYujiao	4	FengZiming
+;
+# select * from (select * from student where birthday = '1989-02-24 04:44:44') as t1
+4	FengZiming	laoselang	21	150.00	99.900	1989-02-24 04:44:44.0	1111-01-11 11:11:11.0	false
+;
+# select id, name, malesex from student where id in (select id from student where malesex = false)
+# select id, name from student as f where name > any (select name from student where id > f.id)
+2	JiangXiao
+3	TangBo
+;
+# select id, name from student as s where (select id from student where s.name = name) >= id

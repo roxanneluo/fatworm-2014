@@ -19,7 +19,7 @@ public class TablePlan extends Plan {
 		
 		DBDataManager data = DBDataManager.getInstance();
 		
-		Table table = data.currentDB.tables.get(tableName);
+		Table table = data.currentDB.getTable(tableName);
 		if (table == null)
 			throw new SQLException("table "+tableName+" does not exist");
 		

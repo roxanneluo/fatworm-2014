@@ -1,0 +1,77 @@
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: drop database fatwormTypes
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create database fatwormTypes
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use fatwormTypes
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: create table test1(a int, d datetime)
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(1,'1988-04-09 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(2,'1988-04-10 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(3,'1988-04-11 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(4,'1988-04-12 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(5,'1988-04-13 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(6,'1988-04-13 10:10:09')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(7,'1988-04-12 10:10:09')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(8,'1988-04-11 10:10:09')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(9,'1988-04-10 10:10:09')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(10,'1988-04-09 10:10:09')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(11,'1988-04-09 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(12,'1988-04-10 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(13,'1988-04-11 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(14,'1988-04-12 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(15,'1988-04-13 10:10:10')
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: select * from test1 where d='1988-04-12 10:10:10'
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: select count(a) from test1 where d>'1988-04-12 10:10:10'
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: select count(d) from test1 where d>'1988-04-12 10:10:10' and d<'2222-02-22 00:00:00'
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: select d from test1 order by d
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 93
+[Thu Jun 05 22:41:33 CST 2014] [Thread Time] 26
+[Thu Jun 05 22:41:33 CST 2014] [Total Time] 35
+[Thu Jun 05 22:41:33 CST 2014] [Result] Correct

@@ -1,0 +1,17 @@
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: use nano
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] (select class, class, 1920
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] from Classes
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] where not exists (select name from Ships where Ships.class = Classes.class))
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] (select ship, 'Iowa', 1900
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] from Outcomes where ship <> ALL(select name from Ships))
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:20 CST 2014] [Thread Time] 13
+[Thu Jun 05 22:40:20 CST 2014] [Total Time] 14
+[Thu Jun 05 22:40:20 CST 2014] [Result] Correct

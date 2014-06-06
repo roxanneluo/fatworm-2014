@@ -282,8 +282,8 @@ public class ResultSet implements java.sql.ResultSet{
 		Field f = current.get(idx);
 		if (f.isNull())
 			return null;
-		if (f instanceof DATE)
-			return new Date(((DATE)f).v.getTime());
+//		if (f instanceof DATE)
+//			return new Date(((DATE)f).v.getTime());
 		if (f instanceof TIMESTAMP)
 			return new Date(((TIMESTAMP)f).v.getTime());
 		if (f.isNull()) return null;
@@ -447,9 +447,9 @@ public class ResultSet implements java.sql.ResultSet{
 		if (f instanceof VARCHAR)
 			return ((VARCHAR)f).v;
 		if (f instanceof DATE)
-			return new Date(((DATE)f).v.getTime());
-		if (f instanceof DECIMAL)
-			return new BigDecimal(((DECIMAL)f).v);
+			return ((DATE)f).v;
+		if (f instanceof DECIMAL) 
+			return ((DECIMAL)f).v;
 		if (f instanceof FLOAT)
 			return ((FLOAT)f).v;
 		if (f instanceof INT)
@@ -567,8 +567,8 @@ public class ResultSet implements java.sql.ResultSet{
 		Field f = current.get(idx);
 		if (f.isNull())
 			return null;
-		if (f instanceof DATE)
-			return new Time(((DATE)f).v.getTime());
+//		if (f instanceof DATE)
+//			return new Time(((DATE)f).v.getTime());
 		if (f instanceof TIMESTAMP)
 			return new Time(((TIMESTAMP)f).v.getTime());
 		if (f.isNull()) return null;

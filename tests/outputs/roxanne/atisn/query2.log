@@ -1,0 +1,25 @@
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: use ATISN
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: select distinct category from aircraft order by category
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: select distinct fromairport from flight order by fromairport
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: select distinct aircraftcode from flight order by aircraftcode
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: use ATISN
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: select distinct flightcode from flightfare order by flightcode
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: select distinct flight.flightcode,aircraft.aircrafttype from flight,aircraft where flight.aircraftcode=aircraft.aircraftcode order by flight.flightcode,aircraft.aircrafttype
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: select distinct airline.airlinename,aircraft.aircrafttype from aircraft,airline,flight where flight.aircraftcode=aircraft.aircraftcode and flight.airlinecode=airline.airlinecode order by airline.airlinename,aircraft.aircrafttype
+[Thu Jun 05 22:03:34 CST 2014] [Thread Time] 9
+[Thu Jun 05 22:03:34 CST 2014] [Total Time] 9
+[Thu Jun 05 22:03:34 CST 2014] [Result] Wrong Answer

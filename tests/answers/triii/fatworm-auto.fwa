@@ -1,0 +1,22 @@
+# select * from auto where id = 3
+3	AAA
+;
+# select * from auto
+3	AAA
+4	BBB
+;
+# select * from auto where id = 4
+4	BBB
+;
+# select * from auto where id = 5
+5	CCC
+;
+# select * from auto where id = 6
+6	DDD
+;
+# select * from auto where id = 1
+1	EEE
+;
+# select * from auto where id = 7
+7	FFF
+;

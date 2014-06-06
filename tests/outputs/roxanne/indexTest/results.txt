@@ -1,0 +1,14 @@
+date: Thu Jun 05 22:03:37 CST 2014
+roxanne	testIndex_nonduplicated_select	Wrong Answer	391
+roxanne	testIndex_duplicated_select	Wrong Answer	1042
+roxanne	testIndex_insertAfterCreateIndex	Wrong Answer	4
+roxanne	testIndex_range_select	Wrong Answer	532
+roxanne	testIndex_hugeIndex	Wrong Answer	3005
+roxanne	testIndex_string	Wrong Answer	278
+date: Thu Jun 05 22:07:17 CST 2014
+roxanne	testIndex_nonduplicated_select	Wrong Answer	380
+roxanne	testIndex_duplicated_select	Wrong Answer	1013
+roxanne	testIndex_insertAfterCreateIndex	Wrong Answer	4
+roxanne	testIndex_range_select	Wrong Answer	474
+roxanne	testIndex_hugeIndex	Wrong Answer	3086
+roxanne	testIndex_string	Wrong Answer	321

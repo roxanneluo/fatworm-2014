@@ -1,0 +1,45 @@
+date: Thu Jun 05 08:56:13 CST 2014
+roxanne	init	Correct	87
+roxanne	syntactic-crash	Correct	7
+roxanne	select	Correct	16
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	7
+date: Thu Jun 05 11:48:28 CST 2014
+roxanne	init	Correct	69
+roxanne	syntactic-crash	Correct	6
+roxanne	select	Correct	14
+roxanne	semantic-crash	Correct	9
+roxanne	select	Correct	8
+date: Thu Jun 05 22:03:36 CST 2014
+roxanne	init	Correct	70
+roxanne	syntactic-crash	Correct	6
+roxanne	select	Correct	14
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	7
+date: Thu Jun 05 22:08:45 CST 2014
+roxanne	init	Correct	69
+roxanne	syntactic-crash	Correct	5
+date: Thu Jun 05 22:09:31 CST 2014
+roxanne	init	Correct	70
+roxanne	syntactic-crash	Correct	7
+roxanne	select	Correct	15
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	7
+date: Thu Jun 05 22:10:03 CST 2014
+roxanne	init	Correct	71
+roxanne	syntactic-crash	Correct	6
+roxanne	select	Correct	14
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	6
+date: Thu Jun 05 22:19:28 CST 2014
+roxanne	init	Correct	73
+roxanne	syntactic-crash	Correct	7
+roxanne	select	Correct	13
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	7
+date: Thu Jun 05 22:40:07 CST 2014
+roxanne	init	Correct	69
+roxanne	syntactic-crash	Correct	6
+roxanne	select	Correct	14
+roxanne	semantic-crash	Correct	10
+roxanne	select	Correct	7

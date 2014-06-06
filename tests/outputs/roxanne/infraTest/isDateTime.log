@@ -1,0 +1,132 @@
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: drop database nano
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: create database nano
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: use nano
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: drop table InfraTest
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: create table InfraTest( k int, value datetime)
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(1,'1988-04-09 10:10:10')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(2,'1908-04-19 10:20:10')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(3,'1998-11-01 23:23:23')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(4,'1988-04-09 10:10:23')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(5,'1000-01-01 10:10:10')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(6,'9999-12-31 23:59:59')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(7,'1988-04-19 00:10:10')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(8,'2012-01-01 00:00:10')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(9,'2010-06-15 21:04:00')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(0,'1988-04-09 10:10:10')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: select * from InfraTest
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: select * from InfraTest where value < '1988-04-09 10:10:11'
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: select * from InfraTest where value > '1988-04-09 10:10:11'
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: select * from InfraTest where value = '1988-04-09 10:10:10'
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: select * from InfraTest where value >= '1000-04-09 10:10:11'
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: select * from InfraTest where value <> '1988-04-09 10:10:10'
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:08 CST 2014] [Thread Time] 27
+[Thu Jun 05 22:40:08 CST 2014] [Total Time] 47
+[Thu Jun 05 22:40:08 CST 2014] [Result] Correct

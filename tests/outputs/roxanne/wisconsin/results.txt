@@ -1,0 +1,22 @@
+date: Thu Jun 05 13:30:33 CST 2014
+roxanne	create	Correct	67
+roxanne	insert	Correct	5206
+roxanne	t1	Wrong Answer	4
+roxanne	t3	Wrong Answer	877
+roxanne	useless	Correct	8
+date: Thu Jun 05 19:02:14 CST 2014
+roxanne	create	Correct	70
+roxanne	insert	Correct	6583
+roxanne	t1	Wrong Answer	8
+roxanne	t3	Wrong Answer	1107
+roxanne	useless	Correct	11
+date: Thu Jun 05 22:05:01 CST 2014
+roxanne	create	Correct	68
+roxanne	insert	Correct	4895
+roxanne	t1	Wrong Answer	9
+roxanne	t3	Wrong Answer	905
+roxanne	useless	Correct	5
+date: Thu Jun 05 22:07:42 CST 2014
+roxanne	create	Correct	67
+date: Thu Jun 05 22:07:54 CST 2014
+roxanne	create	Correct	69

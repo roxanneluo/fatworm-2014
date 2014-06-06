@@ -1,0 +1,5 @@
+# select distinct number, score from Classes
+1	2
+2	2
+2	3
+;

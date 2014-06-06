@@ -1,0 +1,9 @@
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use acm
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create index idx0 on student(id)
+[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 0
+[Thu Jun 05 22:41:32 CST 2014] [Total Time] 1
+[Thu Jun 05 22:41:32 CST 2014] [Result] Wrong Answer

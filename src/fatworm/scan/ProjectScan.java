@@ -47,5 +47,7 @@ public class ProjectScan extends UScan {
 	public void restart() throws SQLException {
 		scan.restart();
 	}
-
+	public String toString() {
+		return columns.toString();
+	}
 }

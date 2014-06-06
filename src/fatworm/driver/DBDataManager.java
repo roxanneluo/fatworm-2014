@@ -54,7 +54,7 @@ public class DBDataManager {
 	
 	public String toString() {
 		String ans = "====================DBDataManager Start======================\n";
-		ans += "\tcurrentDB:"+currentDB.name+"\n";
+		ans += "\tcurrentDB:"+(currentDB!= null? currentDB.name:"null")+"\n";
 		for (String db: DBs.keySet()) {
 			ans += "\t[DB]"+db+"\n";
 		}

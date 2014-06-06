@@ -1,0 +1,104 @@
+# select * from InfraTest order by k ASC, v ASC
+0	abcdef
+1	abc
+2	abc
+2	def
+3	abcdef
+3	def
+31	abcdef
+32	abcdef
+90	abcdef
+300	abcdef
+30000	abcdef
+;
+# select * from InfraTest order by k ASC, v DESC
+0	abcdef
+1	abc
+2	def
+2	abc
+3	def
+3	abcdef
+31	abcdef
+32	abcdef
+90	abcdef
+300	abcdef
+30000	abcdef
+;
+# select * from InfraTest order by k DESC, v ASC
+30000	abcdef
+300	abcdef
+90	abcdef
+32	abcdef
+31	abcdef
+3	abcdef
+3	def
+2	abc
+2	def
+1	abc
+0	abcdef
+;
+# select * from InfraTest order by k DESC, v DESC
+30000	abcdef
+300	abcdef
+90	abcdef
+32	abcdef
+31	abcdef
+3	def
+3	abcdef
+2	def
+2	abc
+1	abc
+0	abcdef
+;
+# select * from InfraTest order by v ASC, k ASC
+1	abc
+2	abc
+0	abcdef
+3	abcdef
+31	abcdef
+32	abcdef
+90	abcdef
+300	abcdef
+30000	abcdef
+2	def
+3	def
+;
+# select * from InfraTest order by v ASC, k DESC
+2	abc
+1	abc
+30000	abcdef
+300	abcdef
+90	abcdef
+32	abcdef
+31	abcdef
+3	abcdef
+0	abcdef
+3	def
+2	def
+;
+# select * from InfraTest order by v DESC, k ASC
+2	def
+3	def
+0	abcdef
+3	abcdef
+31	abcdef
+32	abcdef
+90	abcdef
+300	abcdef
+30000	abcdef
+1	abc
+2	abc
+;
+# select * from InfraTest order by v DESC, k DESC
+3	def
+2	def
+30000	abcdef
+300	abcdef
+90	abcdef
+32	abcdef
+31	abcdef
+3	abcdef
+0	abcdef
+2	abc
+1	abc
+;

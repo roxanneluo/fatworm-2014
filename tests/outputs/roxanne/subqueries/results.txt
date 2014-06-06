@@ -1,0 +1,24 @@
+date: Thu Jun 05 10:29:00 CST 2014
+roxanne	create	Correct	98
+roxanne	subqueries	Wrong Answer	105
+date: Thu Jun 05 11:47:11 CST 2014
+roxanne	create	Correct	102
+roxanne	subqueries	Wrong Answer	110
+date: Thu Jun 05 19:03:03 CST 2014
+roxanne	create	Correct	151
+roxanne	subqueries	Wrong Answer	142
+date: Thu Jun 05 19:34:36 CST 2014
+roxanne	create	Correct	96
+roxanne	subqueries	Correct	170
+date: Thu Jun 05 22:05:00 CST 2014
+roxanne	create	Correct	99
+roxanne	subqueries	Wrong Answer	82
+date: Thu Jun 05 22:10:27 CST 2014
+roxanne	create	Correct	97
+roxanne	subqueries	Wrong Answer	79
+date: Thu Jun 05 22:19:51 CST 2014
+roxanne	create	Correct	117
+roxanne	subqueries	Correct	124
+date: Thu Jun 05 22:41:31 CST 2014
+roxanne	create	Correct	99
+roxanne	subqueries	Correct	128

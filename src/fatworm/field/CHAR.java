@@ -73,4 +73,7 @@ public class CHAR extends Field{
 		CHAR b = (CHAR)f;
 		return v.compareTo(b.v);
 	}
+	public String getVal() {
+		return v;
+	}
 }

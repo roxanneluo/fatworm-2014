@@ -52,5 +52,9 @@ public class NULL extends Field {
 		if (f instanceof NULL) return 0;
 		return -1;
 	}
+	
+	public Object getVal() {
+		return null;
+	}
 }
 

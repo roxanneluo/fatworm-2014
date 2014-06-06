@@ -1,0 +1,9 @@
+# select count(k) from InfraTest
+5
+;
+# select count(v) from InfraTest where k=2
+2
+;
+# select count(v) from InfraTest where v=1
+1
+;

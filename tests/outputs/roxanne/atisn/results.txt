@@ -1,0 +1,9 @@
+date: Thu Jun 05 22:03:32 CST 2014
+roxanne	create	Correct	82
+roxanne	insert	Correct	2164
+roxanne	query1	Wrong Answer	7
+roxanne	query2	Wrong Answer	9
+roxanne	query3	Wrong Answer	2
+roxanne	query4	Wrong Answer	7
+date: Thu Jun 05 22:08:42 CST 2014
+roxanne	create	Correct	81

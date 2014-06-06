@@ -1,0 +1,30 @@
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use acm
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: update student set malesex = false where name = 'JiangXiao'
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select id, name, age, malesex from student
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 4 is 16
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 4 is 16
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 4 is 16
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 4 is 16
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: update student set id = id + 1000, id = id + id, id = id / 2 - 1000
+[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 4
+[Thu Jun 05 22:41:32 CST 2014] [Total Time] 5
+[Thu Jun 05 22:41:32 CST 2014] [Result] Wrong Answer

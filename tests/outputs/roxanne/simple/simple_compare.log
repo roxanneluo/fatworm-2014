@@ -1,0 +1,62 @@
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use db
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from d where a > b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from d where a < b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from d where a = b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from d where a <> b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from d where a <= b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from d where a >= b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from d where a > 0 or (a < 3 and b = 1)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from d where (a > 0 and a < 2) or (b > 0 and (b < 3 or b > 10))
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 3
+[Thu Jun 05 22:40:31 CST 2014] [Thread Time] 12
+[Thu Jun 05 22:40:31 CST 2014] [Total Time] 26
+[Thu Jun 05 22:40:31 CST 2014] [Result] Correct

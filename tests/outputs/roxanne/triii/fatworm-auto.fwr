@@ -1,0 +1,23 @@
+# select * from auto where id = 3
+3	AAA
+;
+# select * from auto
+1	BBB
+3	AAA
+;
+# select * from auto where id = 4
+# EMPTY
+;
+# select * from auto where id = 5
+# EMPTY
+;
+# select * from auto where id = 6
+# EMPTY
+;
+# select * from auto where id = 1
+1	BBB
+1	EEE
+;
+# select * from auto where id = 7
+# EMPTY
+;

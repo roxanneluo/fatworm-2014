@@ -1,0 +1,14 @@
+# select * from test1 where c='odsfnmopdfpommnpomewponmpsdomfnpomsdpnd'
+911	odsfnmopdfpommnpomewponmpsdomfnpomsdpnd
+;
+# select * from test1 order by c
+5	abcdefgihaosidngoiasndgoiansiodgjasdjg
+4	aksofkokqwojpoisdgnasdgn
+3	asjgojdojnposndfjopjdpfnje
+844	bkosfdkopjnopenopmsdopfmnpomewpnmpsomn
+644	bksodfjobjeoprjhpownpbonwpobnopwnbpowb
+1	kodsfjnoeoijnpoenopjsopdfnpodposjndfn
+712	mfsobpoejrnpomdsopnopdsfmnpomdsopfmnpo
+2	nojconjeornoiejrnoijeoinjojsonpjspofn
+911	odsfnmopdfpommnpomewponmpsdomfnpomsdpnd
+;

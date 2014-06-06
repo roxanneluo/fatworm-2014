@@ -23,7 +23,7 @@ public class VARCHAR extends CHAR {
 	
 	public VARCHAR(String v, int len) {
 		this(len);
-		this.v = Util.trim(v);
+		this.v = v != null? Util.trim(v):null;
 	}
 	
 	public String toString() {
@@ -43,7 +43,9 @@ public class VARCHAR extends CHAR {
 		if (f instanceof CHAR || f instanceof VARCHAR) return true;
 		return false;
 	}
-	
+	public VARCHAR clone() {
+		return new VARCHAR(v, len);
+	}
 	public Field toMe(Field f) throws SQLException {
 		if (f instanceof NULL) return NULL.getInstance();
 		if (f instanceof CHAR) {

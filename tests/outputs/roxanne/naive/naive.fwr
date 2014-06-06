@@ -1,0 +1,6 @@
+# select a from Classes where a=1
+1
+;
+# select c from Classes where a=1
+3
+;

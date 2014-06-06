@@ -1,0 +1,11 @@
+[Thu Jun 05 22:05:07 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:05:07 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:05:07 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:05:07 CST 2014] [Thread0] Executing: USE winsconsin
+[Thu Jun 05 22:05:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:05:07 CST 2014] [Thread0] Executing: select *  from tenk1 where (unique2 > 301) and (unique2 < 402) order by unique1 ASC, unique2 ASC
+[Thu Jun 05 22:05:07 CST 2014] [Thread0] Executing: select *  from tenk1 where (unique1 > 647) and (unique1 < 1648) order by unique1 ASC, unique2 ASC
+[Thu Jun 05 22:05:07 CST 2014] [Thread0] Executing: select * from tenk1 where unique2 = 2001 order by unique1 ASC, unique2 ASC
+[Thu Jun 05 22:05:07 CST 2014] [Thread Time] 8
+[Thu Jun 05 22:05:07 CST 2014] [Total Time] 9
+[Thu Jun 05 22:05:07 CST 2014] [Result] Wrong Answer

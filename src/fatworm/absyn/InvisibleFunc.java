@@ -25,4 +25,22 @@ public class InvisibleFunc extends Func{
 		autoInc = f.autoInc;
 		deft = f.deft;
 	}
+	
+	public String toString() {
+		return "[invisible]"+super.toString();
+	}
+	
+	public InvisibleFunc clone() {
+		InvisibleFunc col = null;
+		try{
+			col = (InvisibleFunc)super.clone();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+//		col.tableName = this.tableName != null? new String(this.tableName): null;
+//		col.idx = idx == null? null:new Integer(idx);
+//		col.table = this.table;
+//		col.value = (Field)value.clone();
+		return col;
+	}
 }

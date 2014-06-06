@@ -1,0 +1,5 @@
+# select * from c
+# where a in (select distinct * from a)
+1	b
+2	a
+;

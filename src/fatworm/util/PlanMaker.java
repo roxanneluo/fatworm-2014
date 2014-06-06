@@ -31,6 +31,7 @@ import fatworm.driver.Attribute;
 import fatworm.driver.Schema;
 import fatworm.driver.Tuple;
 import fatworm.logicplan.AggPlan;
+import fatworm.logicplan.CalculatorPlan;
 import fatworm.logicplan.CreateTablePlan;
 import fatworm.logicplan.DBPlan;
 import fatworm.logicplan.DBPlan.DBCmdType;
@@ -175,7 +176,7 @@ public class PlanMaker {
 						tuple.add(table.schema.attrNames.get(i).getDefault());
 					} else {
 						type = table.schema.types.get(i);
-						tuple.add(type.toMe(ExprManager.eval(transExpr(attr, null, type),null)));
+						tuple.add(ExprManager.eval(transExpr(attr, null, type),null));
 //						tuple.add(Field.getField(type, attr.getText()));
 					}
 				}
@@ -208,11 +209,15 @@ public class PlanMaker {
 		case FLOAT: return new FLOAT();
 		case CHAR: return new CHAR(Integer.parseInt(t.getChild(0).getText()));	//FIXME:ignore the length so far
 		case DATETIME: 
-			System.out.println("[WARNING] TYPE DATE");
 			return new DATE();
 		case BOOLEAN: return new BOOL();
 		case DECIMAL: 
-			return new DECIMAL(Integer.parseInt(t.getChild(0).getText()), t.getChildCount()>1? Integer.parseInt(t.getChild(1).getText()):0);
+			int headLen = Integer.parseInt(t.getChild(0).getText());
+			int tailLen = t.getChildCount()>1? Integer.parseInt(t.getChild(1).getText()):0;
+			System.out.println("head:"+headLen+", tailLen:"+tailLen);
+			DECIMAL d = new DECIMAL(headLen+tailLen, tailLen);
+			System.out.println(d.typeValString());
+			return d;
 		case TIMESTAMP:
 			return new TIMESTAMP();
 		case VARCHAR:
@@ -239,7 +244,8 @@ public class PlanMaker {
 				attr.autoInc = true;
 				break;
 			case DEFAULT:
-				System.out.println("default:"+(attr.deft = Field.getField(attr.type, child.getChild(0).getText())));
+//				System.out.println("default:"+());
+				attr.deft = Field.getField(attr.type, child.getChild(0).getText());
 			}
 		}
 		return attr;
@@ -314,11 +320,20 @@ public class PlanMaker {
 			}
 		}
 //		System.out.println("transselect:"+attributes);
-		assert(from != null);
 		Plan ans = from;
 		if (where != null) 
 			ans = new SelectPlan(from, where);
 		
+		if (from == null) {
+			return new CalculatorPlan(attributes);
+		}
+		
+		boolean ordered = false;
+		if (!orderBy.isEmpty() && extraColInOrderBy(orderBy, attributes)) {
+			ans = new OrderPlan(ans, orderBy, asc);
+			ordered = true;
+			
+		}
 		if (!needAgg.v) {
 			if (!projectAll) 
 				ans = new ProjectPlan(ans, attributes); 
@@ -335,10 +350,27 @@ public class PlanMaker {
 				ans = new SelectPlan(ans, having);
 			}
 		}
-		if (!orderBy.isEmpty())
+		if (!ordered && !orderBy.isEmpty())
 			ans = new OrderPlan(ans, orderBy, asc);
-		if (distinct) ans = new DistinctPlan(ans, orderBy != null);
+		if (distinct) ans = new DistinctPlan(ans, !orderBy.isEmpty());
 		return ans;
+	}
+	
+	private static boolean extraColInOrderBy(ArrayList<Column> orderBy, LinkedList<Expr> attributes) {
+		Expr cmp;
+		for (Column col:orderBy) {
+			boolean exists = false;
+			for (Expr attr:attributes) {
+				cmp = attr instanceof RenameExpr? new Column(null,((RenameExpr)attr).alias):attr;
+				if (col.equals(cmp)) {
+					exists = true;
+					break;
+				}
+			}
+			if (!exists)
+				return true;
+		}
+		return false;
 	}
 	
 	private static Expr replaceByAlias(Expr e, LinkedList<RenameExpr> renames) throws SQLException {
@@ -442,6 +474,7 @@ public class PlanMaker {
 	private static Expr transExpr(Tree t) throws SQLException {
 		return transExpr(t, null, null);
 	}
+	
 	private static Expr transExpr(Tree t, BOOL needAgg, Field type) throws SQLException {
 		Expr l = null, r = null;
 		BopType op;
@@ -449,6 +482,8 @@ public class PlanMaker {
 			return transColumn(t);
 		Plan table = null;
 		switch(t.getType()) {
+		case SELECT: case SELECT_DISTINCT:
+			return transSelect((CommonTree)t);
 		case AVG: case COUNT: case MIN: case MAX:case SUM:
 			if (needAgg != null)
 				needAgg.v = true;
@@ -456,11 +491,17 @@ public class PlanMaker {
 		case AS:
 			return new RenameExpr(transExpr(t.getChild(0), needAgg, type), t.getChild(1).getText());
 		case INTEGER_LITERAL: 
-			if (type instanceof FLOAT)
+			if (type instanceof DECIMAL) {
+				DECIMAL dt = (DECIMAL)type;
+				DECIMAL d =  new DECIMAL(t.getText(),dt.v.precision(), dt.v.scale());
+				return d;
+			} else if (type instanceof FLOAT)
 				return new FLOAT(t.getText());// FIXME: need this?
 			else return new INT(t.getText());	// include null
 		case FLOAT_LITERAL:
-			return new FLOAT(t.getText());
+			if (type instanceof DECIMAL)
+				return new DECIMAL(t.getText(), ((DECIMAL) type).v.precision(), ((DECIMAL) type).v.scale());
+			else return new FLOAT(t.getText());
 		case STRING_LITERAL:
 			String str = strip(t.getText());
 			if (type instanceof VARCHAR)

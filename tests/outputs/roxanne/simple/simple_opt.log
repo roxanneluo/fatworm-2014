@@ -1,0 +1,30 @@
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use db
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select *
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] from a, b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] where a = 1 and b = 'a'
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select *
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] from a as b, a as c
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] where b.a = 1 and c.a = 1
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread Time] 1
+[Thu Jun 05 22:40:31 CST 2014] [Total Time] 11
+[Thu Jun 05 22:40:31 CST 2014] [Result] Correct

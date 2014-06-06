@@ -7,7 +7,11 @@ public class Database {
 	public HashMap<String, Table> tables = new HashMap<String, Table> ();
 	
 	public Database(String name) {
-		this.name = name;
+		this.name = name.toLowerCase();
+	}
+	
+	public Table getTable(String tbl) {
+		return tables.get(tbl.toLowerCase());
 	}
 	
 	public boolean dropTable(String tableName) {

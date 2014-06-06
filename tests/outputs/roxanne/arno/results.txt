@@ -1,0 +1,21 @@
+date: Tue Jun 03 23:53:21 CST 2014
+roxanne	create	Correct	62
+roxanne	insert	Correct	1387
+date: Wed Jun 04 12:24:20 CST 2014
+roxanne	create	Correct	61
+roxanne	insert	Correct	1315
+date: Wed Jun 04 23:49:38 CST 2014
+roxanne	create	Correct	70
+roxanne	insert	Correct	1666
+date: Thu Jun 05 11:47:44 CST 2014
+roxanne	create	Correct	63
+roxanne	insert	Correct	1373
+date: Thu Jun 05 21:59:08 CST 2014
+roxanne	create	Correct	63
+roxanne	insert	Correct	1381
+date: Thu Jun 05 22:03:18 CST 2014
+roxanne	create	Correct	62
+roxanne	insert	Correct	1317
+date: Thu Jun 05 22:08:29 CST 2014
+roxanne	create	Correct	61
+roxanne	insert	Correct	1294

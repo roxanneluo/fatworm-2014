@@ -1,0 +1,8 @@
+# select * from test1 where d>10
+1	1.2346e+18
+2	1.2346e+35
+;
+# select d from test1 order by d
+1.2346e+18
+1.2346e+35
+;

@@ -1,0 +1,99 @@
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: drop database ATIS
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create database ATIS
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: use ATIS
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table aircraft
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (aircraftcode char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] aircrafttype char(64) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] engines INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] category char(10) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] widebody char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] wingspan float NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] length1 float NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] weight INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] capacity INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] payload INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] cruisingspeed INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] rangemiles INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] pressurized char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] PRIMARY KEY (aircraftcode))
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table airline
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (airlinecode char(2) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] airlinename char(64) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] notes char(38) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] PRIMARY KEY (airlinecode))
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table airport
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (airportcode char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] airportname char(40) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] location char(36) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] statecode char(2) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] countryname char(25) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] timezonecode char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] PRIMARY KEY (airportcode))
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table airportservice
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (citycode char(4) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] airportcode char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] milesdistant float NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] direction char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] minutesdistant INT NOT NULL)
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table city
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (citycode char(4) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] cityname char(25) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] statecode char(2) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] countryname char(25) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] timezonecode char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] PRIMARY KEY (citycode))
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table classofservice
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (classcode char(2) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] rank INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] classdescription char(80) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] PRIMARY KEY (classcode))
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table codedescription
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (code char(5) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] description char(110) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] PRIMARY KEY (code))
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table compoundclass
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (fareclass char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] baseclass char(2) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] classtype char(10) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] premium char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] economy char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] discounted char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] night char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] seasonfare char(4) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] classdays char(7) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] PRIMARY KEY (fareclass))
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table connectleg
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (connectcode INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] legnumber INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] flightcode INT NOT NULL)
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create table fconnection
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] (connectcode INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] fromairport char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] toairport char(3) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] departuretime INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] arrivaltime INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] flightdays char(7) NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] stops INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] connections INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] timeelapsed INT NOT NULL,
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] PRIMARY KEY (connectcode))
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:08:41 CST 2014] [Thread0] Executing: create index fromairport1 on fconnection(fromairport)
+[Thu Jun 05 22:08:41 CST 2014] [Thread Time] 67
+[Thu Jun 05 22:08:41 CST 2014] [Total Time] 81
+[Thu Jun 05 22:08:41 CST 2014] [Result] Correct

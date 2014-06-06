@@ -1,0 +1,96 @@
+# select distinct customer_name
+# from borrower
+# where customer_name in (select customer_name
+# from depositor)
+Hayes
+Jones
+Smith
+;
+# select distinct customer_name
+# from borrower,loan
+# where borrower.loan_number = loan.loan_number and
+# branch_name = 'Perryridge' and
+# customer_name in
+# (select customer_name
+# from depositor, account
+# where depositor.account_number = account.account_number) and
+# branch_name in
+# (select branch_name
+# from depositor, account
+# where depositor.account_number = account.account_number)
+Hayes
+;
+# select distinct customer_name
+# from borrower
+# where customer_name in (select customer_name
+# from depositor)
+Hayes
+Jones
+Smith
+;
+# select branch_name
+# from branch
+# where assets > any (select assets
+# from branch
+# where branch_city = 'Brooklyn')
+Downtown
+Round Hill
+;
+# select branch_name
+# from branch
+# where assets > all (select assets
+# from branch
+# where branch_city = 'Brooklyn')
+# EMPTY
+;
+# select branch_name
+# from account
+# group by branch_name
+# having avg(balance) >= all(select avg(balance)
+# from account
+# group by branch_name)
+Brighton
+;
+# select customer_name
+# from borrower
+# where exists (select *
+# from depositor
+# where depositor.customer_name = borrower.customer_name)
+Hayes
+Jones
+Smith
+Smith
+;
+# select distinct S.customer_name
+# from depositor as S
+# where not exists (select R.branch_name
+# from depositor as T, account as R
+# where T.account_number = R.account_number and S.customer_name = T.customer_name)
+# EMPTY
+;
+# select branch_name, avg_balance
+# from (select branch_name, avg(balance) as avg_balance
+# from account
+# group by branch_name)
+# as branch_avg
+# where avg_balance > 1200
+# EMPTY
+;
+# select max(tot_balance)
+# from (select branch_name, sum(balance) as tot_balance
+# from account
+# group by branch_name)
+# as branch_total
+1650.0
+;
+# select * from account
+A-101	Downtown	500
+A-102	Perryridge	400
+A-201	Brighton	500
+A-215	Mianus	700
+A-217	Brighton	750
+A-222	Redwood	700
+A-305	Round Hill	350
+L-15	Perryridge	200
+L-16	Perryridge	200
+;

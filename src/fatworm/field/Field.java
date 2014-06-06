@@ -27,7 +27,8 @@ public abstract class Field extends Expr implements Serializable, Cloneable, Com
 		case java.sql.Types.BOOLEAN:
 			return new BOOL(x);
 		case java.sql.Types.DECIMAL:
-			return new DECIMAL(x, ((DECIMAL)type).headLen,((DECIMAL)type).tailLen);
+			DECIMAL d = (DECIMAL)type;
+			return new DECIMAL(x, d.v.precision()-d.v.scale(),d.v.scale());
 		case java.sql.Types.TIMESTAMP:
 			return new TIMESTAMP(x);
 		case java.sql.Types.VARCHAR:
@@ -43,15 +44,15 @@ public abstract class Field extends Expr implements Serializable, Cloneable, Com
 	public boolean isNull() {
 		return this instanceof NULL;
 	}
-	public Object clone() {
+	public Field clone() {
 		try {
-			return super.clone();
+			return (Field)super.clone();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 		return null;
 	}
-	
+	public abstract Object getVal();
 	public abstract String typeString();
 	public abstract String typeValString();
 	/**

@@ -1,0 +1,169 @@
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use db
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from a
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from a, b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select a from a, b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select b from a, b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select a.a from a, b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select b.b from a, b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select a, b from a,b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select a, b from a as c, b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select c.a, b from a as c, b
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select a.a, c.a, c.b from a, c where a.a = c.a and a.a = 1
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 3 is 1
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 3 is 1
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select a.a as a, a.a as b from a
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select distinct a from a
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select 1-(-2*10)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread Time] 32
+[Thu Jun 05 22:40:31 CST 2014] [Total Time] 77
+[Thu Jun 05 22:40:31 CST 2014] [Result] Correct

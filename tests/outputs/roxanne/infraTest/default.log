@@ -1,0 +1,39 @@
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: drop database nano
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: create database nano
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: use nano
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: drop table InfraTest
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: create table InfraTest( k int default 10, v char(10) default 'miemiemie')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(1, default)
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(2, default)
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(default, default)
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(default, '123')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: insert into InfraTest values(1, '23')
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Executing: select * from InfraTest
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:08 CST 2014] [Thread Time] 63
+[Thu Jun 05 22:40:08 CST 2014] [Total Time] 85
+[Thu Jun 05 22:40:08 CST 2014] [Result] Correct

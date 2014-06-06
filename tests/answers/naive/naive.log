@@ -1,0 +1,26 @@
+[Mon May 12 11:00:42 CST 2014] [Thread0] Connecting jdbc:mysql://localhost/test?user=root&password=123456
+[Mon May 12 11:00:42 CST 2014] [Thread0] Connection established.
+[Mon May 12 11:00:42 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Mon May 12 11:00:42 CST 2014] [Thread0] Executing: drop database nano
+[Mon May 12 11:00:42 CST 2014] [Thread0] isQuery? false
+[Mon May 12 11:00:42 CST 2014] [Thread0] Executing: create database nano
+[Mon May 12 11:00:42 CST 2014] [Thread0] isQuery? false
+[Mon May 12 11:00:42 CST 2014] [Thread0] Executing: use nano
+[Mon May 12 11:00:42 CST 2014] [Thread0] isQuery? false
+[Mon May 12 11:00:42 CST 2014] [Thread0] Executing: create table Classes(
+[Mon May 12 11:00:42 CST 2014] [Thread0] a int,
+[Mon May 12 11:00:42 CST 2014] [Thread0] b int,
+[Mon May 12 11:00:42 CST 2014] [Thread0] c int)
+[Mon May 12 11:00:42 CST 2014] [Thread0] isQuery? false
+[Mon May 12 11:00:42 CST 2014] [Thread0] Executing: insert into Classes values(1,2,3)
+[Mon May 12 11:00:42 CST 2014] [Thread0] isQuery? false
+[Mon May 12 11:00:42 CST 2014] [Thread0] Executing: select a from Classes where a=1
+[Mon May 12 11:00:42 CST 2014] [Thread0] isQuery? true
+[Mon May 12 11:00:42 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Mon May 12 11:00:42 CST 2014] [Thread0] Type 1 is 4
+[Mon May 12 11:00:42 CST 2014] [Thread0] Executing: select c from Classes where a=1
+[Mon May 12 11:00:42 CST 2014] [Thread0] isQuery? true
+[Mon May 12 11:00:42 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Mon May 12 11:00:42 CST 2014] [Thread0] Type 1 is 4
+[Mon May 12 11:00:42 CST 2014] [Thread Time] 25
+[Mon May 12 11:00:42 CST 2014] [Total Time] 246

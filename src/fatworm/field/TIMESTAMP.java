@@ -15,9 +15,10 @@ public class TIMESTAMP extends Field {
 	
 	public TIMESTAMP() {
 		type = java.sql.Types.TIMESTAMP;
+		v = new java.sql.Timestamp(new java.util.Date().getTime());
 	}
 	
-	public Object clone() {
+	public TIMESTAMP clone() {
 		TIMESTAMP d = null;
 		try {
 			d = (TIMESTAMP) super.clone();
@@ -48,12 +49,22 @@ public class TIMESTAMP extends Field {
 	public boolean compatible(Field f) {
 		if (f instanceof NULL) return true;
 		if (f instanceof TIMESTAMP) return true;
+		if (f instanceof CHAR) return true;
 		return false;
+	}
+	public static Field toTimestamp(Field f) throws SQLException {
+		if (f instanceof NULL) return NULL.getInstance();
+		if (f instanceof TIMESTAMP) return f;
+		if (f instanceof CHAR) //allow varchar
+			return new TIMESTAMP(((CHAR) f).v);
+		throw new SQLException("[ERROR] converting "+f.typeValString()+" to TIMESTAMP");
 	}
 	
 	public Field toMe(Field f) throws SQLException {
 		if (f instanceof NULL) return NULL.getInstance();
 		if (f instanceof TIMESTAMP) return f;
+		if (f instanceof CHAR) //allow varchar
+			return new TIMESTAMP(((CHAR) f).v);
 		throw new SQLException("[ERROR] converting "+f.typeValString()+" to "+this.typeValString());
 	}
 	
@@ -66,7 +77,18 @@ public class TIMESTAMP extends Field {
 	}
 	
 	public int compareTo(Field f) {
-		TIMESTAMP b = (TIMESTAMP)f;
-		return v.compareTo(b.v);
+		try {
+			TIMESTAMP tf = (TIMESTAMP) toMe(f);
+			if (tf == null)
+				throw new SQLException("compare "+this+" with "+f.typeValString());
+			return v.compareTo(tf.v);
+		} catch(Exception e) {
+			e.printStackTrace();
+			return -1;
+		}
+	}
+	
+	public java.sql.Timestamp getVal() {
+		return v;
 	}
 }

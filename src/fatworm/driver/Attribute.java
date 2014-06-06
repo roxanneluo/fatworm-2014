@@ -3,6 +3,7 @@ package fatworm.driver;
 import fatworm.absyn.Expr;
 import fatworm.field.Field;
 import fatworm.field.INT;
+import fatworm.field.TIMESTAMP;
 
 public class Attribute extends Expr implements Cloneable{
 	public String colName;
@@ -29,14 +30,20 @@ public class Attribute extends Expr implements Cloneable{
 	}
 	
 	public Field getDefault() {
-		System.out.println("attr "+this+" default "+deft);
+//		System.out.println(this);
 		if (deft != null)
 			return deft;
 		if (autoInc) {
 			++cnt.v;
 			return (Field) cnt.clone();
-		}
+		} 
+		if (type instanceof TIMESTAMP)
+			return new TIMESTAMP();
 		return null;
 	}
 	
+	public String toString() {
+//		Field deft = getDefault();
+		return colName+"("+type.typeString()+","+(notNull?"notNull,":"")+(autoInc? "autoInc,":"")+(deft!= null? deft:"")+")";
+	}
 }

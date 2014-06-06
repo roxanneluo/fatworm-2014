@@ -1,0 +1,14 @@
+# select * from TTAA
+# where TTAA.id = 100
+100	933181
+;
+# select val from CTA
+# where CTA.id = '100'
+933181
+;
+# select * from TTAA
+# where TTAA.id > 10010 and TTAA.id < 10030
+10013	339878
+10021	335899
+10028	906904
+;

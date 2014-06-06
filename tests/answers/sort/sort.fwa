@@ -1,0 +1,39 @@
+# select * from
+# (select a.ch*10000000+b.ch*1000000+c.ch*100000+d.ch*10000+e.ch*1000+f.ch*100+g.ch*10+h.ch as ans from chars as a, chars as b, chars as c, chars as d, chars as e,chars as f,chars as g,chars as h order by ans) as tab
+# where ans <21 or ans > 99999978
+# order by ans
+0
+1
+2
+3
+4
+7
+8
+9
+10
+11
+12
+13
+14
+17
+18
+19
+20
+99999979
+99999980
+99999981
+99999982
+99999983
+99999984
+99999987
+99999988
+99999989
+99999990
+99999991
+99999992
+99999993
+99999994
+99999997
+99999998
+99999999
+;

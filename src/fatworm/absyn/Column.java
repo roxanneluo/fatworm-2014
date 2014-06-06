@@ -38,6 +38,7 @@ public class Column extends Attribute {
 			e.printStackTrace();
 		}
 		col.tableName = this.tableName != null? new String(this.tableName): null;
+		col.idx = idx == null? null:new Integer(idx);
 //		col.table = this.table;
 //		col.value = (Field)value.clone();
 		return col;

@@ -1,0 +1,24 @@
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use db
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table time(
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] id int,
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] time datetime
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] )
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into time values (1, '1990-08-15 00:00:00')
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into time (id) values (2)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from time
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 93
+[Thu Jun 05 22:40:31 CST 2014] [Thread Time] 7
+[Thu Jun 05 22:40:31 CST 2014] [Total Time] 10
+[Thu Jun 05 22:40:31 CST 2014] [Result] Correct

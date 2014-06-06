@@ -1,0 +1,9 @@
+# select min(k) from InfraTest
+1
+;
+# select max(v) from InfraTest where k=2
+3
+;
+# select max(v) from InfraTest
+5
+;

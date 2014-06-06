@@ -1,0 +1,156 @@
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: use nano
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT class, country
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] FROM Classes
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE numGuns >= 10
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT name AS shipName
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] FROM Ships
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE launched < 1918
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT ship, battle
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] FROM Outcomes
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE result = 'sunk'
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT * FROM Ships
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE name = class
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT S.name
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] FROM Ships AS S, Classes as C
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE S.class = C.class AND C.displacement > 35000
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT S.name, C.displacement, C.numGuns
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] FROM Outcomes AS O, Classes AS C, Ships AS S
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE O.battle = 'Guadalcanal' AND C.class = S.class AND O.ship = S.name
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 3 is 4
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT C1.country
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] FROM Classes AS C1, Classes as C2
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE C1.type = 'Battleship' AND C2.type = 'battlecruiser' AND C1.country = C2.country
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT O1.ship
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] FROM Outcomes AS O1, Outcomes AS O2, Battles AS B1, Battles AS B2
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE O1.ship = O2.ship AND O1.result = 'damaged' AND B1.name = O1.battle AND B2.name = O2.battle AND B1.date < B2.date
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: SELECT distinct O1.battle AS battle
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] FROM Classes AS C1, Classes AS C2, Classes AS C3,
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Ships AS S1, Ships AS S2, Ships AS S3,
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Outcomes AS O1, Outcomes AS O2, Outcomes AS O3
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] WHERE C1.country = C2.country AND C2.country = C3.country AND
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] C1.class = S1.class AND C2.class = S2.class AND C3.class = S3.class AND
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] S1.name = O1.ship AND S2.name = O2.ship AND S3.name = O3.ship AND
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] O1.battle = O2.battle AND O2.battle = O3.battle AND
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] O1.ship <> O2.ship AND O2.ship <> O3.ship AND O1.ship <> O3.ship
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:20 CST 2014] [Thread0] Query executed, begin to fetch and check result

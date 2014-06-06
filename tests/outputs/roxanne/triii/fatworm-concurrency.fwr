@@ -1,0 +1,2 @@
+# select id as a, name as b from student as s where s.malesex = true group by name having name >= b
+# select id, name from student as s where (select id from student where s.name = name and student.malesex = true) >= id and s.malesex = true

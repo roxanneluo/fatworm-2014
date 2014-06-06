@@ -1,0 +1,49 @@
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: drop database nano
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create database nano
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: use nano
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create table InfraTest( k int, v char(10))
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(1, 'abc')
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(2, 'def')
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(2, 'abc')
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(3, 'def')
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(3, 'abcdef')
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select * from InfraTest
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 2 is 1
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select distinct k from InfraTest
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select distinct v from InfraTest
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:40:07 CST 2014] [Thread Time] 4
+[Thu Jun 05 22:40:07 CST 2014] [Total Time] 15
+[Thu Jun 05 22:40:07 CST 2014] [Result] Correct

@@ -1,0 +1,57 @@
+# select * from test1 as t1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+9
+;
+# select * from test2 as t2
+1
+192
+2
+2
+321
+4
+438
+5
+5
+584
+6
+7
+8
+832
+9
+;
+# select max(t2.b),count(t2.b) from test1 as t1,test2 as t2 where 1>0 group by t1.a
+832	15
+832	30
+832	30
+832	30
+832	30
+832	30
+832	30
+832	30
+832	45
+;
+# select t1.a, count(t2.b) from test1 as t1, test2 as t2, test1 as t3, test2 as t4
+# where t1.a = t3.a and t2.b = t4.b group by t1.a having t1.a > 3
+4	76
+5	76
+6	76
+7	76
+8	76
+9	171
+;

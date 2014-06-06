@@ -1,0 +1,14 @@
+# select * from InfraTest
+1	abc
+2	abc
+2	def
+3	abcdef
+3	def
+;
+# select * from InfraTest
+100	abc
+100	abc
+2	def
+3	abcdef
+3	def
+;

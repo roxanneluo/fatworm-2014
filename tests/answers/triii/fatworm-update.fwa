@@ -1,0 +1,24 @@
+# select id, name, age, malesex from student
+1	ChengYu	20	true
+2	JiangXiao	21	false
+3	TangBo	21	true
+4	FengZiming	21	false
+;
+# select id, name, age, malesex from student
+1	ChengYu	20	true
+2	JiangXiao	21	false
+3	TangBo	21	true
+4	FengZiming	21	false
+;
+# select id, name, age, malesex from student
+1	ChengYu	20	true
+2	JiangXiao	21	false
+3	TangBo	21	true
+4	FengZiming	250	false
+;
+# select id, name, age, malesex from student
+4	FengZiming	250	false
+;
+# select count(id) from A
+100
+;

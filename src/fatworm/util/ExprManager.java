@@ -8,9 +8,10 @@ import fatworm.absyn.BExpr.BopType;
 import fatworm.absyn.UExpr.UopType;
 import fatworm.driver.Tuple;
 import fatworm.field.*;
+import fatworm.scan.Scan;
 
 public class ExprManager {
-	
+	private static final double err = 0.000001;
 	public static void restart(Expr e) throws SQLException {
 		if (e instanceof UExpr) {
 			UExpr ue = (UExpr)e;
@@ -49,7 +50,10 @@ public class ExprManager {
 //			System.out.println("idx = "+((Column)e).idx+" ,t = "+t);
 			Column col = (Column)e;
 			if (col.parent) return parent.get(col.idx);
-			else return t.get(col.idx);
+			else {
+				if (t == null) return NULL.getInstance();
+				return t.get(col.idx);
+			}
 		} else if (e instanceof UExpr) {
 			UExpr ue = (UExpr)e;
 			Field f = eval(ue.expr, t, parent);
@@ -67,12 +71,21 @@ public class ExprManager {
 			return evalIn((In)e, t, parent);
 		} else if (e instanceof AnyAll) {
 			return evalAnyAll((AnyAll)e, t, parent);
+		} else if (e instanceof Scan) {
+			return evalScan((Scan)e, t);
 		}
 		
 		return null;
 	} 
+	
+	private static Field evalScan(Scan scan, Tuple parent) throws SQLException {
+		if (!scan.hasNext(parent))
+ 			return null;	// FIXME: or NULL.getInstance()?
+		else return scan.next(parent).get(0);
+	}
 	private static Field evalAnyAll(AnyAll e, Tuple t, Tuple parent) throws SQLException {
 		Field col = eval(e.col, t, parent);
+		e.scan.restart();
 		if (e.any) {
 			while (e.scan.hasNext(t)) {
 				if (toFinalBool(evalBExpr(col, e.op, e.scan.next(t).get(0))))
@@ -81,7 +94,10 @@ public class ExprManager {
 			return new BOOL(false);
 		} else {
 			while (e.scan.hasNext(t)) {
-				if (!toFinalBool(evalBExpr(col, e.op, e.scan.next(t).get(0))))
+				Field next = e.scan.next(t).get(0);
+				boolean ans = toFinalBool(evalBExpr(col, e.op, next));
+//				System.out.println(col.toString()+e.op+"all"+next);
+				if (!ans)
 					return new BOOL(false);
 			}
 			return new BOOL(true);
@@ -89,6 +105,7 @@ public class ExprManager {
 	}
 	private static Field evalIn(In in, Tuple t, Tuple parent) throws SQLException {
 		Field col = eval(in.col, t, parent);
+		in.scan.restart();
 		while(in.scan.hasNext(t)) {
 			if (col.equals(in.scan.next().get(0)))
 				return new BOOL(true);
@@ -97,7 +114,11 @@ public class ExprManager {
 	}
 	
 	private static Field evalExists(Exists e, Tuple t) throws SQLException {
+//		System.out.println(t);
+//		System.out.println(e.scan);
+		e.scan.restart();
 		boolean hasNext = e.scan.hasNext(t);
+		e.scan.next();
 		return new BOOL(e.exists? hasNext:!hasNext);
 	}
 	
@@ -111,8 +132,11 @@ public class ExprManager {
 					func.val = new INT(0);
 				else func.val = new INT(1);
 				break;
-			case AVG:
-				func.val = new FLOAT(0);
+			case AVG: case SUM:
+				if (f instanceof INT)
+//					func.val = new DECIMAL((Integer)f.getVal());
+					func.val = new FLOAT((Integer)f.getVal());
+				else func.val = f;
 				break;
 			default:
 				func.val = f;
@@ -163,14 +187,23 @@ public class ExprManager {
 		if (func.func == Func.FuncType.COUNT) {
 			++((INT)af).v;
 			return;
+		} else if (func.func == Func.FuncType.SUM || func.func == Func.FuncType.AVG) {
+			double tff;
+			if (tf instanceof INT) { 
+//				tff = new DECIMAL((Integer)tf.getVal()).getVal();
+				tff = new FLOAT((Integer)tf.getVal()).getVal();
+			} else 
+				tff = (Float)tf.getVal();
+			func.val = new FLOAT(evalAgg(func.func, (Float)FLOAT.toFloat(af).getVal(), tff));
+			return;
 		}
 		if (tf instanceof INT) {
 			af = INT.toInt(af);
 			func.val = new INT(evalAgg(func.func, af.isNull()? null:(float)(((INT)af).v), ((INT)tf).v));
 		} else if (tf instanceof DECIMAL) {
 			DECIMAL td = (DECIMAL)tf;
-			int headLen = td.headLen, tailLen = td.tailLen;
-			func.val = new DECIMAL(evalAgg(func.func, af.isNull()? null:((DECIMAL)af).v, td.v), headLen, tailLen);
+			int prec = td.v.precision(), scale = td.v.scale();
+			func.val = new DECIMAL(evalAgg(func.func, af.isNull()? null:((DECIMAL)af).v.floatValue(), td.v.floatValue()), prec, scale); //FIXME: if need to write an exact version for decimal
 		} else if (tf instanceof FLOAT) {
 			func.val = new FLOAT(evalAgg(func.func, af.isNull()? null:((FLOAT)af).v, ((FLOAT)tf).v));
 		} else 
@@ -213,23 +246,19 @@ public class ExprManager {
 	}
 	
 	private static boolean compare(Float l, BopType op, Float r) {
+//		System.out.println(l.toString()+op+r);
 		switch (op) {
 		case LEQ: 	return l <= r;
 		case GEQ: 	return l >= r;
 		case LT:	return l < r;
 		case GT:	return l > r;
-		case EQ: 	return l == r;
-		case NEQ: 	return l != r;
+		case EQ: 	return Math.abs(l-r) < err;
+		case NEQ: 	return Math.abs(l-r) >= err;
 		default:
 			return false;
 		}
 	}
 	
-	private static Float getFloat(Field f) {
-		if (f instanceof FLOAT) return ((FLOAT)f).v;
-		if (f instanceof INT) return new Float(((INT)f).v);
-		return null;
-	}
 	
 	private static Boolean getBool(Field f) {
 		if (f instanceof INT) return ((INT)f).v != 0;
@@ -275,23 +304,53 @@ public class ExprManager {
 			return false;
 		}
 	}
+	
+	private static boolean compare(java.sql.Timestamp l, BopType op, java.sql.Timestamp r) {
+		switch (op) {
+		case LEQ: 	return l.compareTo(r) <= 0;
+		case GEQ: 	return l.compareTo(r) >= 0;
+		case LT:	return l.compareTo(r) < 0;
+		case GT:	return l.compareTo(r) > 0;
+		case EQ: 	return l.equals(r);
+		case NEQ: 	return !l.equals(r);
+		default:
+			return false;
+		}
+	}
 	/*
 	 * in all evaluation cases, so far I treat decimal the same as float
 	 * FIXME if they need to be distinguished
 	 */
 	private static Field evalBExpr(Field l, BopType op, Field r) throws SQLException {
 		switch(op) {
-		case LEQ: case GEQ: case LT: case GT: case EQ: case NEQ:
+		case EQ: 
+			return new BOOL(l.compareTo(r) == 0);
+		case NEQ:
+			return new BOOL(l.compareTo(r) != 0);
+		case LEQ: case GEQ: case LT: case GT:
 			if (l instanceof NULL || r instanceof NULL)
 				return NULL.getInstance();
 			if (l instanceof INT && r instanceof INT) {
 				return new BOOL(compare(((INT)l).v,op,((INT)r).v));
 			} else if (l instanceof CHAR && r instanceof CHAR) {
 				return new BOOL(compare(((CHAR)l).v, op, ((CHAR)r).v));
-			}
-			
-			Float lf = getFloat(l);
-			Float rf = getFloat(r);
+			} else if (l instanceof TIMESTAMP || r instanceof TIMESTAMP) {
+				TIMESTAMP ld = (TIMESTAMP) TIMESTAMP.toTimestamp(l), rd = (TIMESTAMP) TIMESTAMP.toTimestamp(r);
+				if (ld == null || rd == null)
+					typeError(l,op,r);
+				return new BOOL(compare(ld.v, op, rd.v));
+			} else if (l instanceof DATE || r instanceof DATE) {
+				DATE ld = (DATE) DATE.toDate(l), rd = (DATE) DATE.toDate(r);
+				if (ld == null || rd == null)
+					typeError(l,op,r);
+				return new BOOL(compare(ld.v, op, rd.v));
+			} else if (l instanceof CHAR && r instanceof CHAR) {
+				return new BOOL(compare(((CHAR)l).v, op, ((CHAR)r).v));
+			} 
+//			System.out.println(l+op.toString()+r);
+			 
+			Float lf = (Float) FLOAT.toFloat(l).getVal();
+			Float rf = (Float) FLOAT.toFloat(r).getVal();
 			if (lf == null || rf == null)
 				typeError(l, op, r);
 			return new BOOL(compare(lf, op, rf));
@@ -310,9 +369,14 @@ public class ExprManager {
 //			System.out.println("l:"+l+",r:"+r);
 			if (l.isNull() || r.isNull())
 				return NULL.getInstance();
-			if (l instanceof INT && r instanceof INT)
+			if (l instanceof INT && r instanceof INT) {
+				if (op == BopType.DIV) {
+					Float lff = (Float) FLOAT.toFloat(l).getVal(), rff = (Float)FLOAT.toFloat(r).getVal();
+					return new FLOAT(arithmetic(lff, op, rff));
+				}
 				return new INT(arithmetic(((INT)l).v, op, ((INT)r).v));
-			Float lff = getFloat(l), rff = getFloat(r);
+			}
+			Float lff = (Float) FLOAT.toFloat(l).getVal(), rff = (Float)FLOAT.toFloat(r).getVal();
 			if (lff == null || rff == null)
 				typeError(l,op, r);
 			else return new FLOAT(arithmetic(lff, op, rff));

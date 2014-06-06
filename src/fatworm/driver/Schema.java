@@ -65,9 +65,9 @@ public class Schema implements Serializable{
 		ans.primaryKey = primaryKey;
 		ans.types = (ArrayList<Field>) Util.cloneFieldList(types);
 		ans.attrNames = (ArrayList<Attribute>) Util.cloneColumnList(attrNames,alias, false/*,src*/);
-		for (Attribute attr:ans.attrNames) {
-			ans.attributes.put(attr.colName, attr);
-		}
+//		for (Attribute attr:ans.attrNames) {
+//			ans.attributes.put(attr.colName, attr);
+//		}
 		return ans;
 	}
 	

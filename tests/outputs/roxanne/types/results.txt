@@ -1,0 +1,42 @@
+date: Thu Jun 05 13:30:14 CST 2014
+roxanne	int	Wrong Answer	92
+roxanne	float	Wrong Answer	12
+roxanne	chars	Correct	16
+roxanne	datetime	Correct	35
+roxanne	decimal	Wrong Answer	11
+date: Thu Jun 05 19:35:52 CST 2014
+roxanne	int	Wrong Answer	93
+roxanne	float	Wrong Answer	13
+roxanne	chars	Correct	16
+roxanne	datetime	Correct	34
+roxanne	decimal	Wrong Answer	10
+date: Thu Jun 05 20:09:18 CST 2014
+roxanne	int	Correct	142
+roxanne	float	Correct	22
+roxanne	chars	Correct	27
+roxanne	datetime	Correct	53
+roxanne	decimal	Wrong Answer	13
+date: Thu Jun 05 22:05:01 CST 2014
+roxanne	int	Correct	94
+roxanne	float	Correct	14
+roxanne	chars	Correct	14
+roxanne	datetime	Correct	34
+roxanne	decimal	Correct	9
+date: Thu Jun 05 22:10:29 CST 2014
+roxanne	int	Correct	94
+roxanne	float	Correct	15
+roxanne	chars	Correct	15
+roxanne	datetime	Correct	37
+roxanne	decimal	Correct	10
+date: Thu Jun 05 22:19:53 CST 2014
+roxanne	int	Correct	93
+roxanne	float	Correct	17
+roxanne	chars	Correct	17
+roxanne	datetime	Correct	39
+roxanne	decimal	Correct	12
+date: Thu Jun 05 22:41:32 CST 2014
+roxanne	int	Correct	97
+roxanne	float	Correct	15
+roxanne	chars	Correct	15
+roxanne	datetime	Correct	35
+roxanne	decimal	Correct	13

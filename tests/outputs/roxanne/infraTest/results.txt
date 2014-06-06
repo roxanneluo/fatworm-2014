@@ -1,0 +1,66 @@
+date: Thu Jun 05 11:48:44 CST 2014
+roxanne	default	Correct	85
+roxanne	autoinc	Correct	15
+roxanne	delete	Correct	13
+roxanne	expression	Correct	112
+roxanne	float	Correct	41
+roxanne	isChar	Correct	18
+roxanne	isDateTime	Correct	45
+roxanne	isVarCharStable	Correct	784
+roxanne	isVarCharStable2	Correct	943
+roxanne	isVarCharVarChar	Correct	1773
+date: Thu Jun 05 22:03:43 CST 2014
+roxanne	default	Correct	89
+roxanne	autoinc	Correct	17
+roxanne	delete	Correct	14
+roxanne	expression	Correct	118
+roxanne	float	Correct	41
+roxanne	isChar	Correct	18
+roxanne	isDateTime	Correct	44
+roxanne	isVarCharStable	Correct	914
+roxanne	isVarCharStable2	Correct	1082
+roxanne	isVarCharVarChar	Correct	1741
+date: Thu Jun 05 22:09:32 CST 2014
+roxanne	default	Correct	89
+roxanne	autoinc	Correct	15
+roxanne	delete	Correct	14
+roxanne	expression	Correct	124
+roxanne	float	Correct	54
+roxanne	isChar	Correct	22
+roxanne	isDateTime	Correct	46
+roxanne	isVarCharStable	Correct	799
+roxanne	isVarCharStable2	Correct	929
+roxanne	isVarCharVarChar	Correct	1680
+date: Thu Jun 05 22:10:03 CST 2014
+roxanne	default	Correct	91
+roxanne	autoinc	Correct	17
+roxanne	delete	Correct	12
+roxanne	expression	Correct	117
+roxanne	float	Correct	42
+roxanne	isChar	Correct	19
+roxanne	isDateTime	Correct	47
+roxanne	isVarCharStable	Correct	800
+roxanne	isVarCharStable2	Correct	917
+roxanne	isVarCharVarChar	Correct	1875
+date: Thu Jun 05 22:19:28 CST 2014
+roxanne	default	Correct	88
+roxanne	autoinc	Correct	15
+roxanne	delete	Correct	12
+roxanne	expression	Correct	114
+roxanne	float	Correct	43
+roxanne	isChar	Correct	17
+roxanne	isDateTime	Correct	45
+roxanne	isVarCharStable	Correct	760
+roxanne	isVarCharStable2	Correct	966
+roxanne	isVarCharVarChar	Correct	1616
+date: Thu Jun 05 22:40:08 CST 2014
+roxanne	default	Correct	85
+roxanne	autoinc	Correct	16
+roxanne	delete	Correct	13
+roxanne	expression	Correct	115
+roxanne	float	Correct	42
+roxanne	isChar	Correct	20
+roxanne	isDateTime	Correct	47
+roxanne	isVarCharStable	Correct	806
+roxanne	isVarCharStable2	Correct	891
+roxanne	isVarCharVarChar	Correct	1620

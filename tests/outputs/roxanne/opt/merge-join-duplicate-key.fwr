@@ -1,0 +1,3 @@
+# select TTAD.id, TTAD.val, TTBD.val
+# from TTAD, TTBD
+# where TTAD.id = TTBD.id

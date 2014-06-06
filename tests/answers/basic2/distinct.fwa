@@ -1,0 +1,17 @@
+# select * from InfraTest
+1	abc
+2	abc
+2	def
+3	abcdef
+3	def
+;
+# select distinct k from InfraTest
+1
+2
+3
+;
+# select distinct v from InfraTest
+abc
+abcdef
+def
+;

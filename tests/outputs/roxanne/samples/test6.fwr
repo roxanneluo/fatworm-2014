@@ -1,0 +1,4 @@
+# select name, number, score from Classes where number > all(select score from Classes)
+1991-01-11 11:01:00	5	2
+1991-01-11 11:01:00	6	3
+;

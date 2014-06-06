@@ -14,6 +14,7 @@ public class SelectScan extends UScan {
 	public SelectScan(Scan scan, Expr cond) {
 		super(scan);
 		this.cond = cond;
+//		System.out.println(scan);
 	}
 	@Override
 	public boolean hasNext(Tuple parent) throws SQLException {
@@ -25,7 +26,11 @@ public class SelectScan extends UScan {
 			return cur;
 		while(scan.hasNext(null)) {
 			Tuple t = scan.next(null);
-			if (ExprManager.toFinalBool(ExprManager.eval(cond, t, parent))) {
+//			System.out.println("eval "+cond+ " over "+t);
+			System.out.println("parent:"+parent);
+			boolean ans = ExprManager.toFinalBool(ExprManager.eval(cond, t, parent));
+//			System.out.println("["+ans+"]eval "+cond+ " over "+t);
+			if (ans) {
 				return cur = t;
 			}
 		}
@@ -44,4 +49,7 @@ public class SelectScan extends UScan {
 		ExprManager.restart(cond);
 	}
 	
+	public String toString(){
+		return cond.toString();
+	}
 }

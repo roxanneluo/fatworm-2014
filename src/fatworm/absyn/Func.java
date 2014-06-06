@@ -19,7 +19,7 @@ public class Func extends Column {
 		 AVG, COUNT, MIN, MAX, SUM
 	};
 	public String toString() {
-		return func+"("+col+")";
+		return func+"("+col+")"+"<"+idx+">";
 	}
 	
 	public boolean equals(Object o) {

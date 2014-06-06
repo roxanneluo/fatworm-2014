@@ -43,9 +43,11 @@ public class AggScan extends UScan{
 			init(parent);
 		if (!iter.hasNext()) return null;
 		Scan scan = iter.next();
+//		System.out.println("to:"+to);
 		Tuple first = scan.next(parent); // if by != null, tableScan would not use parent; else scan may use this
+//		System.out.println("first:"+first);
 		initFunc(first);
-		int cnt = 0;
+		int cnt = 1;
 		while (scan.hasNext(parent)) {
 			evalFunc(scan.next(parent));
 			++cnt;
@@ -57,12 +59,13 @@ public class AggScan extends UScan{
 		int i = 0;
 		for (Expr col:to) {
 			if (col instanceof Func && ((Func)col).func == Func.FuncType.AVG && !ans.get(i).isNull()) {
+//				System.out.println("col:"+col+", ans:"+ans);
 				Float avg = ((FLOAT)FLOAT.toFloat(ans.get(i))).v/cnt; 
 				ans.set(i, new FLOAT(avg));
 			}
 			++i;
 		}
-//		System.out.println(ans);
+//		System.out.println("first:"+first+"ans:"+ans);
 		return ans;
 	}
 	private void evalFunc(Tuple t) throws SQLException {
@@ -80,8 +83,12 @@ public class AggScan extends UScan{
 		if (hashed) {
 			if (by == null)
 				scan.restart();
-			else 
+			else {
 				initIter();
+				while(iter.hasNext())
+					iter.next().restart();
+				initIter();
+			}
 		}
 	}
 	private void init(Tuple parent) throws SQLException {
@@ -117,6 +124,12 @@ public class AggScan extends UScan{
 			}
 		}
 		hashed = true;
+	}
+	
+	public String toString() {
+		String ans = "to:"+to;
+		ans += "by:"+by;
+		return ans;
 	}
 
 }

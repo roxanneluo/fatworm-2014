@@ -1,0 +1,30 @@
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Setting AUTO_COMMIT mode as true
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: drop database nano
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create database nano
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: use nano
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create table Salary (id INT, salary INT)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (1, 158235)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (2, 157999)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (3, 918231)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (4, 183952)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (5, 348583)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (6, 982923)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (7, 827374)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (8, 987582)
+[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:07 CST 2014] [Thread Time] 63
+[Thu Jun 05 22:40:07 CST 2014] [Total Time] 69
+[Thu Jun 05 22:40:07 CST 2014] [Result] Correct

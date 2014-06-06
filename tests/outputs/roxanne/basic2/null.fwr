@@ -1,0 +1,29 @@
+# select * from InfraTest
+1	NULL
+2	NULL
+3	abcdefg
+4	NULL
+5	NULL
+NULL	NULL
+NULL	blablabla
+;
+# select * from InfraTest where k <= 2
+1	NULL
+2	NULL
+;
+# select * from InfraTest where 2 <= k
+2	NULL
+3	abcdefg
+4	NULL
+5	NULL
+;
+# select * from InfraTest where k <= 2 or 2 <= k
+1	NULL
+2	NULL
+3	abcdefg
+4	NULL
+5	NULL
+;
+# select * from InfraTest where k <= 2 and 2 <= k
+2	NULL
+;

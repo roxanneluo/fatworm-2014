@@ -1,0 +1,315 @@
+date: Tue Jun 03 22:46:52 CST 2014
+roxanne	create-tables	Correct	78
+roxanne	create-bigtables	Correct	15
+roxanne	insert1	Wrong Answer	16
+roxanne	insert2	Wrong Answer	2
+roxanne	insert3	Wrong Answer	9
+roxanne	delete1	Wrong Answer	8
+roxanne	delete2	Wrong Answer	10
+roxanne	update1	Wrong Answer	8
+roxanne	update2	Wrong Answer	14
+roxanne	select1	Wrong Answer	16
+roxanne	select2	Wrong Answer	25
+roxanne	select3	Wrong Answer	16
+roxanne	select4	Wrong Answer	25
+roxanne	select5	Wrong Answer	6
+roxanne	select6	Wrong Answer	19
+date: Tue Jun 03 22:50:18 CST 2014
+roxanne	create-tables	Correct	66
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	28
+roxanne	insert2	Wrong Answer	12
+roxanne	insert3	Correct	24
+roxanne	delete1	Correct	9
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	17
+roxanne	update2	Wrong Answer	13
+roxanne	select1	Correct	97
+roxanne	select2	Correct	57
+roxanne	select3	Correct	39
+roxanne	select4	Correct	141
+roxanne	select5	Correct	12
+roxanne	select6	Wrong Answer	106
+date: Tue Jun 03 22:58:58 CST 2014
+roxanne	create-tables	Correct	64
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	27
+roxanne	insert2	Wrong Answer	13
+roxanne	insert3	Correct	22
+roxanne	delete1	Correct	10
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	13
+roxanne	update2	Wrong Answer	14
+roxanne	select1	Correct	87
+roxanne	select2	Correct	59
+roxanne	select3	Correct	33
+roxanne	select4	Correct	146
+roxanne	select5	Correct	12
+roxanne	select6	Wrong Answer	111
+date: Tue Jun 03 23:02:05 CST 2014
+roxanne	create-tables	Correct	65
+roxanne	create-bigtables	Correct	15
+roxanne	insert1	Correct	37
+roxanne	insert2	Wrong Answer	13
+roxanne	insert3	Correct	25
+roxanne	delete1	Correct	7
+roxanne	delete2	Correct	10
+roxanne	update1	Correct	12
+roxanne	update2	Wrong Answer	16
+roxanne	select1	Correct	82
+roxanne	select2	Correct	61
+roxanne	select3	Correct	36
+roxanne	select4	Correct	152
+roxanne	select5	Correct	13
+roxanne	select6	Wrong Answer	123
+date: Tue Jun 03 23:24:58 CST 2014
+roxanne	create-tables	Correct	72
+roxanne	create-bigtables	Correct	16
+roxanne	insert1	Correct	29
+roxanne	insert2	Correct	12
+roxanne	insert3	Wrong Answer	18
+roxanne	delete1	Correct	8
+roxanne	delete2	Correct	13
+roxanne	update1	Correct	14
+roxanne	update2	Wrong Answer	20
+roxanne	select1	Correct	83
+roxanne	select2	Correct	58
+roxanne	select3	Correct	34
+roxanne	select4	Wrong Answer	25
+roxanne	select5	Correct	14
+roxanne	select6	Wrong Answer	23
+date: Tue Jun 03 23:28:18 CST 2014
+roxanne	create-tables	Correct	85
+roxanne	create-bigtables	Correct	13
+roxanne	insert1	Correct	27
+roxanne	insert2	Correct	11
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	8
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	26
+roxanne	update2	Wrong Answer	13
+roxanne	select1	Correct	92
+roxanne	select2	Correct	58
+roxanne	select3	Correct	32
+roxanne	select4	Wrong Answer	25
+roxanne	select5	Correct	13
+roxanne	select6	Wrong Answer	25
+date: Tue Jun 03 23:34:18 CST 2014
+roxanne	create-tables	Correct	83
+roxanne	create-bigtables	Correct	15
+roxanne	insert1	Correct	31
+roxanne	insert2	Correct	13
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	7
+roxanne	delete2	Correct	10
+roxanne	update1	Correct	17
+roxanne	update2	Correct	15
+roxanne	select1	Correct	92
+roxanne	select2	Correct	62
+roxanne	select3	Correct	36
+roxanne	select4	Wrong Answer	24
+roxanne	select5	Correct	13
+roxanne	select6	Wrong Answer	23
+date: Tue Jun 03 23:36:25 CST 2014
+roxanne	create-tables	Correct	73
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	28
+roxanne	insert2	Correct	11
+roxanne	insert3	Correct	21
+roxanne	delete1	Correct	9
+roxanne	delete2	Correct	10
+roxanne	update1	Correct	13
+roxanne	update2	Correct	13
+roxanne	select1	Correct	94
+roxanne	select2	Correct	59
+roxanne	select3	Correct	34
+roxanne	select4	Correct	151
+roxanne	select5	Correct	14
+roxanne	select6	Wrong Answer	106
+date: Tue Jun 03 23:42:47 CST 2014
+roxanne	create-tables	Correct	68
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	28
+roxanne	insert2	Correct	12
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	8
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	17
+roxanne	update2	Correct	13
+roxanne	select1	Correct	90
+roxanne	select2	Correct	58
+roxanne	select3	Correct	34
+roxanne	select4	Correct	147
+roxanne	select5	Correct	12
+roxanne	select6	Correct	78
+date: Wed Jun 04 23:28:00 CST 2014
+roxanne	create-tables	Correct	64
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	28
+roxanne	insert2	Correct	11
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	8
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	12
+roxanne	update2	Correct	16
+roxanne	select1	Correct	88
+roxanne	select2	Correct	58
+roxanne	select3	Correct	32
+roxanne	select4	Correct	137
+roxanne	select5	Correct	10
+roxanne	select6	Correct	92
+date: Wed Jun 04 23:35:12 CST 2014
+roxanne	create-tables	Correct	69
+roxanne	create-bigtables	Correct	13
+roxanne	insert1	Correct	28
+roxanne	insert2	Correct	11
+roxanne	insert3	Correct	22
+roxanne	delete1	Correct	9
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	17
+roxanne	update2	Correct	13
+roxanne	select1	Correct	92
+roxanne	select2	Correct	57
+roxanne	select3	Correct	37
+roxanne	select4	Correct	145
+roxanne	select5	Correct	11
+roxanne	select6	Correct	81
+date: Wed Jun 04 23:39:36 CST 2014
+roxanne	create-tables	Correct	63
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	27
+roxanne	insert2	Correct	12
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	9
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	16
+roxanne	update2	Correct	14
+roxanne	select1	Correct	87
+roxanne	select2	Correct	56
+roxanne	select3	Correct	39
+roxanne	select4	Correct	145
+roxanne	select5	Correct	10
+roxanne	select6	Correct	88
+date: Thu Jun 05 10:25:38 CST 2014
+roxanne	create-tables	Correct	65
+roxanne	create-bigtables	Correct	15
+roxanne	insert1	Correct	31
+roxanne	insert2	Correct	11
+roxanne	insert3	Correct	22
+roxanne	delete1	Correct	8
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	12
+roxanne	update2	Correct	14
+roxanne	select1	Correct	85
+roxanne	select2	Correct	55
+roxanne	select3	Correct	38
+roxanne	select4	Correct	135
+roxanne	select5	Correct	12
+roxanne	select6	Correct	77
+date: Thu Jun 05 11:48:02 CST 2014
+roxanne	create-tables	Correct	66
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	27
+roxanne	insert2	Correct	12
+roxanne	insert3	Correct	24
+roxanne	delete1	Correct	8
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	13
+roxanne	update2	Correct	14
+roxanne	select1	Correct	88
+roxanne	select2	Correct	59
+roxanne	select3	Correct	37
+roxanne	select4	Correct	144
+roxanne	select5	Correct	12
+roxanne	select6	Correct	84
+date: Thu Jun 05 22:03:35 CST 2014
+roxanne	create-tables	Correct	64
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	28
+roxanne	insert2	Correct	11
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	13
+roxanne	delete2	Correct	12
+roxanne	update1	Correct	17
+roxanne	update2	Correct	17
+roxanne	select1	Correct	88
+roxanne	select2	Correct	58
+roxanne	select3	Correct	36
+roxanne	select4	Correct	141
+roxanne	select5	Correct	12
+roxanne	select6	Correct	92
+date: Thu Jun 05 22:08:44 CST 2014
+roxanne	create-tables	Correct	62
+roxanne	create-bigtables	Correct	17
+roxanne	insert1	Correct	28
+roxanne	insert2	Correct	13
+roxanne	insert3	Correct	22
+roxanne	delete1	Correct	7
+roxanne	delete2	Correct	10
+roxanne	update1	Correct	21
+roxanne	update2	Correct	18
+roxanne	select1	Correct	107
+date: Thu Jun 05 22:09:30 CST 2014
+roxanne	create-tables	Correct	64
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	33
+roxanne	insert2	Correct	13
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	8
+roxanne	delete2	Correct	12
+roxanne	update1	Correct	12
+roxanne	update2	Correct	15
+roxanne	select1	Correct	84
+roxanne	select2	Correct	59
+roxanne	select3	Correct	37
+roxanne	select4	Correct	142
+roxanne	select5	Correct	10
+roxanne	select6	Correct	90
+date: Thu Jun 05 22:10:01 CST 2014
+roxanne	create-tables	Correct	68
+roxanne	create-bigtables	Correct	13
+roxanne	insert1	Correct	28
+roxanne	insert2	Correct	12
+roxanne	insert3	Correct	27
+roxanne	delete1	Correct	9
+roxanne	delete2	Correct	11
+roxanne	update1	Correct	14
+roxanne	update2	Correct	15
+roxanne	select1	Correct	95
+roxanne	select2	Correct	55
+roxanne	select3	Correct	38
+roxanne	select4	Correct	144
+roxanne	select5	Correct	11
+roxanne	select6	Correct	91
+date: Thu Jun 05 22:19:26 CST 2014
+roxanne	create-tables	Correct	72
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	29
+roxanne	insert2	Correct	13
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	7
+roxanne	delete2	Correct	10
+roxanne	update1	Correct	15
+roxanne	update2	Correct	16
+roxanne	select1	Correct	96
+roxanne	select2	Correct	60
+roxanne	select3	Correct	33
+roxanne	select4	Correct	138
+roxanne	select5	Correct	12
+roxanne	select6	Correct	83
+date: Thu Jun 05 22:40:06 CST 2014
+roxanne	create-tables	Correct	63
+roxanne	create-bigtables	Correct	14
+roxanne	insert1	Correct	29
+roxanne	insert2	Correct	11
+roxanne	insert3	Correct	23
+roxanne	delete1	Correct	8
+roxanne	delete2	Correct	10
+roxanne	update1	Correct	17
+roxanne	update2	Correct	15
+roxanne	select1	Correct	89
+roxanne	select2	Correct	57
+roxanne	select3	Correct	37
+roxanne	select4	Correct	131
+roxanne	select5	Correct	11
+roxanne	select6	Correct	87

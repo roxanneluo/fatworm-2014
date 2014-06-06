@@ -23,6 +23,7 @@ public class Statement implements java.sql.Statement {
 			return execute((DBPlan)plan);
 		} else {
 			DBDataManager data = DBDataManager.getInstance();
+//			System.out.println(data);
 			Database db = null;
 			if (data.currentDB == null) {
 				System.out.println("[ERR] currentDB is null");
@@ -52,10 +53,10 @@ public class Statement implements java.sql.Statement {
 			} else if (plan instanceof UpdatePlan) {
 				return execute((UpdatePlan)plan);
 			} else {
-//				System.out.println(plan);
 				rs = new ResultSet();
 				rs.scan = ScanMaker.plan2Scan(plan);
 //				System.out.println(rs.scan);
+				System.out.println(plan);
 				rs.schema = plan.schema;
 				return true;
 			}
@@ -67,7 +68,7 @@ public class Statement implements java.sql.Statement {
 	}
 	private boolean execute(InsertQueryPlan plan, Database db) throws SQLException {
 		InsertQueryPlan insert = (InsertQueryPlan)plan;
-		Table table = db.tables.get(insert.tableName);
+		Table table = db.getTable(insert.tableName);
 		if (table == null)
 			throw new SQLException("[table]"+insert.tableName+"does not exist");
 		
@@ -79,13 +80,13 @@ public class Statement implements java.sql.Statement {
 		/*create a copy of the table to insert, since it could probably using one of the table to be
 		 * inserted
 		 */
-		Table temp = new Table("temp",insert.plan.schema);
+		TableScan tempScan = new TableScan(new Table("temp",insert.plan.schema));
 		while(subQuery.hasNext()) {
-			if (!temp.insert(subQuery.next())) 
+			if (!tempScan.insert(subQuery.next())) 
 				return false;
 		}
+		tempScan.restart();
 		/*really insert into desired table now*/
-		TableScan tempScan = new TableScan(temp);
 		while (tempScan.hasNext()) {
 			if (!table.insert(tempScan.next()))
 				return false;
@@ -94,6 +95,7 @@ public class Statement implements java.sql.Statement {
 	}
 	private boolean execute(DBPlan plan) {
 		DBDataManager data = DBDataManager.getInstance();
+//		System.out.println(data);
 		switch(plan.type) {
 		case USE_DB:
 			return data.useDB(plan.database);

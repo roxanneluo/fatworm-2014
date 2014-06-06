@@ -1,0 +1,73 @@
+# select sum(engines) from aircraft
+278.00
+;
+# select avg(engines) from aircraft
+2.0593
+;
+# select avg(engines) from aircraft where engines>0
+2.3761
+;
+# select count(aircraftcode),min(payload),max(payload) from aircraft where payload>0
+94	240	165710
+;
+# select min(flightcode),min(flightcode) from flight
+101908	101908
+;
+# select min(fromairport),min(toairport) from flight
+ATL	ATL
+;
+# select count(aircraftcode) from aircraft where payload>10000
+50
+;
+# select count(aircraftcode) from aircraft where payload<>0
+94
+;
+# select count(flightcode) from flight where flightcode >= 112793
+279
+;
+# select citycode, avg(groundfare) from groundservice where groundfare<>0 group by citycode order by citycode
+BBOS	5.0000
+BBWI	5.0000
+DDEN	5.0000
+DDFW	6.0000
+FDFW	6.0000
+MATL	9.0000
+OOAK	4.7500
+PPHL	4.7500
+PPIT	7.5000
+SSFO	4.5000
+WWAS	12.000
+;
+# select groundservice.citycode from groundservice group by groundservice.citycode order by groundservice.citycode
+
+BBOS
+BBWI
+DDEN
+DDFW
+FDFW
+MATL
+OOAK
+PPHL
+PPIT
+SSFO
+WWAS
+;
+# select category,count(aircraftcode) as totalnr from aircraft where engines=2 group by category having totalnr>4 order by category
+JET	15
+PROPELLER	16
+TURBOPROP	32
+;
+# select category,count(aircraftcode) from aircraft where engines=2 group by category having count(aircraftcode)>4 order by category
+JET	15
+PROPELLER	16
+TURBOPROP	32
+;
+# select dayname.dayname,count(flightday.daymask) from flightday,dayname where dayname.daycode=flightday.daycode group by dayname.dayname order by dayname.dayname
+FRIDAY	64
+MONDAY	64
+SATURDAY	64
+SUNDAY	64
+THURSDAY	64
+TUESDAY	64
+WEDNESDAY	64
+;

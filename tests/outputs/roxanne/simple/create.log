@@ -1,0 +1,56 @@
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: drop database db
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create database db
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use db
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table a (
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] a int
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] )
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table b (
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] b varchar(200)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] )
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table c (
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] a int,
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] b char(200)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] )
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table d (
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] a decimal(10),
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] b decimal(10)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] )
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into a values (1)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into a values (2)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into a values (1)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into a values (2)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into b values ('a')
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into b values ('b')
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into c values (1, 'b')
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into c values (2, 'a')
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into d values (1, 1)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into d values (1, 2)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into d values (2, 1)
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table empty (
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] a int
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] )
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread Time] 65
+[Thu Jun 05 22:40:31 CST 2014] [Total Time] 74
+[Thu Jun 05 22:40:31 CST 2014] [Result] Correct

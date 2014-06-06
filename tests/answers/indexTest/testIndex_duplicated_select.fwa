@@ -1,0 +1,30 @@
+# select count(value) from IndexTest where k=100
+10
+;
+# select count(value) from IndexTest where k=200
+11
+;
+# select count(value) from IndexTest where k=300
+10
+;
+# select count(value) from IndexTest where k=400
+13
+;
+# select count(value) from IndexTest where k=500
+13
+;
+# select count(value) from IndexTest where k=600
+12
+;
+# select count(value) from IndexTest where k=700
+12
+;
+# select count(value) from IndexTest where k=800
+12
+;
+# select count(value) from IndexTest where k=900
+4
+;
+# select count(value) from IndexTest where k=1000
+0
+;

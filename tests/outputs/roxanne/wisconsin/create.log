@@ -1,0 +1,32 @@
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] Executing: DROP DATABASE winsconsin
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] Executing: CREATE DATABASE winsconsin
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] Executing: USE winsconsin
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] Executing: create table onek (
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] unique1 int NOT NULL,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] unique2 int NOT NULL,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] two int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] four int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] ten int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] twenty int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] hundred int NOT NULL,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] thousand int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] twothousand int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] fivethous int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] tenthous int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] odd int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] even int,
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] stringu1 char(16),
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] stringu2 char(16),
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] string4 char(16)
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] )
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:54 CST 2014] [Thread0] Executing: create index hundred1 on onek(hundred)
+[Thu Jun 05 22:07:54 CST 2014] [Thread Time] 62
+[Thu Jun 05 22:07:54 CST 2014] [Total Time] 69
+[Thu Jun 05 22:07:54 CST 2014] [Result] Correct

@@ -1,0 +1,3 @@
+# select TTAA.id, TTAA.val
+# from TTAA, TTBB, TTA
+# where TTA.id = TTBB.id and TTA.id = TTAA.id

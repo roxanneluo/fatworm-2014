@@ -3,6 +3,7 @@ package fatworm.main;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -15,50 +16,20 @@ import fatworm.driver.DBDataManager;
 import fatworm.driver.Statement;
 
 class Main {
-	static String flname = "testcases_revised/basic/basic2/autoinc.fwt";
 //	static String flname = "test.fwt";
-	public static void main(String[] args) {
-		try {
-			File file = new File(flname);
-			@SuppressWarnings("resource")
-			BufferedReader reader = new BufferedReader(new FileReader(file));
-			String line = null;
-			String command;
+	public static void main(String[] args) throws ClassNotFoundException, IOException, SQLException {
+//		try {
 			
 			Class.forName("fatworm.driver.Driver");
-			fatworm.driver.Connection conn = (Connection) DriverManager.getConnection("jdbc:fatworm://localhost:3306/test");
-			while ((line = reader.readLine()) != null) {
-				if (line.isEmpty() || line.charAt(0) == '@') {
-					System.out.println(line);
-					continue;
-				}
-				command = "";
-				while (line!=null && !line.contains(";")) {
-					command += line+" ";
-					line = reader.readLine();
-				}				
-				command += prefixOf(line, ';');
-				System.out.println(command);
-				fatworm.driver.Statement stmt = (Statement) conn.createStatement();
-				System.out.println(stmt.execute(command));
-				
-				ResultSet res = stmt.getResultSet();
-				
-
-				if (res == null || res.getMetaData() == null)
-					continue;
-				
-				displayResultSet(res);
-				res.close();
-//				System.out.println(PlanMaker.makePlan(command));
+			String folder  = "testsuit/triii/";
+			String[] files = {new String(folder+"fatworm-create.fwt"), new String(folder+"fatworm-select.fwt")};
+			for (int i = 0; i < files.length; ++i) {
+				execute(files[i]);
 			}
-			
-			System.out.println(DBDataManager.getInstance());
-			
-		} catch (Exception e) {
-			System.err.print(e);
-			e.printStackTrace();
-		}
+//		} catch (Exception e) {
+//			System.err.print(e);
+//			e.printStackTrace();
+//		}
 	}
 	
 	private static void displayResultSet(ResultSet res) throws SQLException {
@@ -67,6 +38,43 @@ class Main {
 //			System.out.println("hasNext");
 			outputOneRecord(res, schema);
 		}
+	}
+	
+	private static void execute(String flname) throws IOException, SQLException {
+		fatworm.driver.Connection conn = (Connection) DriverManager.getConnection("jdbc:fatworm://localhost:3306/test");
+		File file = new File(flname);
+		@SuppressWarnings("resource")
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		String line = null;
+		String command;
+		while ((line = reader.readLine()) != null) {
+			if (line.isEmpty() || line.charAt(0) == '@' || line.charAt(0)=='#') {
+				System.out.println(line);
+				continue;
+			}
+			command = "";
+			while (line!=null && !line.contains(";")) {
+				command += line+" ";
+				line = reader.readLine();
+			}				
+			command += prefixOf(line, ';');
+			System.out.println(command);
+			fatworm.driver.Statement stmt = (Statement) conn.createStatement();
+			System.out.println(stmt.execute(command));
+			
+			ResultSet res = stmt.getResultSet();
+			
+
+			if (res == null || res.getMetaData() == null)
+				continue;
+			
+			displayResultSet(res);
+			res.close();
+//			System.out.println(PlanMaker.makePlan(command));
+			conn.close();
+		}
+		
+		System.out.println(DBDataManager.getInstance());
 	}
 
 	private static void outputOneRecord(ResultSet res, ResultSetMetaData schema)

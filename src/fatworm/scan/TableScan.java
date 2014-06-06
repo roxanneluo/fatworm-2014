@@ -7,8 +7,10 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 import fatworm.absyn.Column;
+import fatworm.driver.Attribute;
 import fatworm.driver.Table;
 import fatworm.driver.Tuple;
+import fatworm.field.Field;
 
 public class TableScan extends Scan{
 	Table table;
@@ -63,8 +65,21 @@ public class TableScan extends Scan{
 		return true;
 	}
 	
-	public boolean insert(Tuple t) {
-//		System.out.println("before adding "+t+":"+table);
+	public boolean insert(Tuple t) throws SQLException {
+		Attribute attr;
+		if (table.schema != null) {
+			for (int i = 0; i < table.schema.attrNames.size(); ++i) {
+				attr = table.schema.attrNames.get(i);
+				if (t.get(i).isNull()) {
+					Field deft = attr.getDefault();
+	//				System.out.println(attr+"'s deft = "+deft);
+					if (deft != null)
+						t.set(i, deft);
+					else if (attr.notNull)
+						throw new SQLException(attr+" should be not null");
+				}
+			}
+		}
 		iter.add(t);
 //		System.out.println("after adding "+t+":"+table);
 		return true;

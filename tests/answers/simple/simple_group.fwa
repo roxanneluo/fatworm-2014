@@ -1,0 +1,15 @@
+# select avg(a) from a
+1.5000
+;
+# select avg(a) from c group by b having avg(a) > 1
+2.0000
+;
+# select min(a)+max(a) from a
+3
+;
+# select avg(a) from a
+1.5000
+;
+# select count(a) from empty
+0
+;

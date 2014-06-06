@@ -1,0 +1,13 @@
+# select citycode, avg(groundfare) as avgfare from groundservice where groundfare<>0 group by citycode order by citycode ASC
+BBOS	5.0000
+BBWI	5.0000
+DDEN	5.0000
+DDFW	6.0000
+FDFW	6.0000
+MATL	9.0000
+OOAK	4.7500
+PPHL	4.7500
+PPIT	7.5000
+SSFO	4.5000
+WWAS	12.000
+;

@@ -1,8 +1,9 @@
 package fatworm.logicplan;
 
+import fatworm.absyn.Expr;
 import fatworm.driver.Schema;
 
-public abstract class Plan {
+public abstract class Plan extends Expr {
 	public Plan parent = null;
 	public Schema schema = null;
 	

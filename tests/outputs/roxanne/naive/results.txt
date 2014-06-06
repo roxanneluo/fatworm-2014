@@ -1,0 +1,10 @@
+date: Thu Jun 05 11:49:17 CST 2014
+roxanne	naive	Correct	87
+date: Thu Jun 05 22:03:55 CST 2014
+roxanne	naive	Correct	101
+date: Thu Jun 05 22:10:15 CST 2014
+roxanne	naive	Correct	110
+date: Thu Jun 05 22:19:39 CST 2014
+roxanne	naive	Correct	104
+date: Thu Jun 05 22:40:19 CST 2014
+roxanne	naive	Correct	110

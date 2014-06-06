@@ -1,0 +1,6 @@
+# select name, number as n, score from Classes as c where c.number > ANY(select number from Classes)
+1911-01-11 11:13:00	3	7.8000
+1991-01-11 11:01:00	5	2.5000
+1991-01-11 11:01:00	6	3.5000
+1991-01-11 11:11:00	2	2.2000
+;

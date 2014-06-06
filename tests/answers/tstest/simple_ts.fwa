@@ -1,0 +1,4 @@
+# select count(id) from tsa
+# where ts <= ALL (select ts from tsb)
+9
+;

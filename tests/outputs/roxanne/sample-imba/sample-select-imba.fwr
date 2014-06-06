@@ -1,0 +1,108 @@
+# SELECT class, country
+# FROM Classes
+# WHERE numGuns >= 10
+Tennessee	USA
+;
+# SELECT name AS shipName
+# FROM Ships
+# WHERE launched < 1918
+Duke of York
+Fuso
+Haruna
+Hiei
+Hood
+King George V
+Kirishima
+Kongo
+Prince of Wales
+Prince of Wales
+Prince of Wales
+Ramillies
+Renown
+Repulse
+Resolution
+Revenge
+Rodney
+Royal Oak
+Royal Sovereign
+Scharnhorst
+South Dakota
+West Virginia
+Yamashiro
+;
+# SELECT ship, battle
+# FROM Outcomes
+# WHERE result = 'sunk'
+Bismarck	North Atlantic
+Fuso	Surigao Strait
+Hood	North Atlantic
+Kirishima	Guadalcanal
+Prince of Wales	North Cape
+Scharnhorst	North Cape
+Yamashiro	Surigao Strait
+;
+# SELECT * FROM Ships
+# WHERE name = class
+Bismarck	Bismarck	1920
+Iowa	Iowa	1943
+Kongo	Kongo	1913
+Renown	Renown	1916
+Revenge	Revenge	1916
+Tennessee	Tennessee	1920
+Yamato	Yamato	1941
+;
+# SELECT S.name
+# FROM Ships AS S, Classes as C
+# WHERE S.class = C.class AND C.displacement > 35000
+Bismarck
+Duke of York
+Fuso
+Hood
+Iowa
+King George V
+Missouri
+Musashi
+New Jersey
+North Carolian
+Prince of Wales
+Prince of Wales
+Prince of Wales
+Rodney
+Scharnhorst
+South Dakota
+Washington
+West Virginia
+Wisconsin
+Yamashiro
+Yamato
+;
+# SELECT S.name, C.displacement, C.numGuns
+# FROM Outcomes AS O, Classes AS C, Ships AS S
+# WHERE O.battle = 'Guadalcanal' AND C.class = S.class AND O.ship = S.name
+Kirishima	32000	8
+Prince of Wales	46000	9
+Prince of Wales	46000	9
+Prince of Wales	46000	9
+South Dakota	46000	9
+Washington	37000	9
+;
+# SELECT C1.country
+# FROM Classes AS C1, Classes as C2
+# WHERE C1.type = 'Battleship' AND C2.type = 'battlecruiser' AND C1.country = C2.country
+# EMPTY
+;
+# SELECT O1.ship
+# FROM Outcomes AS O1, Outcomes AS O2, Battles AS B1, Battles AS B2
+# WHERE O1.ship = O2.ship AND O1.result = 'damaged' AND B1.name = O1.battle AND B2.name = O2.battle AND B1.date < B2.date
+Prince of Wales
+Prince of Wales
+;
+# SELECT distinct O1.battle AS battle
+# FROM Classes AS C1, Classes AS C2, Classes AS C3,
+# Ships AS S1, Ships AS S2, Ships AS S3,
+# Outcomes AS O1, Outcomes AS O2, Outcomes AS O3
+# WHERE C1.country = C2.country AND C2.country = C3.country AND
+# C1.class = S1.class AND C2.class = S2.class AND C3.class = S3.class AND
+# S1.name = O1.ship AND S2.name = O2.ship AND S3.name = O3.ship AND
+# O1.battle = O2.battle AND O2.battle = O3.battle AND
+# O1.ship <> O2.ship AND O2.ship <> O3.ship AND O1.ship <> O3.ship

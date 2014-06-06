@@ -45,8 +45,25 @@ public class ScanMaker {
 			return transOrder((OrderPlan) plan, pSchema);
 		} else if (plan instanceof DistinctPlan) {
 			return transDistinct((DistinctPlan) plan, pSchema);
+		} else if (plan instanceof CalculatorPlan) {
+			return transCalculator((CalculatorPlan)plan);
 		}
 		return null;
+	}
+	
+	private static CalculatorScan transCalculator(CalculatorPlan plan) throws SQLException  {
+		CalculatorScan scan = new CalculatorScan(((CalculatorPlan)plan).columns);
+		plan.schema = new Schema();
+		Column col; Expr e;
+		for (int i = 0; i < plan.columns.size(); ++i) {
+			e = plan.columns.get(i);
+			if (e instanceof RenameExpr) {
+				col =  getProjectCalcCol(((RenameExpr)e).expr, plan.alias, ((RenameExpr)e).alias, i, null,false);
+			} else col = getProjectCalcCol(e, plan.alias, null, i, null,false);
+			plan.schema.attrNames.add(col);
+			plan.schema.types.add(col.type);
+		}
+		return scan;
 	}
 	private static DistinctScan transDistinct(DistinctPlan plan, Schema pSchema) throws SQLException {
 		DistinctScan scan = new DistinctScan(plan2Scan(plan.src, pSchema), plan.sorted);
@@ -67,7 +84,8 @@ public class ScanMaker {
 		if (scan.by != null)
 			for (Column col:scan.by) 
 				setColIdxParent(col, plan.src.schema);
-		plan.schema = replaceColCalcSchema(scan.to, plan.src.schema, plan.alias, true, plan.having);
+//		plan.schema = replaceColCalcSchema(scan.to, plan.src.schema, plan.alias, true, plan.having);
+		plan.schema = setColIdxTypeCalcSchema(scan.to, plan.src.schema, plan.alias, true, plan.having);
 		return scan;
 	}
 	
@@ -77,11 +95,30 @@ public class ScanMaker {
 		for (Column col: scan.cols) {
 			setColIdxParent(col, plan.src.schema);
 		}
-		for (Expr val:scan.vals) {
+		Expr val;
+		for (int i = 0;i< plan.vals.size(); ++i) {
+			val = plan.vals.get(i);
 			setColIdxParent(val, plan.src.schema);
+			plan.vals.set(i, transExprScan(val, null));
 		}
 		return scan;
 	}
+	
+	private static Expr transExprScan(Expr e, Schema schema) throws SQLException {
+		if (e instanceof Plan) {
+			return plan2Scan((Plan)e, schema);
+		} else if (e instanceof BExpr) {
+			BExpr be = (BExpr)e;
+			be.left = transExprScan(be.left, schema);
+			be.right = transExprScan(be.right, schema);
+			return be;
+		} else if (e instanceof UExpr) {
+			UExpr ue = (UExpr)e;
+			ue.expr = transExprScan(ue.expr, schema);
+			return ue;
+		} else return e;
+	}
+	
 	private static TableScan transTable(TablePlan plan) {
 		DBDataManager data = DBDataManager.getInstance();
 		if (plan.alias != null) {
@@ -89,7 +126,7 @@ public class ScanMaker {
 				((Column)attr).tableName = plan.alias;
 			}
 		}
-		return new TableScan(data.currentDB.tables.get((plan).tableName));
+		return new TableScan(data.currentDB.getTable((plan).tableName));
 	}
 	
 	private static DeleteScan transDelete(DeletePlan plan) throws SQLException {
@@ -106,7 +143,65 @@ public class ScanMaker {
 	 * @param cols (project to cols), srcSchema (schema of plan src), having from AggPlan
 	 * @return schema built from cols
 	 */
-	private static Schema replaceColCalcSchema(LinkedList<Expr> cols, Schema srcSchema, String alias, boolean agg, Expr having) throws SQLException {
+//	private static Schema replaceColCalcSchema(LinkedList<Expr> cols, Schema srcSchema, String alias, boolean agg, Expr having) throws SQLException {
+//		Schema schema = new Schema();
+//		Expr e;
+////		TODO: so far set type of calculated column: double
+//		for (int i = 0; i < cols.size(); ++i) {
+//			e = cols.get(i);
+//			if (e instanceof RenameExpr) {
+//				RenameExpr rename = (RenameExpr)e;
+//				rename.expr = replaceCol(rename.expr, srcSchema);
+//			} else {
+//				cols.set(i, replaceCol(e, srcSchema));
+//			}
+//		}
+////		System.out.println("replaceColCalc:"+cols);
+//		// remove rename, eval type generate Column for schema
+//		Column col;
+//		Tuple typeTuple = new Tuple(srcSchema.types);
+//		for (int i = 0;i < cols.size(); ++i) {
+//			e = cols.get(i);
+//			if (e.getClass() == Column.class) {
+//				col = getProjectCol((Column)e, alias, null, i);
+//			} else if (e instanceof RenameExpr) {
+//				RenameExpr rename = (RenameExpr)e;
+//				if (rename.expr.getClass() == Column.class) {
+//					col = getProjectCol((Column)rename.expr, alias, rename.alias,i);
+//				} else {
+//					col = getProjectCalcCol(rename.expr, alias, rename.alias, i, typeTuple, agg);
+//				}
+//				cols.set(i, rename.expr);
+//			} else {
+////				System.out.println(e);
+//				col = getProjectCalcCol(e, alias, null,i, typeTuple, agg);
+//			}
+//			schema.attrNames.add(col);
+//			schema.types.add(col.type);
+//		}
+//		if (having != null) {
+//			LinkedList<Column> havingCols = getHavingCols(having);
+//			
+//			InvisibleFunc invisible, invclone;
+//			int size = schema.types.size();
+//			Column havingCol;
+//			for (int i = 0; i < havingCols.size(); ++i) {
+//				havingCol = havingCols.get(i);
+//				if (schema.getColumn(havingCol) == null) {
+//					//column from getProjCalcCol can only be func, since normal column must be within to
+//					invisible = new InvisibleFunc((Func)getProjectCalcCol(replaceCol(havingCol, srcSchema), alias, null,size+i, typeTuple, true));
+//					schema.attrNames.add(invisible);
+//					schema.types.add(invisible.type);
+//					invclone = invisible.clone();
+//					invclone.idx = null;
+//					cols.add(invisible);
+//					System.out.println("extra having col:"+havingCol+"to "+invisible);
+//				}
+//			}
+//		}
+//		return schema;
+//	}
+	private static Schema setColIdxTypeCalcSchema(LinkedList<Expr> cols, Schema srcSchema, String alias, boolean agg, Expr having) throws SQLException {
 		Schema schema = new Schema();
 		Expr e;
 //		TODO: so far set type of calculated column: double
@@ -114,9 +209,9 @@ public class ScanMaker {
 			e = cols.get(i);
 			if (e instanceof RenameExpr) {
 				RenameExpr rename = (RenameExpr)e;
-				rename.expr = replaceCol(rename.expr, srcSchema);
+				setColIdxParentType(rename.expr, srcSchema, null);
 			} else {
-				cols.set(i, replaceCol(e, srcSchema));
+				setColIdxParentType(e, srcSchema, null);
 			}
 		}
 //		System.out.println("replaceColCalc:"+cols);
@@ -143,7 +238,6 @@ public class ScanMaker {
 			schema.types.add(col.type);
 		}
 		if (having != null) {
-			replaceCol(having, srcSchema);
 			LinkedList<Column> havingCols = getHavingCols(having);
 			
 			InvisibleFunc invisible;
@@ -152,11 +246,13 @@ public class ScanMaker {
 			for (int i = 0; i < havingCols.size(); ++i) {
 				havingCol = havingCols.get(i);
 				if (schema.getColumn(havingCol) == null) {
+					setColIdxParentType(havingCol, srcSchema, null);
+					cols.add(havingCol.clone());
 					//column from getProjCalcCol can only be func, since normal column must be within to
 					invisible = new InvisibleFunc((Func)getProjectCalcCol(havingCol, alias, null,size+i, typeTuple, true));
-					cols.add(invisible);
 					schema.attrNames.add(invisible);
 					schema.types.add(invisible.type);
+					System.out.println("extra having col:"+havingCol+"to "+invisible);
 				}
 			}
 		}
@@ -175,8 +271,17 @@ public class ScanMaker {
 		} else if (e instanceof UExpr) {
 			ans.addAll(getHavingCols(((UExpr)e).expr));
 			return ans;
-		} else if (e instanceof Field)
+		} else if (e instanceof Field) {
 			return ans;
+		} else if (e instanceof In) {
+			ans.addAll(getHavingCols(((In)e).col));
+			return ans; 
+		} else if (e instanceof AnyAll) {
+			ans.addAll(getHavingCols(((AnyAll)e).col));
+			return ans; 
+		} else if (e instanceof Exists) {
+			return ans;
+		} 
 		throw new SQLException("[ERROR]getHavingCols of "+e);
 	}
 	/**
@@ -185,46 +290,48 @@ public class ScanMaker {
 	private static ProjectScan transProject(ProjectPlan plan, Schema pSchema) throws SQLException {
 		Scan src = plan2Scan(plan.src, pSchema);
 		ProjectScan scan = new ProjectScan(src, plan.columns);
-		plan.schema = replaceColCalcSchema(scan.columns, plan.src.schema, plan.alias, false, null);
+//		plan.schema = replaceColCalcSchema(scan.columns, plan.src.schema, plan.alias, false, null);
+		plan.schema = setColIdxTypeCalcSchema(scan.columns, plan.src.schema, plan.alias, false, null);
 		return scan;
 	}
 	/*
 	 * TODO: could type conversion here, but I'm too
 	 * 		 lazy so far
 	 */
-	private static Expr replaceCol(Expr e, Schema schema/*, Scan src*/) {
-		Column ans = null;
-		if (e instanceof Func) { //TODO
-			((Func)e).col = (Column) replaceCol(((Func)e).col, schema/*, src*/);
-			return e;
-		} else if (e.getClass() == Column.class) {
-			ans = schema.getColumn((Column)e);
-//			System.out.println("[replaceCol]get"+e+" from schema:"+schema+"=>"+ans);
-//			ans.table = src;
-			return ans;
-		} else if (e instanceof UExpr) {
-			((UExpr)e).expr = replaceCol(((UExpr)e).expr, schema/*, src*/);
-			return e;
-		} else if (e instanceof BExpr) {
-			BExpr be = (BExpr)e;
-			be.left = replaceCol(be.left, schema/*, src*/);
-			be.right = replaceCol(be.right, schema/*, src*/);
-			return be;
-		} else {
-			// could not be rename, or exists, anyall, in, TODO:default
-			// can only be constant;
-			return e;
-		}
-	}
+//	private static Expr replaceCol(Expr e, Schema schema/*, Scan src*/) {
+//		Column ans = null;
+//		if (e instanceof Func) { //TODO
+//			((Func)e).col = (Column) replaceCol(((Func)e).col, schema/*, src*/);
+//			return e;
+//		} else if (e.getClass() == Column.class) {
+//			ans = schema.getColumn((Column)e);
+////			System.out.println("[replaceCol]get"+e+" from schema:"+schema+"=>"+ans);
+////			ans.table = src;
+//			return ans;
+//		} else if (e instanceof UExpr) {
+//			((UExpr)e).expr = replaceCol(((UExpr)e).expr, schema/*, src*/);
+//			return e;
+//		} else if (e instanceof BExpr) {
+//			BExpr be = (BExpr)e;
+//			be.left = replaceCol(be.left, schema/*, src*/);
+//			be.right = replaceCol(be.right, schema/*, src*/);
+//			return be;
+//		} else {
+//			// could not be rename, or exists, anyall, in, TODO:default
+//			// can only be constant;
+//			return e;
+//		}
+//	}
 	private static Column getProjectCol(Column col, String tableAlias, String colAlias, int idx) {
 		Column ans = col.clone();
 		ans.tableName = tableAlias!=null? tableAlias:col.tableName;
 		ans.colName = colAlias!=null? colAlias:col.colName;
-		ans.idx = idx;
+		ans.idx = new Integer(idx);
 		return ans;
 	}
 	
 	private static Column getProjectCalcCol(Expr e, String tableAlias, String colAlias, int idx, Tuple typeTuple, boolean agg) throws SQLException {
+//		System.out.println(e+tableAlias+"."+colAlias+"("+idx+")"+typeTuple+",agg:"+agg);
 		Column ans;
 		if (e instanceof Func) {
 			ans = ((Func) e).clone();
@@ -243,11 +350,12 @@ public class ScanMaker {
 	private static SelectScan transSelect(SelectPlan plan, Schema parentSchema) throws SQLException {
 		SelectScan scan = new SelectScan(plan2Scan(plan.src),plan.condition);
 		plan.schema = plan.src.schema.clone(plan.alias, false);
-		setColIdxParent(scan.cond, plan.src.schema, parentSchema);
+		setColIdxParentType(scan.cond, plan.src.schema, parentSchema);
+		scan.cond = transExprScan(scan.cond, plan.src.schema);
 		return scan;
 	}
 	private static void setColIdxParent(Expr expr, Schema schema) throws SQLException {
-		setColIdxParent(expr, schema, null);
+		setColIdxParentType(expr, schema, null);
 	}
 	/**
 	 * set Parent(= true or false) to denote whether the column is from a parent tuple or src tuple
@@ -256,35 +364,44 @@ public class ScanMaker {
 	 * @param pSchema parent Schema: schema passed from above exists, in, anyAll
 	 * @throws SQLException 
 	 */
-	private static void setColIdxParent(Expr expr, Schema schema, Schema pSchema) throws SQLException {
+	private static void setColIdxParentType(Expr expr, Schema schema, Schema pSchema) throws SQLException {
 //		System.out.println("get "+expr+" from schema:"+schema+", pSchema:"+pSchema);
 		if (expr instanceof Func) {
+			/**
+			 * func.idx != null appears only in having's select for expr evaluation
+			 * func.type and func.val is useless in this case
+			 * fun.idx == null appears only with agg, type is determined by init, type is useless again
+			 * but func.val is usefull in this case
+			 */
 			Func func = (Func)expr;
 			func.idx = schema.getColIdx(func);
-			if (func.idx == null)
-				setColIdxParent(func.col, schema, pSchema);
-			func.val = func.col.type; 
+			if (func.idx == null) {
+				setColIdxParentType(func.col, schema, pSchema);
+				func.val = func.col.type; 
+			} 
 		} else if (expr.getClass() == Column.class){
 			Column col = (Column) expr;
 			col.idx = schema.getColIdx(col);
 //			System.out.println("get "+col+" from "+schema+", idx="+col.idx);
 			col.parent = (col.idx == null);
-			if (col.parent)
+			if (col.parent) {
 				col.idx = pSchema.getColIdx(col);
+				col.type = pSchema.types.get(col.idx).clone();
+			} else col.type = schema.types.get(col.idx).clone();	//although for expr evaluation, type is useless
 		} else if (expr instanceof BExpr) {
-			setColIdxParent(((BExpr)expr).left, schema, pSchema);
-			setColIdxParent(((BExpr)expr).right, schema, pSchema);
+			setColIdxParentType(((BExpr)expr).left, schema, pSchema);
+			setColIdxParentType(((BExpr)expr).right, schema, pSchema);
 		} else if (expr instanceof UExpr)
-			setColIdxParent(((UExpr)expr).expr, schema, pSchema);
+			setColIdxParentType(((UExpr)expr).expr, schema, pSchema);
 		else if (expr instanceof BQExpr) {
 			BQExpr bqe = (BQExpr)expr;
 			bqe.scan = plan2Scan(bqe.plan, schema);
 			if (expr instanceof In) {
-				setColIdxParent(((In)bqe).col, schema, pSchema);
+				setColIdxParentType(((In)bqe).col, schema, pSchema);
 			} else if (expr instanceof AnyAll) {
-				setColIdxParent(((AnyAll)bqe).col, schema, pSchema);
+				setColIdxParentType(((AnyAll)bqe).col, schema, pSchema);
 			}
-		}
+		} 
 		//TODO: haven't deal with and anyall, in
 	}
 	

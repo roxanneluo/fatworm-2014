@@ -70,4 +70,8 @@ public class INT extends Field{
 		INT b = (INT)f;
 		return v.compareTo(b.v);
 	}
+	
+	public Integer getVal() {
+		return v;
+	}
 }

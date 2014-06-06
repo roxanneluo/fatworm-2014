@@ -1,0 +1,10 @@
+date: Thu Jun 05 13:30:07 CST 2014
+roxanne	simple_ts	Correct	97
+date: Thu Jun 05 22:05:01 CST 2014
+roxanne	simple_ts	Correct	90
+date: Thu Jun 05 22:10:29 CST 2014
+roxanne	simple_ts	Correct	129
+date: Thu Jun 05 22:19:53 CST 2014
+roxanne	simple_ts	Correct	94
+date: Thu Jun 05 22:41:32 CST 2014
+roxanne	simple_ts	Correct	95

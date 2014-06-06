@@ -1,0 +1,28 @@
+date: Thu Jun 05 22:05:00 CST 2014
+roxanne	fatworm-create	Correct	243
+roxanne	fatworm-select	Wrong Answer	184
+roxanne	fatworm-auto	Wrong Answer	20
+roxanne	fatworm-index	Wrong Answer	1
+roxanne	fatworm-concurrency	Wrong Answer	7
+roxanne	fatworm-update	Wrong Answer	5
+date: Thu Jun 05 22:10:28 CST 2014
+roxanne	fatworm-create	Correct	300
+roxanne	fatworm-select	Wrong Answer	188
+roxanne	fatworm-auto	Wrong Answer	20
+roxanne	fatworm-index	Wrong Answer	1
+roxanne	fatworm-concurrency	Wrong Answer	7
+roxanne	fatworm-update	Wrong Answer	8
+date: Thu Jun 05 22:19:52 CST 2014
+roxanne	fatworm-create	Correct	251
+roxanne	fatworm-select	Wrong Answer	143
+roxanne	fatworm-auto	Wrong Answer	17
+roxanne	fatworm-index	Wrong Answer	1
+roxanne	fatworm-concurrency	Wrong Answer	6
+roxanne	fatworm-update	Wrong Answer	6
+date: Thu Jun 05 22:41:31 CST 2014
+roxanne	fatworm-create	Correct	237
+roxanne	fatworm-select	Wrong Answer	139
+roxanne	fatworm-auto	Wrong Answer	19
+roxanne	fatworm-index	Wrong Answer	1
+roxanne	fatworm-concurrency	Wrong Answer	5
+roxanne	fatworm-update	Wrong Answer	5

@@ -1,0 +1,7 @@
+# select number, sum(score) from Classes as c where c.score in (select 1 + 1)
+# group by c.number
+# having c.number < 3
+# order by c.number DESC
+1	2.0000
+2	6.0000
+;

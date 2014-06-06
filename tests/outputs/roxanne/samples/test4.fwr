@@ -1,0 +1,3 @@
+# select name, number, score from Classes where number > ANY(select number from Classes)
+# EMPTY
+;

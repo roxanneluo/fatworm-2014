@@ -1,0 +1,794 @@
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: drop database acm
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: create database acm
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: use acm
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: create table student(
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] id int,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] name varchar(100),
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] nickname char(10),
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] age int,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] height float,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] weight decimal(4,1),
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] birthday timestamp,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] deathday datetime,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] malesex boolean)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into student values(1, 'ChengYu', 'cy', 20, 180, 69.5, '1989-08-31 17:17:17', '2112-08-31 17:17:17', true)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into student values(2, 'JiangXiao', 'FireDancer', 21, 175.0, 80.0, '1989-02-20 02:22:22', '2222-02-22 02:22:22', true)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into student values(3, 'TangBo', 'tangbonk1', 21, 180.3, 65.5, '1989-01-25 21:32:13', '8888-12-31 23:59:59', true)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into student values(4, 'FengZiming', 'laoselang', 21, 150.0, 99.9, '1989-02-24 04:44:44', '1111-01-11 11:11:11', false)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: create table fatworm(
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] id int,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] name varchar(100),
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] groupid char(1),
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] leader varchar(100),
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] loc int)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(1, 'ChengYu', 'C', 'TangBo', 11899)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(2, 'JiangXiao', 'C', 'TangBo', 3187)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(3, 'TangBo', 'C', 'TangBo', 51664)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(4, 'FengZiming', 'I', 'ShengMeiLun', 11890)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(5, 'ShengMeilun', 'I', 'ShengMeiLun', 10528)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(6, 'ZhangJiapeng', 'I', '.', 0)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(7, 'KangNanXi', 'I', 'KangNanXi', 12610)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(8, 'ZhangYan', 'A', 'KangNanXi', 2343)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(9, 'ZhouYujiao', 'A', 'KangNanXi', 664)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(10, 'ChenKailong', 'H', 'ChenKailong', 21635)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(11, 'WangHang', 'H', 'WangHang', 44921)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into fatworm values(12, 'LuoYuLong', 'Z', 'ChenKailong', 6957)
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: create table A(
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] id int,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] name char(5))
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (0, 'a0')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (1, 'a1')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (2, 'a2')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (3, 'a3')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (4, 'a4')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (5, 'a5')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (6, 'a6')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (7, 'a7')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (8, 'a8')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (9, 'a9')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (10, 'a10')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (11, 'a11')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (12, 'a12')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (13, 'a13')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (14, 'a14')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (15, 'a15')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (16, 'a16')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (17, 'a17')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (18, 'a18')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (19, 'a19')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (20, 'a20')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (21, 'a21')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (22, 'a22')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (23, 'a23')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (24, 'a24')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (25, 'a25')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (26, 'a26')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (27, 'a27')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (28, 'a28')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (29, 'a29')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (30, 'a30')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (31, 'a31')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (32, 'a32')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (33, 'a33')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (34, 'a34')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (35, 'a35')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (36, 'a36')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (37, 'a37')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (38, 'a38')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (39, 'a39')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (40, 'a40')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (41, 'a41')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (42, 'a42')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (43, 'a43')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (44, 'a44')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (45, 'a45')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (46, 'a46')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (47, 'a47')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (48, 'a48')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into A values (49, 'a49')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: create table B(
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] id int,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] name char(5))
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into B values (0, 'b0')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into B values (1, 'b1')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into B values (2, 'b2')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into B values (3, 'b3')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into B values (4, 'b4')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into B values (5, 'b5')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: create table C(
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] id int,
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] name char(5))
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (0, 'c0')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (1, 'c1')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (2, 'c2')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (3, 'c3')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (4, 'c4')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (5, 'c5')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (6, 'c6')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (7, 'c7')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (8, 'c8')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (9, 'c9')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (10, 'c10')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (11, 'c11')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (12, 'c12')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (13, 'c13')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (14, 'c14')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (15, 'c15')
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into C values (16, 'c16')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (17, 'c17')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (18, 'c18')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (19, 'c19')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (20, 'c20')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (21, 'c21')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (22, 'c22')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (23, 'c23')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (24, 'c24')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (25, 'c25')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (26, 'c26')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (27, 'c27')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (28, 'c28')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (29, 'c29')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (30, 'c30')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (31, 'c31')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (32, 'c32')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (33, 'c33')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (34, 'c34')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (35, 'c35')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (36, 'c36')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (37, 'c37')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (38, 'c38')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (39, 'c39')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (40, 'c40')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (41, 'c41')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (42, 'c42')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (43, 'c43')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (44, 'c44')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (45, 'c45')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (46, 'c46')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (47, 'c47')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (48, 'c48')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (49, 'c49')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (50, 'c50')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (51, 'c51')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (52, 'c52')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (53, 'c53')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (54, 'c54')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (55, 'c55')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (56, 'c56')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (57, 'c57')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (58, 'c58')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (59, 'c59')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (60, 'c60')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (61, 'c61')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (62, 'c62')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (63, 'c63')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (64, 'c64')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (65, 'c65')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (66, 'c66')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (67, 'c67')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (68, 'c68')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (69, 'c69')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (70, 'c70')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (71, 'c71')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (72, 'c72')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (73, 'c73')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (74, 'c74')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (75, 'c75')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (76, 'c76')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (77, 'c77')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (78, 'c78')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (79, 'c79')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (80, 'c80')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (81, 'c81')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (82, 'c82')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (83, 'c83')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (84, 'c84')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (85, 'c85')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (86, 'c86')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (87, 'c87')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (88, 'c88')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (89, 'c89')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (90, 'c90')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (91, 'c91')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (92, 'c92')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (93, 'c93')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (94, 'c94')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (95, 'c95')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (96, 'c96')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (97, 'c97')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (98, 'c98')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (99, 'c99')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (100, 'c100')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (101, 'c101')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (102, 'c102')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (103, 'c103')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (104, 'c104')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (105, 'c105')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (106, 'c106')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (107, 'c107')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (108, 'c108')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (109, 'c109')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (110, 'c110')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (111, 'c111')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (112, 'c112')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (113, 'c113')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (114, 'c114')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (115, 'c115')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (116, 'c116')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (117, 'c117')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (118, 'c118')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (119, 'c119')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (120, 'c120')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (121, 'c121')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (122, 'c122')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (123, 'c123')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (124, 'c124')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (125, 'c125')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (126, 'c126')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (127, 'c127')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (128, 'c128')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (129, 'c129')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (130, 'c130')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (131, 'c131')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (132, 'c132')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (133, 'c133')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (134, 'c134')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (135, 'c135')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (136, 'c136')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (137, 'c137')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (138, 'c138')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (139, 'c139')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (140, 'c140')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (141, 'c141')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (142, 'c142')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (143, 'c143')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (144, 'c144')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (145, 'c145')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (146, 'c146')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (147, 'c147')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (148, 'c148')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (149, 'c149')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (150, 'c150')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (151, 'c151')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (152, 'c152')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (153, 'c153')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (154, 'c154')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (155, 'c155')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (156, 'c156')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (157, 'c157')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (158, 'c158')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (159, 'c159')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (160, 'c160')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (161, 'c161')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (162, 'c162')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (163, 'c163')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (164, 'c164')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (165, 'c165')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (166, 'c166')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (167, 'c167')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (168, 'c168')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (169, 'c169')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (170, 'c170')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (171, 'c171')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (172, 'c172')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (173, 'c173')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (174, 'c174')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (175, 'c175')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (176, 'c176')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (177, 'c177')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (178, 'c178')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (179, 'c179')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (180, 'c180')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (181, 'c181')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (182, 'c182')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (183, 'c183')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (184, 'c184')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (185, 'c185')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (186, 'c186')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (187, 'c187')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (188, 'c188')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (189, 'c189')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (190, 'c190')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (191, 'c191')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (192, 'c192')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (193, 'c193')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (194, 'c194')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (195, 'c195')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (196, 'c196')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (197, 'c197')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (198, 'c198')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into C values (199, 'c199')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create table D(
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] id int,
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] name char(5))
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (0, 'd0')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (1, 'd1')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (2, 'd2')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (3, 'd3')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (4, 'd4')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (5, 'd5')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (6, 'd6')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (7, 'd7')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (8, 'd8')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (9, 'd9')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (10, 'd10')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (11, 'd11')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (12, 'd12')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (13, 'd13')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (14, 'd14')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (15, 'd15')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (16, 'd16')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (17, 'd17')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (18, 'd18')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into D values (19, 'd19')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create table E(
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] id int,
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] name char(5))
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (40, 'e40')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (41, 'e41')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (42, 'e42')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (43, 'e43')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (44, 'e44')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (45, 'e45')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (46, 'e46')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (47, 'e47')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (48, 'e48')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (49, 'e49')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (50, 'e50')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (51, 'e51')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (52, 'e52')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (53, 'e53')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (54, 'e54')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (55, 'e55')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (56, 'e56')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (57, 'e57')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (58, 'e58')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (59, 'e59')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (60, 'e60')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (61, 'e61')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (62, 'e62')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (63, 'e63')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (64, 'e64')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (65, 'e65')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (66, 'e66')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (67, 'e67')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (68, 'e68')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (69, 'e69')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (70, 'e70')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (71, 'e71')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (72, 'e72')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (73, 'e73')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (74, 'e74')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (75, 'e75')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (76, 'e76')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (77, 'e77')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (78, 'e78')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (79, 'e79')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (80, 'e80')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (81, 'e81')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (82, 'e82')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (83, 'e83')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (84, 'e84')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (85, 'e85')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (86, 'e86')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (87, 'e87')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (88, 'e88')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (89, 'e89')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (90, 'e90')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (91, 'e91')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (92, 'e92')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (93, 'e93')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (94, 'e94')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (95, 'e95')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (96, 'e96')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (97, 'e97')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (98, 'e98')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (99, 'e99')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (100, 'e100')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (101, 'e101')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (102, 'e102')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (103, 'e103')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (104, 'e104')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (105, 'e105')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (106, 'e106')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (107, 'e107')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (108, 'e108')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (109, 'e109')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (110, 'e110')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (111, 'e111')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (112, 'e112')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (113, 'e113')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (114, 'e114')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (115, 'e115')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (116, 'e116')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (117, 'e117')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (118, 'e118')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into E values (119, 'e119')
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 196
+[Thu Jun 05 22:41:32 CST 2014] [Total Time] 237
+[Thu Jun 05 22:41:32 CST 2014] [Result] Correct

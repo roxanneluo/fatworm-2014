@@ -1,0 +1,11 @@
+# select distinct fromairport from flight order by fromairport ASC
+ATL
+BOS
+BWI
+DEN
+DFW
+OAK
+PHL
+PIT
+SFO
+;

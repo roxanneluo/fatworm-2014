@@ -1,0 +1,47 @@
+# select * from test1 as t1
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+;
+# select * from test2 as t2
+1
+192
+2
+321
+4
+438
+5
+584
+6
+832
+;
+# select 1 + t1.a + t2.b from test1 as t1,test2 as t2 where t1.a = t2.b or 1>1
+11
+11
+13
+13
+3
+3
+5
+5
+9
+9
+;
+# select min(a) + max(b) from test1 as t1,test2 as t2 where t1.a = t2.b or a > b
+7
+;

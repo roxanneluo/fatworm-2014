@@ -1,0 +1,24 @@
+# select distinct aircraftcode from flight order by aircraftcode ASC
+100
+727
+72S
+733
+734
+73S
+74M
+757
+763
+767
+D10
+D8S
+D9S
+DH8
+F28
+J31
+L10
+L15
+M80
+SH3
+SH6
+SWM
+;

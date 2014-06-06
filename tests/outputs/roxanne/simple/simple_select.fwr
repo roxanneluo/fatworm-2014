@@ -1,0 +1,107 @@
+# select * from a
+1
+1
+2
+2
+;
+# select * from b
+a
+b
+;
+# select * from a, b
+1	a
+1	a
+1	b
+1	b
+2	a
+2	a
+2	b
+2	b
+;
+# select a from a, b
+1
+1
+1
+1
+2
+2
+2
+2
+;
+# select b from a, b
+a
+a
+a
+a
+b
+b
+b
+b
+;
+# select a.a from a, b
+1
+1
+1
+1
+2
+2
+2
+2
+;
+# select b.b from a, b
+a
+a
+a
+a
+b
+b
+b
+b
+;
+# select a, b from a,b
+1	a
+1	a
+1	b
+1	b
+2	a
+2	a
+2	b
+2	b
+;
+# select a, b from a as c, b
+1	a
+1	a
+1	b
+1	b
+2	a
+2	a
+2	b
+2	b
+;
+# select c.a, b from a as c, b
+1	a
+1	a
+1	b
+1	b
+2	a
+2	a
+2	b
+2	b
+;
+# select a.a, c.a, c.b from a, c where a.a = c.a and a.a = 1
+1	1	b
+1	1	b
+;
+# select a.a as a, a.a as b from a
+1	1
+1	1
+2	2
+2	2
+;
+# select distinct a from a
+1
+2
+;
+# select 1-(-2*10)
+21
+;

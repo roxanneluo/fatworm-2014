@@ -1,0 +1,324 @@
+date: Tue Jun 03 23:52:52 CST 2014
+roxanne	create	Correct	71
+roxanne	simple_select	Wrong Answer	72
+roxanne	simple_order	Correct	17
+roxanne	simple_group	Wrong Answer	14
+roxanne	simple_compare	Wrong Answer	23
+roxanne	simple_subquery	Wrong Answer	4
+roxanne	simple_opt	Correct	12
+roxanne	simple_timestamp	Wrong Answer	11
+roxanne	simple_ts	Wrong Answer	10
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Wrong Answer	3
+date: Wed Jun 04 12:57:43 CST 2014
+roxanne	create	Correct	74
+roxanne	simple_select	Wrong Answer	71
+roxanne	simple_order	Correct	16
+roxanne	simple_group	Wrong Answer	14
+roxanne	simple_compare	Wrong Answer	25
+roxanne	simple_subquery	Wrong Answer	4
+roxanne	simple_opt	Correct	13
+roxanne	simple_timestamp	Correct	11
+roxanne	simple_ts	Wrong Answer	9
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Wrong Answer	4
+date: Wed Jun 04 20:16:37 CST 2014
+roxanne	create	Correct	57
+roxanne	simple_select	Wrong Answer	1
+roxanne	simple_order	Wrong Answer	1
+roxanne	simple_group	Wrong Answer	1
+roxanne	simple_compare	Wrong Answer	1
+roxanne	simple_subquery	Wrong Answer	1
+roxanne	simple_opt	Wrong Answer	1
+roxanne	simple_timestamp	Wrong Answer	1
+roxanne	simple_ts	Wrong Answer	1
+roxanne	simple_trim	Wrong Answer	2
+roxanne	simple_case	Wrong Answer	1
+date: Wed Jun 04 20:19:27 CST 2014
+roxanne	create	Correct	78
+roxanne	simple_select	Wrong Answer	81
+roxanne	simple_order	Correct	26
+roxanne	simple_group	Wrong Answer	20
+roxanne	simple_compare	Wrong Answer	33
+roxanne	simple_subquery	Wrong Answer	5
+roxanne	simple_opt	Correct	10
+roxanne	simple_timestamp	Correct	16
+roxanne	simple_ts	Wrong Answer	18
+roxanne	simple_trim	Correct	12
+roxanne	simple_case	Wrong Answer	5
+date: Wed Jun 04 20:39:37 CST 2014
+roxanne	create	Correct	81
+roxanne	simple_select	Wrong Answer	82
+roxanne	simple_order	Correct	27
+roxanne	simple_group	Wrong Answer	20
+roxanne	simple_compare	Wrong Answer	34
+roxanne	simple_subquery	Wrong Answer	5
+roxanne	simple_opt	Correct	11
+roxanne	simple_timestamp	Correct	12
+roxanne	simple_ts	Wrong Answer	17
+roxanne	simple_trim	Correct	11
+roxanne	simple_case	Wrong Answer	5
+date: Wed Jun 04 20:39:55 CST 2014
+roxanne	create	Correct	74
+roxanne	simple_select	Wrong Answer	77
+roxanne	simple_order	Correct	17
+roxanne	simple_group	Wrong Answer	15
+roxanne	simple_compare	Wrong Answer	24
+roxanne	simple_subquery	Wrong Answer	4
+roxanne	simple_opt	Correct	12
+roxanne	simple_timestamp	Correct	13
+roxanne	simple_ts	Wrong Answer	9
+roxanne	simple_trim	Correct	5
+roxanne	simple_case	Wrong Answer	4
+date: Wed Jun 04 20:43:50 CST 2014
+roxanne	create	Correct	71
+roxanne	simple_select	Wrong Answer	74
+roxanne	simple_order	Correct	15
+roxanne	simple_group	Wrong Answer	14
+roxanne	simple_compare	Wrong Answer	23
+roxanne	simple_subquery	Wrong Answer	4
+roxanne	simple_opt	Correct	13
+roxanne	simple_timestamp	Correct	9
+roxanne	simple_ts	Wrong Answer	9
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Wrong Answer	4
+date: Wed Jun 04 21:17:37 CST 2014
+roxanne	create	Correct	72
+roxanne	simple_select	Correct	75
+roxanne	simple_order	Correct	15
+roxanne	simple_group	Wrong Answer	14
+roxanne	simple_compare	Wrong Answer	23
+roxanne	simple_subquery	Wrong Answer	3
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Correct	12
+roxanne	simple_ts	Wrong Answer	8
+roxanne	simple_trim	Correct	7
+roxanne	simple_case	Wrong Answer	4
+date: Wed Jun 04 21:21:59 CST 2014
+roxanne	create	Correct	76
+roxanne	simple_select	Correct	76
+roxanne	simple_order	Correct	16
+roxanne	simple_group	Wrong Answer	14
+roxanne	simple_compare	Wrong Answer	24
+roxanne	simple_subquery	Wrong Answer	4
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Correct	10
+roxanne	simple_ts	Wrong Answer	10
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Wrong Answer	3
+date: Wed Jun 04 21:22:42 CST 2014
+roxanne	create	Correct	78
+roxanne	simple_select	Correct	75
+roxanne	simple_order	Correct	16
+roxanne	simple_group	Wrong Answer	15
+roxanne	simple_compare	Wrong Answer	25
+roxanne	simple_subquery	Wrong Answer	3
+roxanne	simple_opt	Correct	13
+roxanne	simple_timestamp	Correct	12
+roxanne	simple_ts	Wrong Answer	10
+roxanne	simple_trim	Correct	7
+roxanne	simple_case	Correct	4
+date: Wed Jun 04 21:29:36 CST 2014
+roxanne	create	Correct	75
+roxanne	simple_select	Correct	75
+roxanne	simple_order	Correct	16
+roxanne	simple_group	Correct	15
+roxanne	simple_compare	Wrong Answer	23
+roxanne	simple_subquery	Wrong Answer	4
+roxanne	simple_opt	Correct	15
+roxanne	simple_timestamp	Correct	11
+roxanne	simple_ts	Wrong Answer	10
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	4
+date: Wed Jun 04 21:56:03 CST 2014
+roxanne	create	Correct	277
+roxanne	simple_select	Correct	279
+roxanne	simple_order	Correct	59
+roxanne	simple_group	Correct	54
+roxanne	simple_compare	Wrong Answer	93
+roxanne	simple_subquery	Wrong Answer	14
+roxanne	simple_opt	Correct	51
+roxanne	simple_timestamp	Correct	30
+roxanne	simple_ts	Wrong Answer	30
+roxanne	simple_trim	Correct	22
+roxanne	simple_case	Correct	14
+date: Wed Jun 04 22:00:59 CST 2014
+roxanne	create	Correct	286
+roxanne	simple_select	Correct	260
+roxanne	simple_order	Correct	64
+roxanne	simple_group	Correct	55
+roxanne	simple_compare	Wrong Answer	111
+roxanne	simple_subquery	Wrong Answer	13
+roxanne	simple_opt	Correct	54
+roxanne	simple_timestamp	Correct	32
+roxanne	simple_ts	Wrong Answer	28
+roxanne	simple_trim	Correct	22
+roxanne	simple_case	Correct	14
+date: Wed Jun 04 22:03:19 CST 2014
+roxanne	create	Correct	286
+roxanne	simple_select	Correct	259
+roxanne	simple_order	Correct	60
+roxanne	simple_group	Correct	57
+roxanne	simple_compare	Correct	99
+roxanne	simple_subquery	Wrong Answer	14
+roxanne	simple_opt	Correct	45
+roxanne	simple_timestamp	Correct	29
+roxanne	simple_ts	Wrong Answer	33
+roxanne	simple_trim	Correct	20
+roxanne	simple_case	Correct	16
+date: Wed Jun 04 22:42:01 CST 2014
+roxanne	create	Correct	74
+roxanne	simple_select	Correct	88
+roxanne	simple_order	Correct	16
+roxanne	simple_group	Correct	16
+roxanne	simple_compare	Correct	26
+roxanne	simple_subquery	Correct	6
+roxanne	simple_opt	Correct	15
+roxanne	simple_timestamp	Correct	11
+roxanne	simple_ts	Wrong Answer	11
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	6
+date: Wed Jun 04 22:53:17 CST 2014
+roxanne	create	Correct	71
+roxanne	simple_select	Correct	73
+roxanne	simple_order	Correct	16
+roxanne	simple_group	Correct	15
+roxanne	simple_compare	Correct	30
+roxanne	simple_subquery	Correct	5
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Wrong Answer	9
+roxanne	simple_ts	Correct	9
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	4
+date: Wed Jun 04 23:19:41 CST 2014
+roxanne	create	Correct	71
+roxanne	simple_select	Correct	78
+roxanne	simple_order	Correct	15
+roxanne	simple_group	Correct	14
+roxanne	simple_compare	Correct	27
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	15
+roxanne	simple_timestamp	Wrong Answer	9
+roxanne	simple_ts	Correct	10
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	4
+date: Wed Jun 04 23:20:35 CST 2014
+roxanne	create	Correct	77
+roxanne	simple_select	Correct	76
+roxanne	simple_order	Correct	17
+roxanne	simple_group	Correct	16
+roxanne	simple_compare	Correct	27
+roxanne	simple_subquery	Correct	5
+roxanne	simple_opt	Correct	13
+roxanne	simple_timestamp	Wrong Answer	9
+roxanne	simple_ts	Correct	9
+roxanne	simple_trim	Correct	7
+roxanne	simple_case	Correct	4
+date: Wed Jun 04 23:27:52 CST 2014
+roxanne	create	Correct	76
+roxanne	simple_select	Correct	78
+roxanne	simple_order	Correct	17
+roxanne	simple_group	Correct	17
+roxanne	simple_compare	Correct	28
+roxanne	simple_subquery	Correct	5
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Correct	11
+roxanne	simple_ts	Correct	8
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	4
+date: Wed Jun 04 23:39:26 CST 2014
+roxanne	create	Correct	71
+roxanne	simple_select	Correct	78
+roxanne	simple_order	Correct	15
+roxanne	simple_group	Correct	16
+roxanne	simple_compare	Correct	26
+roxanne	simple_subquery	Correct	7
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Correct	11
+roxanne	simple_ts	Correct	9
+roxanne	simple_trim	Correct	5
+roxanne	simple_case	Correct	4
+date: Thu Jun 05 10:25:52 CST 2014
+roxanne	create	Correct	75
+roxanne	simple_select	Correct	73
+roxanne	simple_order	Correct	15
+roxanne	simple_group	Correct	17
+roxanne	simple_compare	Correct	28
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Correct	12
+roxanne	simple_ts	Correct	9
+roxanne	simple_trim	Correct	7
+roxanne	simple_case	Correct	4
+date: Thu Jun 05 10:26:19 CST 2014
+roxanne	create	Correct	75
+roxanne	simple_select	Correct	71
+roxanne	simple_order	Correct	16
+roxanne	simple_group	Correct	15
+roxanne	simple_compare	Correct	30
+roxanne	simple_subquery	Correct	5
+roxanne	simple_opt	Correct	13
+roxanne	simple_timestamp	Correct	10
+roxanne	simple_ts	Correct	8
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	4
+date: Thu Jun 05 11:48:17 CST 2014
+roxanne	create	Correct	77
+roxanne	simple_select	Correct	77
+roxanne	simple_order	Correct	16
+roxanne	simple_group	Correct	16
+roxanne	simple_compare	Correct	27
+roxanne	simple_subquery	Correct	5
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Correct	9
+roxanne	simple_ts	Correct	9
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	4
+date: Thu Jun 05 22:04:59 CST 2014
+roxanne	create	Correct	89
+roxanne	simple_select	Correct	76
+roxanne	simple_order	Correct	17
+roxanne	simple_group	Wrong Answer	2
+roxanne	simple_compare	Correct	28
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	8
+roxanne	simple_timestamp	Correct	12
+roxanne	simple_ts	Correct	8
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	4
+date: Thu Jun 05 22:10:27 CST 2014
+roxanne	create	Correct	85
+roxanne	simple_select	Correct	79
+roxanne	simple_order	Correct	17
+roxanne	simple_group	Wrong Answer	3
+roxanne	simple_compare	Correct	28
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	9
+roxanne	simple_timestamp	Correct	16
+roxanne	simple_ts	Correct	8
+roxanne	simple_trim	Correct	7
+roxanne	simple_case	Correct	4
+date: Thu Jun 05 22:19:51 CST 2014
+roxanne	create	Correct	81
+roxanne	simple_select	Correct	85
+roxanne	simple_order	Correct	18
+roxanne	simple_group	Correct	17
+roxanne	simple_compare	Correct	26
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Correct	9
+roxanne	simple_ts	Correct	8
+roxanne	simple_trim	Correct	7
+roxanne	simple_case	Correct	5
+date: Thu Jun 05 22:40:31 CST 2014
+roxanne	create	Correct	74
+roxanne	simple_select	Correct	77
+roxanne	simple_order	Correct	17
+roxanne	simple_group	Correct	15
+roxanne	simple_compare	Correct	26
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	11
+roxanne	simple_timestamp	Correct	10
+roxanne	simple_ts	Correct	8
+roxanne	simple_trim	Correct	6
+roxanne	simple_case	Correct	4

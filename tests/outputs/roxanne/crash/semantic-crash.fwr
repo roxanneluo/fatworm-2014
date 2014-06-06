@@ -1,0 +1,10 @@
+# select id as Id, salary as Salary from Salary
+1	158235
+2	157999
+3	918231
+4	183952
+5	348583
+6	982923
+7	827374
+8	987582
+;

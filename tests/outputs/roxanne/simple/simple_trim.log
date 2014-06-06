@@ -1,0 +1,24 @@
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use db
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table ctest ( a char(3) )
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into ctest values ('eee')
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from ctest
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table vctest ( a varchar(3) )
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into vctest values ('eee')
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from vctest
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 12
+[Thu Jun 05 22:40:31 CST 2014] [Thread Time] 1
+[Thu Jun 05 22:40:31 CST 2014] [Total Time] 6
+[Thu Jun 05 22:40:31 CST 2014] [Result] Correct

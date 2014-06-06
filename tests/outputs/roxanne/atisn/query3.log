@@ -1,0 +1,11 @@
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: use ATISN
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: select sum(engines) from aircraft
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:03:34 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:03:34 CST 2014] [Thread Time] 2
+[Thu Jun 05 22:03:34 CST 2014] [Total Time] 2
+[Thu Jun 05 22:03:34 CST 2014] [Result] Wrong Answer

@@ -19,18 +19,17 @@ public class UpdateScan extends UScan {
 		this.vals = vals;
 	}
 	public boolean update() throws SQLException {
-		Tuple t, ans;
+		Tuple t;
 		while(scan.hasNext()) {
 			t = scan.next();
-			ans = new Tuple(t);
 			if (ExprManager.toFinalBool(ExprManager.eval(cond, t, null))) {
 				Column col; Expr val;
 				for (int i = 0; i < cols.size(); ++i) {
 					col = cols.get(i);
 					val = vals.get(i);
-					ans.set(col.idx, ExprManager.eval(val, t, null));
+					t.set(col.idx, ExprManager.eval(val, t, null));
 				}
-				if (!((TableScan)scan).update(ans)) //FIXME: remove this if not need
+				if (!((TableScan)scan).update(t)) //FIXME: remove this if not need
 					return false;
 			}
 		}

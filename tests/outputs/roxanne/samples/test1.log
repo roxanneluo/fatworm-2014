@@ -1,0 +1,37 @@
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: drop database nano
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: create database nano
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: use nano
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: create table Classes(
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] name char(50),
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] number int,
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] score float,
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] date datetime)
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: insert into Classes values ('1991-01-11 11:12:00', 1, 2.1, '2009-01-11 11:12:00')
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: insert into Classes values ('1991-01-11 11:11:00', 2, 2.2, '2001-01-11 11:12:01')
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: insert into Classes values ('1911-01-11 11:13:00', 3, 2.4, '2005-01-11 11:12:02')
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: insert into Classes values ('1991-01-11 11:01:00', 5, 2.5, '2010-01-11 11:12:04')
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: insert into Classes values ('1991-01-11 11:01:00', 6, 3.5, '2008-08-08 09:56:23')
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: delete from Classes where number <> 3
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: select * from Classes
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 1 is 1
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 2 is 4
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 3 is 6
+[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 4 is 93
+[Thu Jun 05 22:40:30 CST 2014] [Thread Time] 87
+[Thu Jun 05 22:40:30 CST 2014] [Total Time] 102
+[Thu Jun 05 22:40:30 CST 2014] [Result] Correct

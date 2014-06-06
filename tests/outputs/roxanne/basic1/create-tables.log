@@ -1,0 +1,28 @@
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: drop database fatwormBasic1
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: create database fatwormBasic1
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: use fatwormBasic1
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: create table test1(a int, b int, primary key(a))
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: drop table test1
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: create table test2(a int, b int, c int, d int, e int, f int)
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: drop table test2
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: create table test3(a int, b char(200), c datetime, d boolean, f decimal(10, 10), g timestamp, h varchar(10))
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: drop table test3
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: create table test4(a int not null auto_increment, b varchar(20) default 'aaaaa', primary key(a))
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] Executing: drop table test4
+[Thu Jun 05 22:40:06 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:06 CST 2014] [Thread Time] 55
+[Thu Jun 05 22:40:06 CST 2014] [Total Time] 63
+[Thu Jun 05 22:40:06 CST 2014] [Result] Correct

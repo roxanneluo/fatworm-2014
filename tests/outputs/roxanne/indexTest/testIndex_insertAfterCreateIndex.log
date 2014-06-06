@@ -1,0 +1,72 @@
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: drop database nano
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: create database nano
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: use nano
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: drop table IndexTest
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: create table IndexTest(
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] k int,
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] value varchar(20)
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] )
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(81,'81')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(237,'237')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(346,'346')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(545,'545')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(569,'569')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(606,'606')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(657,'657')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(681,'681')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(723,'723')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(925,'925')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(973,'973')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1039,'1039')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1052,'1052')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1063,'1063')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1255,'1255')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1360,'1360')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1474,'1474')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1839,'1839')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1947,'1947')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1961,'1961')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(1962,'1962')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(2021,'2021')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(2215,'2215')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(2245,'2245')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(2254,'2254')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: insert into IndexTest values(2305,'2305')
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:07:18 CST 2014] [Thread0] Executing: create index idx0 on IndexTest(k)
+[Thu Jun 05 22:07:18 CST 2014] [Thread Time] 2
+[Thu Jun 05 22:07:18 CST 2014] [Total Time] 4
+[Thu Jun 05 22:07:18 CST 2014] [Result] Wrong Answer

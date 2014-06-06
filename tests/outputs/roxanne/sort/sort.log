@@ -1,0 +1,14 @@
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use sort
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] (select a.ch*10000000+b.ch*1000000+c.ch*100000+d.ch*10000+e.ch*1000+f.ch*100+g.ch*10+h.ch as ans from chars as a, chars as b, chars as c, chars as d, chars as e,chars as f,chars as g,chars as h order by ans) as tab
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] where ans <21 or ans > 99999978
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] order by ans
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:41:31 CST 2014] [Thread Time] 59262
+[Thu Jun 05 22:41:31 CST 2014] [Total Time] 59263
+[Thu Jun 05 22:41:31 CST 2014] [Result] Wrong Answer

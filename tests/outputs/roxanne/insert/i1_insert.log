@@ -1,0 +1,1014 @@
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: DROP database fatworm
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: CREATE DATABASE fatworm
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: USE fatworm
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: CREATE TABLE i1(a INT, b INT)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(0,0)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(1,2)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(2,4)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(3,6)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(4,8)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(5,10)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(6,12)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(7,14)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(8,16)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(9,18)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(10,20)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(11,22)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(12,24)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(13,26)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(14,28)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(15,30)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(16,32)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(17,34)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(18,36)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(19,38)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(20,40)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(21,42)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(22,44)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(23,46)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(24,48)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(25,50)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(26,52)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(27,54)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(28,56)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(29,58)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(30,60)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(31,62)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(32,64)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(33,66)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(34,68)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(35,70)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(36,72)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(37,74)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(38,76)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(39,78)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(40,80)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(41,82)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(42,84)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(43,86)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(44,88)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(45,90)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(46,92)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(47,94)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(48,96)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(49,98)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(50,100)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(51,102)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(52,104)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(53,106)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(54,108)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(55,110)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(56,112)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(57,114)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(58,116)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(59,118)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(60,120)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(61,122)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(62,124)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(63,126)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(64,128)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(65,130)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(66,132)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(67,134)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(68,136)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(69,138)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(70,140)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(71,142)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(72,144)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(73,146)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(74,148)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(75,150)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(76,152)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(77,154)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(78,156)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(79,158)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(80,160)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(81,162)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(82,164)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(83,166)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(84,168)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(85,170)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(86,172)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(87,174)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(88,176)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(89,178)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(90,180)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(91,182)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(92,184)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(93,186)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(94,188)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(95,190)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(96,192)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(97,194)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(98,196)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(99,198)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(100,200)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(101,202)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(102,204)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(103,206)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(104,208)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(105,210)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(106,212)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(107,214)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(108,216)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(109,218)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(110,220)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(111,222)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(112,224)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(113,226)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(114,228)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(115,230)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(116,232)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(117,234)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(118,236)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(119,238)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(120,240)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(121,242)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(122,244)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(123,246)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(124,248)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(125,250)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(126,252)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(127,254)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(128,256)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(129,258)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(130,260)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(131,262)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(132,264)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(133,266)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(134,268)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(135,270)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(136,272)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(137,274)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(138,276)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(139,278)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(140,280)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(141,282)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(142,284)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(143,286)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(144,288)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(145,290)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(146,292)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(147,294)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(148,296)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(149,298)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(150,300)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(151,302)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(152,304)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(153,306)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(154,308)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(155,310)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(156,312)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(157,314)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(158,316)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(159,318)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(160,320)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(161,322)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(162,324)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(163,326)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(164,328)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(165,330)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(166,332)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(167,334)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(168,336)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(169,338)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(170,340)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(171,342)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(172,344)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(173,346)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(174,348)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(175,350)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(176,352)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(177,354)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(178,356)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(179,358)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(180,360)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(181,362)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(182,364)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(183,366)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(184,368)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(185,370)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(186,372)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(187,374)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(188,376)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(189,378)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(190,380)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(191,382)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(192,384)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(193,386)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(194,388)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(195,390)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(196,392)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(197,394)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(198,396)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(199,398)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(200,400)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(201,402)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(202,404)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(203,406)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(204,408)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(205,410)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(206,412)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(207,414)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(208,416)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(209,418)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(210,420)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(211,422)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(212,424)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(213,426)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(214,428)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(215,430)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(216,432)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(217,434)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(218,436)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(219,438)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(220,440)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(221,442)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(222,444)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(223,446)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(224,448)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(225,450)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(226,452)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(227,454)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(228,456)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(229,458)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(230,460)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(231,462)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(232,464)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(233,466)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(234,468)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(235,470)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(236,472)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(237,474)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(238,476)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(239,478)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(240,480)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(241,482)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(242,484)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(243,486)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(244,488)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(245,490)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(246,492)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(247,494)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(248,496)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(249,498)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(250,500)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(251,502)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(252,504)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(253,506)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(254,508)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(255,510)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(256,512)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(257,514)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(258,516)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(259,518)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(260,520)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(261,522)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(262,524)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(263,526)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(264,528)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(265,530)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(266,532)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(267,534)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(268,536)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(269,538)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(270,540)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(271,542)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(272,544)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(273,546)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(274,548)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(275,550)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(276,552)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(277,554)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(278,556)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(279,558)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(280,560)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(281,562)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(282,564)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(283,566)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(284,568)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(285,570)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(286,572)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(287,574)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(288,576)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(289,578)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(290,580)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(291,582)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(292,584)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(293,586)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(294,588)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(295,590)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(296,592)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(297,594)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(298,596)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(299,598)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(300,600)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(301,602)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(302,604)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(303,606)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(304,608)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(305,610)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(306,612)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(307,614)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(308,616)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(309,618)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(310,620)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(311,622)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(312,624)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(313,626)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(314,628)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(315,630)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(316,632)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(317,634)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(318,636)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(319,638)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(320,640)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(321,642)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(322,644)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(323,646)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(324,648)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(325,650)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(326,652)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(327,654)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(328,656)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(329,658)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(330,660)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(331,662)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(332,664)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(333,666)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(334,668)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(335,670)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(336,672)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(337,674)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(338,676)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(339,678)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(340,680)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(341,682)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(342,684)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(343,686)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(344,688)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(345,690)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(346,692)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(347,694)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(348,696)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(349,698)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(350,700)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(351,702)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(352,704)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(353,706)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(354,708)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(355,710)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(356,712)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(357,714)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(358,716)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(359,718)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(360,720)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(361,722)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(362,724)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(363,726)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(364,728)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(365,730)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(366,732)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(367,734)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(368,736)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(369,738)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(370,740)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(371,742)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(372,744)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(373,746)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(374,748)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(375,750)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(376,752)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(377,754)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(378,756)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(379,758)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(380,760)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(381,762)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(382,764)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(383,766)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(384,768)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(385,770)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(386,772)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(387,774)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(388,776)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(389,778)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(390,780)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(391,782)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(392,784)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(393,786)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(394,788)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(395,790)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(396,792)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(397,794)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(398,796)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(399,798)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(400,800)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(401,802)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(402,804)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(403,806)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(404,808)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(405,810)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(406,812)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(407,814)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(408,816)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(409,818)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(410,820)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(411,822)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(412,824)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(413,826)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(414,828)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(415,830)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(416,832)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(417,834)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(418,836)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(419,838)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(420,840)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(421,842)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(422,844)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(423,846)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(424,848)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(425,850)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(426,852)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(427,854)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(428,856)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(429,858)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(430,860)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(431,862)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(432,864)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(433,866)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(434,868)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(435,870)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(436,872)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(437,874)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(438,876)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(439,878)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(440,880)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(441,882)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(442,884)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(443,886)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(444,888)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(445,890)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(446,892)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(447,894)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(448,896)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(449,898)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(450,900)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(451,902)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(452,904)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(453,906)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(454,908)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(455,910)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(456,912)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(457,914)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(458,916)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(459,918)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(460,920)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(461,922)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(462,924)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(463,926)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(464,928)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(465,930)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(466,932)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(467,934)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(468,936)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(469,938)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(470,940)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(471,942)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(472,944)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(473,946)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(474,948)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(475,950)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(476,952)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(477,954)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(478,956)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(479,958)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(480,960)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(481,962)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(482,964)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(483,966)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(484,968)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(485,970)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(486,972)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(487,974)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(488,976)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(489,978)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(490,980)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(491,982)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(492,984)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(493,986)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(494,988)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(495,990)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(496,992)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(497,994)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(498,996)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] Executing: INSERT INTO i1 VALUES(499,998)
+[Thu Jun 05 22:40:12 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:40:12 CST 2014] [Thread Time] 201
+[Thu Jun 05 22:40:12 CST 2014] [Total Time] 244
+[Thu Jun 05 22:40:12 CST 2014] [Result] Correct

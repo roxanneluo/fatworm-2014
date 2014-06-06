@@ -1,0 +1,18 @@
+# select name, groupid from fatworm where groupid = 'Z'
+LuoYuLong	Z
+;
+# select * from A, E where A.id = E.id
+40	a40	40	e40
+41	a41	41	e41
+42	a42	42	e42
+43	a43	43	e43
+44	a44	44	e44
+45	a45	45	e45
+46	a46	46	e46
+47	a47	47	e47
+48	a48	48	e48
+49	a49	49	e49
+;
+# SELECT * FROM E as E1 WHERE id >= ALL(select ID from E where E1.id <= E.id)
+119	e119
+;

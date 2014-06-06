@@ -1,0 +1,9 @@
+# select distinct category from aircraft order by category
+
+AMPHIBIAN
+HELICOPTER
+JET
+PROPELLER
+TURBOPROP
+TURBOPROP
+;

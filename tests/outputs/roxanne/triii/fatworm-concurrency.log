@@ -1,0 +1,16 @@
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use acm
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select id as a, name as b from student as s where s.malesex = true group by name having name >= b
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select id as a, name as b from student where student.malesex = true group by b
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] having name > any (select name from student where a < id and student.malesex = true)
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select id, name from student as s where (select id from student where s.name = name and student.malesex = true) >= id and s.malesex = true
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
+[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 4
+[Thu Jun 05 22:41:32 CST 2014] [Total Time] 5
+[Thu Jun 05 22:41:32 CST 2014] [Result] Wrong Answer

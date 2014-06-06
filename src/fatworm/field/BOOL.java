@@ -68,4 +68,8 @@ public class BOOL extends Field{
 		BOOL b = (BOOL)f;
 		return v.compareTo(b.v);
 	}
+	
+	public Boolean getVal() {
+		return v;
+	}
 }

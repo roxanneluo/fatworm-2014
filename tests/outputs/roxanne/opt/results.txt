@@ -1,0 +1,6 @@
+date: Thu Jun 05 22:03:55 CST 2014
+roxanne	opt-create	Correct	2228
+roxanne	prepare-data	Correct	160
+roxanne	create-index	Correct	1
+roxanne	index-select	Correct	34
+roxanne	index-update	Correct	6

@@ -1,0 +1,9 @@
+# select avg(k) from InfraTest
+5.0000
+;
+# select sum(v) from InfraTest
+40.000
+;
+# select sum(k) from InfraTest
+50.000
+;
