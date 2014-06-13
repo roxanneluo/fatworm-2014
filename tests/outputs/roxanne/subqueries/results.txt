@@ -22,3 +22,39 @@ roxanne	subqueries	Correct	124
 date: Thu Jun 05 22:41:31 CST 2014
 roxanne	create	Correct	99
 roxanne	subqueries	Correct	128
+date: Fri Jun 06 13:51:52 CST 2014
+roxanne	create	Correct	102
+roxanne	subqueries	Correct	235
+date: Fri Jun 13 07:41:07 CST 2014
+roxanne	create	Correct	211
+roxanne	subqueries	Correct	281
+date: Fri Jun 13 09:55:20 CST 2014
+roxanne	create	Correct	242
+roxanne	subqueries	Wrong Answer	105
+date: Fri Jun 13 11:05:30 CST 2014
+roxanne	create	Correct	248
+roxanne	subqueries	Wrong Answer	79
+date: Fri Jun 13 12:58:11 CST 2014
+roxanne	create	Correct	249
+roxanne	subqueries	Correct	121
+date: Fri Jun 13 12:58:45 CST 2014
+roxanne	create	Correct	257
+roxanne	subqueries	Correct	116
+date: Fri Jun 13 13:10:35 CST 2014
+roxanne	create	Correct	252
+roxanne	subqueries	Correct	108
+date: Fri Jun 13 16:55:19 CST 2014
+roxanne	create	Correct	362
+roxanne	subqueries	Correct	113
+date: Fri Jun 13 20:57:22 CST 2014
+roxanne	create	Correct	369
+roxanne	subqueries	Correct	112
+date: Fri Jun 13 21:06:36 CST 2014
+roxanne	create	Correct	283
+roxanne	subqueries	Correct	139
+date: Fri Jun 13 23:38:29 CST 2014
+roxanne	create	Correct	404
+roxanne	subqueries	Correct	108
+date: Fri Jun 13 23:59:10 CST 2014
+roxanne	create	Correct	364
+roxanne	subqueries	Correct	116

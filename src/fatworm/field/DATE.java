@@ -3,6 +3,7 @@ package fatworm.field;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 
+import fatworm.util.Constant;
 import fatworm.util.Util;
 
 
@@ -27,6 +28,11 @@ public class DATE extends Field {
 		}
 		d.v = v != null? (Timestamp) v.clone():null;
 		return d;
+	}
+	
+	public DATE(long l) {
+		this();
+		v = new Timestamp(l);
 	}
 	public DATE(String x) {
 		this();
@@ -84,5 +90,28 @@ public class DATE extends Field {
 	@Override
 	public Timestamp getVal() {
 		return v;
+	}
+
+	@Override
+	public Field bytes2Field(byte[] bytes, int start, int l) {
+//		System.out.println(Util.bytes2long(bytes, start)+" to "+  (new DATE(Util.bytes2long(bytes, start)).v));
+		return new DATE(Util.bytes2long(bytes, start));
+	}
+
+	@Override
+	public int maxSize() {
+		return Constant.LONG_SIZE;
+	}
+
+
+
+	@Override
+	public byte[] toBytes() {
+		return Util.long2bytes( v.getTime());
+	}
+
+	@Override
+	public boolean fix() {
+		return true;
 	}
 }

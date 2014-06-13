@@ -1,0 +1,14 @@
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Executing: use ATIS
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Executing: select city.cityname,state.statename,city.citycode from city,state where city.citycode='MATL' and city.statecode=state.statecode
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:55:21 CST 2014] [Thread0] Type 3 is 1
+[Fri Jun 13 23:55:21 CST 2014] [Thread Time] 9
+[Fri Jun 13 23:55:21 CST 2014] [Total Time] 17
+[Fri Jun 13 23:55:21 CST 2014] [Result] Correct

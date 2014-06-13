@@ -1,0 +1,14 @@
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Executing: use ATIS
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Executing: select count(aircraftcode) as num, min(payload) as min ,max(payload) as max from aircraft where payload>0
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:55:52 CST 2014] [Thread Time] 1
+[Fri Jun 13 23:55:52 CST 2014] [Total Time] 2
+[Fri Jun 13 23:55:52 CST 2014] [Result] Correct

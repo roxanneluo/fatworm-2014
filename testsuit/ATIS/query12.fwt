@@ -2,6 +2,6 @@
 use ATIS
 ;
 
-@ORDERED_SELECT;
+@ORDERED_SELECT
 select distinct flightcode from flightfare order by flightcode ASC
 ;

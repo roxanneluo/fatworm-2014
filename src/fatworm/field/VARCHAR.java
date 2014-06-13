@@ -10,7 +10,6 @@ public class VARCHAR extends CHAR {
 	 * 
 	 */
 	private static final long serialVersionUID = -4284120208202982412L;
-	public int len;
 	
 	public VARCHAR(String v) {
 		this(v.length());
@@ -68,5 +67,29 @@ public class VARCHAR extends CHAR {
 	public int compareTo(Field f) {
 		VARCHAR b = (VARCHAR)f;
 		return v.compareTo(b.v);
+	}
+	
+	@Override
+	public Field bytes2Field(byte[] bytes, int start, int l) {
+		return new VARCHAR(new String(bytes, start,l), len);
+	}
+
+	@Override
+	public int maxSize() {
+		return len;
+	}
+
+	public int size() {
+		return v.length();
+	}
+
+	@Override
+	public byte[] toBytes() {
+		return v.getBytes();
+	}
+
+	@Override
+	public boolean fix() {
+		return false;
 	}
 }

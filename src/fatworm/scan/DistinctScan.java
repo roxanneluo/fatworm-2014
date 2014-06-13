@@ -52,13 +52,16 @@ public class DistinctScan extends UScan {
 		if (cur != null)
 			return cur;
 		if (sorted) {
+			if (!scan.hasNext())
+				return null;
 			if (last == null) {
 				if (scan.hasNext(parent)) {
 					return last = cur = scan.next(parent);
 				} else return last = cur = null;
 			}
-			
 			while (scan.hasNext(parent) && (cur = scan.next(parent)).equals(last));
+			if (cur.equals(last))
+				return last = cur = null;
 			last = cur;
 			return cur;
 		} else {

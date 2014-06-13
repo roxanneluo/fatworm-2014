@@ -40,3 +40,69 @@ roxanne	float	Correct	15
 roxanne	chars	Correct	15
 roxanne	datetime	Correct	35
 roxanne	decimal	Correct	13
+date: Fri Jun 06 13:51:53 CST 2014
+roxanne	int	Correct	92
+roxanne	float	Correct	14
+roxanne	chars	Correct	19
+roxanne	datetime	Correct	37
+roxanne	decimal	Correct	11
+date: Fri Jun 13 07:41:09 CST 2014
+roxanne	int	Correct	281
+roxanne	float	Correct	53
+roxanne	chars	Correct	50
+roxanne	datetime	Correct	84
+roxanne	decimal	Wrong Answer	28
+date: Fri Jun 13 07:49:43 CST 2014
+roxanne	int	Correct	192
+roxanne	float	Correct	42
+roxanne	chars	Correct	38
+roxanne	datetime	Correct	61
+roxanne	decimal	Correct	31
+date: Fri Jun 13 08:58:14 CST 2014
+roxanne	int	Correct	234
+roxanne	float	Correct	45
+roxanne	chars	Correct	46
+roxanne	datetime	Correct	61
+roxanne	decimal	Correct	26
+date: Fri Jun 13 09:55:31 CST 2014
+roxanne	int	Correct	188
+roxanne	float	Correct	45
+roxanne	chars	Correct	41
+roxanne	datetime	Correct	74
+roxanne	decimal	Correct	30
+date: Fri Jun 13 13:10:47 CST 2014
+roxanne	int	Correct	192
+roxanne	float	Correct	45
+roxanne	chars	Correct	43
+roxanne	datetime	Correct	63
+roxanne	decimal	Correct	30
+date: Fri Jun 13 16:55:31 CST 2014
+roxanne	int	Correct	281
+roxanne	float	Correct	57
+roxanne	chars	Correct	46
+roxanne	datetime	Correct	69
+roxanne	decimal	Correct	42
+date: Fri Jun 13 20:57:45 CST 2014
+roxanne	int	Correct	297
+roxanne	float	Correct	50
+roxanne	chars	Correct	47
+roxanne	datetime	Correct	68
+roxanne	decimal	Correct	44
+date: Fri Jun 13 21:06:58 CST 2014
+roxanne	int	Correct	184
+roxanne	float	Correct	31
+roxanne	chars	Correct	36
+roxanne	datetime	Correct	51
+roxanne	decimal	Correct	33
+date: Fri Jun 13 23:38:51 CST 2014
+roxanne	int	Correct	311
+roxanne	float	Correct	61
+roxanne	chars	Correct	61
+roxanne	datetime	Correct	72
+roxanne	decimal	Correct	52
+date: Fri Jun 13 23:59:32 CST 2014
+roxanne	int	Correct	369
+roxanne	float	Correct	108
+roxanne	chars	Correct	68
+roxanne	datetime	Correct	105
+roxanne	decimal	Correct	73

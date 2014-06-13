@@ -2,6 +2,6 @@
 use ATIS
 ;
 
-@ORDERED_SELECT;
+@ORDERED_SELECT
 select distinct fromairport from flight order by fromairport ASC
 ;

@@ -64,3 +64,219 @@ roxanne	isDateTime	Correct	47
 roxanne	isVarCharStable	Correct	806
 roxanne	isVarCharStable2	Correct	891
 roxanne	isVarCharVarChar	Correct	1620
+date: Fri Jun 06 13:50:30 CST 2014
+roxanne	default	Correct	86
+roxanne	autoinc	Correct	16
+roxanne	delete	Correct	14
+roxanne	expression	Correct	113
+roxanne	float	Correct	44
+roxanne	isChar	Correct	18
+roxanne	isDateTime	Correct	44
+roxanne	isVarCharStable	Correct	792
+roxanne	isVarCharStable2	Correct	878
+roxanne	isVarCharVarChar	Correct	1820
+date: Fri Jun 13 07:37:07 CST 2014
+roxanne	default	Correct	117
+roxanne	autoinc	Correct	20
+roxanne	delete	Correct	20
+roxanne	expression	Correct	140
+roxanne	float	Correct	66
+roxanne	isChar	Correct	33
+roxanne	isDateTime	Correct	52
+roxanne	isVarCharStable	Correct	1117
+roxanne	isVarCharStable2	Wrong Answer	586
+roxanne	isVarCharVarChar	Wrong Answer	3609
+date: Fri Jun 13 07:37:58 CST 2014
+roxanne	default	Correct	120
+roxanne	autoinc	Correct	21
+roxanne	delete	Correct	18
+roxanne	expression	Correct	144
+roxanne	float	Correct	62
+roxanne	isChar	Correct	34
+roxanne	isDateTime	Correct	51
+roxanne	isVarCharStable	Correct	1086
+roxanne	isVarCharStable2	Wrong Answer	553
+roxanne	isVarCharVarChar	Wrong Answer	1858
+date: Fri Jun 13 07:38:51 CST 2014
+roxanne	default	Correct	120
+roxanne	autoinc	Correct	20
+roxanne	delete	Correct	19
+roxanne	expression	Correct	129
+roxanne	float	Correct	53
+roxanne	isChar	Correct	33
+roxanne	isDateTime	Correct	47
+roxanne	isVarCharStable	Correct	943
+roxanne	isVarCharStable2	Wrong Answer	486
+roxanne	isVarCharVarChar	Wrong Answer	1423
+date: Fri Jun 13 07:39:38 CST 2014
+roxanne	default	Correct	168
+roxanne	autoinc	Correct	27
+roxanne	delete	Correct	26
+roxanne	expression	Correct	138
+roxanne	float	Correct	61
+roxanne	isChar	Correct	31
+roxanne	isDateTime	Correct	59
+roxanne	isVarCharStable	Correct	948
+roxanne	isVarCharStable2	Wrong Answer	293
+roxanne	isVarCharVarChar	Wrong Answer	1465
+date: Fri Jun 13 09:53:56 CST 2014
+roxanne	default	Correct	167
+roxanne	autoinc	Correct	27
+roxanne	delete	Correct	29
+roxanne	expression	Correct	134
+roxanne	float	Correct	61
+roxanne	isChar	Correct	28
+roxanne	isDateTime	Correct	52
+roxanne	isVarCharStable	Correct	1003
+roxanne	isVarCharStable2	Wrong Answer	290
+roxanne	isVarCharVarChar	Wrong Answer	1518
+date: Fri Jun 13 13:09:05 CST 2014
+roxanne	default	Correct	192
+roxanne	autoinc	Correct	42
+roxanne	delete	Correct	41
+roxanne	expression	Correct	159
+roxanne	float	Correct	63
+roxanne	isChar	Correct	34
+roxanne	isDateTime	Correct	53
+roxanne	isVarCharStable	Correct	964
+roxanne	isVarCharStable2	Wrong Answer	290
+roxanne	isVarCharVarChar	Wrong Answer	1602
+date: Fri Jun 13 16:53:49 CST 2014
+roxanne	default	Correct	285
+roxanne	autoinc	Correct	60
+roxanne	delete	Correct	41
+roxanne	expression	Correct	164
+roxanne	float	Correct	70
+roxanne	isChar	Correct	50
+roxanne	isDateTime	Correct	68
+roxanne	isVarCharStable	Correct	974
+roxanne	isVarCharStable2	Wrong Answer	522
+roxanne	isVarCharVarChar	Wrong Answer	1547
+date: Fri Jun 13 20:55:51 CST 2014
+roxanne	default	Correct	297
+roxanne	autoinc	Correct	55
+roxanne	delete	Correct	45
+roxanne	expression	Correct	166
+roxanne	float	Correct	70
+roxanne	isChar	Correct	45
+roxanne	isDateTime	Correct	68
+roxanne	isVarCharStable	Correct	955
+roxanne	isVarCharStable2	Wrong Answer	539
+roxanne	isVarCharVarChar	Wrong Answer	1573
+date: Fri Jun 13 21:04:06 CST 2014
+roxanne	default	Correct	336
+roxanne	autoinc	Correct	59
+roxanne	delete	Correct	45
+roxanne	expression	Correct	159
+roxanne	float	Correct	78
+roxanne	isChar	Correct	46
+roxanne	isDateTime	Correct	76
+roxanne	isVarCharStable	Correct	999
+roxanne	isVarCharStable2	Wrong Answer	564
+roxanne	isVarCharVarChar	Wrong Answer	1844
+date: Fri Jun 13 22:53:18 CST 2014
+roxanne	default	Correct	190
+roxanne	autoinc	Correct	53
+roxanne	delete	Correct	52
+roxanne	expression	Correct	167
+roxanne	float	Correct	63
+roxanne	isChar	Correct	33
+roxanne	isDateTime	Correct	58
+roxanne	isVarCharStable	Correct	948
+roxanne	isVarCharStable2	Wrong Answer	511
+roxanne	isVarCharVarChar	Wrong Answer	1519
+date: Fri Jun 13 23:30:48 CST 2014
+roxanne	default	Correct	203
+roxanne	autoinc	Correct	52
+roxanne	delete	Correct	39
+roxanne	expression	Correct	153
+roxanne	float	Correct	65
+roxanne	isChar	Correct	30
+roxanne	isDateTime	Correct	57
+roxanne	isVarCharStable	Correct	986
+roxanne	isVarCharStable2	Wrong Answer	2324
+roxanne	isVarCharVarChar	Wrong Answer	1557
+date: Fri Jun 13 23:33:28 CST 2014
+roxanne	default	Correct	201
+roxanne	autoinc	Correct	54
+roxanne	delete	Correct	43
+roxanne	expression	Correct	152
+roxanne	float	Correct	62
+roxanne	isChar	Correct	32
+roxanne	isDateTime	Correct	61
+roxanne	isVarCharStable	Correct	1013
+roxanne	isVarCharStable2	Wrong Answer	2325
+roxanne	isVarCharVarChar	Wrong Answer	1418
+date: Fri Jun 13 23:35:53 CST 2014
+roxanne	default	Correct	346
+roxanne	autoinc	Correct	72
+roxanne	delete	Correct	54
+roxanne	expression	Correct	199
+roxanne	float	Correct	94
+roxanne	isChar	Correct	65
+roxanne	isDateTime	Correct	84
+roxanne	isVarCharStable	Correct	1154
+roxanne	isVarCharStable2	Wrong Answer	2667
+roxanne	isVarCharVarChar	Wrong Answer	1485
+date: Fri Jun 13 23:39:05 CST 2014
+roxanne	default	Correct	301
+roxanne	autoinc	Correct	70
+roxanne	delete	Correct	48
+roxanne	expression	Correct	170
+roxanne	float	Correct	76
+roxanne	isChar	Correct	57
+roxanne	isDateTime	Correct	77
+roxanne	isVarCharStable	Correct	971
+roxanne	isVarCharStable2	Wrong Answer	2461
+roxanne	isVarCharVarChar	Wrong Answer	1645
+date: Fri Jun 13 23:42:02 CST 2014
+roxanne	default	Correct	313
+roxanne	autoinc	Correct	61
+roxanne	delete	Correct	52
+roxanne	expression	Correct	173
+roxanne	float	Correct	74
+roxanne	isChar	Correct	50
+roxanne	isDateTime	Correct	85
+roxanne	isVarCharStable	Correct	961
+roxanne	isVarCharStable2	Wrong Answer	2461
+roxanne	isVarCharVarChar	Wrong Answer	1611
+date: Fri Jun 13 23:45:31 CST 2014
+roxanne	default	Correct	323
+roxanne	autoinc	Correct	59
+roxanne	delete	Correct	53
+roxanne	expression	Correct	174
+roxanne	float	Correct	79
+roxanne	isChar	Correct	52
+roxanne	isDateTime	Correct	88
+roxanne	isVarCharStable	Correct	992
+roxanne	isVarCharStable2	Wrong Answer	2422
+roxanne	isVarCharVarChar	Wrong Answer	1467
+date: Fri Jun 13 23:49:46 CST 2014
+roxanne	default	Wrong Answer	113
+roxanne	autoinc	Wrong Answer	19
+roxanne	delete	Wrong Answer	21
+roxanne	expression	Wrong Answer	23
+roxanne	float	Wrong Answer	19
+roxanne	isChar	Wrong Answer	18
+date: Fri Jun 13 23:50:01 CST 2014
+roxanne	default	Wrong Answer	102
+roxanne	autoinc	Wrong Answer	19
+roxanne	delete	Wrong Answer	23
+roxanne	expression	Wrong Answer	19
+roxanne	float	Wrong Answer	21
+roxanne	isChar	Wrong Answer	17
+roxanne	isDateTime	Wrong Answer	21
+roxanne	isVarCharStable	Wrong Answer	19
+roxanne	isVarCharStable2	Wrong Answer	25
+roxanne	isVarCharVarChar	Wrong Answer	10
+date: Fri Jun 13 23:56:45 CST 2014
+roxanne	default	Correct	241
+roxanne	autoinc	Correct	126
+roxanne	delete	Correct	42
+roxanne	expression	Correct	177
+roxanne	float	Correct	77
+roxanne	isChar	Correct	41
+roxanne	isDateTime	Correct	70
+roxanne	isVarCharStable	Correct	1042
+roxanne	isVarCharStable2	Wrong Answer	2437
+roxanne	isVarCharVarChar	Wrong Answer	1534

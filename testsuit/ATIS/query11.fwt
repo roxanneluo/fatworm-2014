@@ -2,6 +2,6 @@
 use ATIS
 ;
 
-@ORDERED_SELECT;
+@ORDERED_SELECT
 select distinct * from fare order by farecode ASC
 ;

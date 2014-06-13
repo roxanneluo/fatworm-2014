@@ -1,11 +1,125 @@
-[Thu Jun 05 22:03:34 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:03:34 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:03:34 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: use ATISN
-[Thu Jun 05 22:03:34 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:34 CST 2014] [Thread0] Executing: select sum(engines) from aircraft
-[Thu Jun 05 22:03:34 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:03:34 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:03:34 CST 2014] [Thread Time] 2
-[Thu Jun 05 22:03:34 CST 2014] [Total Time] 2
-[Thu Jun 05 22:03:34 CST 2014] [Result] Wrong Answer
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: use ATISN
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select sum(engines) from aircraft
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select avg(engines) from aircraft
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select avg(engines) from aircraft where engines>0
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select count(aircraftcode),min(payload),max(payload) from aircraft where payload>0
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select min(flightcode),min(flightcode) from flight
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select min(fromairport),min(toairport) from flight
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select count(aircraftcode) from aircraft where payload>10000
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select count(aircraftcode) from aircraft where payload<>0
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select count(flightcode) from flight where flightcode >= 112793
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: use ATISN
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select citycode, avg(groundfare) from groundservice where groundfare<>0 group by citycode order by citycode
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select groundservice.citycode from groundservice group by groundservice.citycode order by groundservice.citycode
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select category,count(aircraftcode) as totalnr from aircraft where engines=2 group by category having totalnr>4 order by category
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select category,count(aircraftcode) from aircraft where engines=2 group by category having count(aircraftcode)>4 order by category
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Executing: select dayname.dayname,count(flightday.daymask) from flightday,dayname where dayname.daycode=flightday.daycode group by dayname.dayname order by dayname.dayname
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:56:15 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:15 CST 2014] [Thread Time] 27
+[Fri Jun 13 23:56:15 CST 2014] [Total Time] 36
+[Fri Jun 13 23:56:15 CST 2014] [Result] Correct

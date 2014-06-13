@@ -19,3 +19,32 @@ roxanne	sort	Wrong Answer	13
 date: Thu Jun 05 22:40:31 CST 2014
 roxanne	insert	Correct	69
 roxanne	sort	Wrong Answer	59263
+date: Fri Jun 06 13:50:53 CST 2014
+roxanne	insert	Correct	104
+roxanne	sort	Wrong Answer	57779
+date: Fri Jun 13 07:39:20 CST 2014
+roxanne	insert	Correct	150
+date: Fri Jun 13 07:40:06 CST 2014
+roxanne	insert	Correct	143
+roxanne	sort	Wrong Answer	61007
+date: Fri Jun 13 09:54:15 CST 2014
+roxanne	insert	Correct	153
+roxanne	sort	Wrong Answer	64013
+date: Fri Jun 13 13:09:34 CST 2014
+roxanne	insert	Correct	201
+roxanne	sort	Wrong Answer	60269
+date: Fri Jun 13 16:54:19 CST 2014
+roxanne	insert	Correct	267
+roxanne	sort	Wrong Answer	58963
+date: Fri Jun 13 20:56:21 CST 2014
+roxanne	insert	Correct	288
+roxanne	sort	Wrong Answer	60780
+date: Fri Jun 13 21:05:31 CST 2014
+roxanne	insert	Correct	293
+roxanne	sort	Wrong Answer	63900
+date: Fri Jun 13 23:37:22 CST 2014
+roxanne	insert	Correct	270
+roxanne	sort	Wrong Answer	66959
+date: Fri Jun 13 23:58:08 CST 2014
+roxanne	insert	Correct	239
+roxanne	sort	Wrong Answer	60690

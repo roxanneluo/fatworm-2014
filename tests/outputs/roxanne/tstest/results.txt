@@ -8,3 +8,19 @@ date: Thu Jun 05 22:19:53 CST 2014
 roxanne	simple_ts	Correct	94
 date: Thu Jun 05 22:41:32 CST 2014
 roxanne	simple_ts	Correct	95
+date: Fri Jun 06 13:51:53 CST 2014
+roxanne	simple_ts	Correct	91
+date: Fri Jun 13 07:41:09 CST 2014
+roxanne	simple_ts	Correct	189
+date: Fri Jun 13 09:55:31 CST 2014
+roxanne	simple_ts	Correct	211
+date: Fri Jun 13 13:10:46 CST 2014
+roxanne	simple_ts	Correct	206
+date: Fri Jun 13 16:55:31 CST 2014
+roxanne	simple_ts	Correct	314
+date: Fri Jun 13 20:57:44 CST 2014
+roxanne	simple_ts	Correct	313
+date: Fri Jun 13 21:06:57 CST 2014
+roxanne	simple_ts	Correct	182
+date: Fri Jun 13 23:59:31 CST 2014
+roxanne	simple_ts	Correct	488

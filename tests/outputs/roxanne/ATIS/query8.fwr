@@ -1,0 +1,8 @@
+# select distinct category from aircraft order by category ASC
+
+AMPHIBIAN
+HELICOPTER
+JET
+PROPELLER
+TURBOPROP
+;

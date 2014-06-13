@@ -1,18 +1,18 @@
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Executing: use opt
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Executing: update TTBB
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] set val = val + 100
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] where id = 8229
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Executing: select * from TTBB
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] where id = 8229
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:04:48 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:04:48 CST 2014] [Thread Time] 4
-[Thu Jun 05 22:04:48 CST 2014] [Total Time] 6
-[Thu Jun 05 22:04:48 CST 2014] [Result] Correct
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: use opt
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: update TTBB
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] set val = val + 100
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] where id = 8229
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: select * from TTBB
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] where id = 8229
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:57:56 CST 2014] [Thread Time] 7
+[Fri Jun 13 23:57:56 CST 2014] [Total Time] 8
+[Fri Jun 13 23:57:56 CST 2014] [Result] Correct

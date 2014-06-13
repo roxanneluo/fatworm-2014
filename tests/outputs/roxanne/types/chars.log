@@ -1,58 +1,58 @@
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: drop database fatwormTypes
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create database fatwormTypes
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use fatwormTypes
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create table test1(a int, c char(200))
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(5,'abcdefgihaosidngoiasndgoiansiodgjasdjg')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(4,'aksofkokqwojpoisdgnasdgn')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(3,'asjgojdojnposndfjopjdpfnje')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(2,'nojconjeornoiejrnoijeoinjojsonpjspofn')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(1,'kodsfjnoeoijnpoenopjsopdfnpodposjndfn')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(644,'bksodfjobjeoprjhpownpbonwpobnopwnbpowb')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(712,'mfsobpoejrnpomdsopnopdsfmnpomdsopfmnpo')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(844,'bkosfdkopjnopenopmsdopfmnpomewpnmpsomn')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(911,'odsfnmopdfpommnpomewponmpsdomfnpomsdpnd')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from test1 where c='odsfnmopdfpommnpomewponmpsdomfnpomsdpnd'
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from test1 order by c
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 11
-[Thu Jun 05 22:41:32 CST 2014] [Total Time] 15
-[Thu Jun 05 22:41:32 CST 2014] [Result] Correct
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: drop database fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: create database fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: use fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: create table test1(a int, c char(200))
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(5,'abcdefgihaosidngoiasndgoiansiodgjasdjg')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(4,'aksofkokqwojpoisdgnasdgn')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(3,'asjgojdojnposndfjopjdpfnje')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(2,'nojconjeornoiejrnoijeoinjojsonpjspofn')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(1,'kodsfjnoeoijnpoenopjsopdfnpodposjndfn')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(644,'bksodfjobjeoprjhpownpbonwpobnopwnbpowb')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(712,'mfsobpoejrnpomdsopnopdsfmnpomdsopfmnpo')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(844,'bkosfdkopjnopenopmsdopfmnpomewpnmpsomn')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(911,'odsfnmopdfpommnpomewponmpsdomfnpomsdpnd')
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: select * from test1 where c='odsfnmopdfpommnpomewponmpsdomfnpomsdpnd'
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: select * from test1 order by c
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:33 CST 2014] [Thread Time] 61
+[Fri Jun 13 23:59:33 CST 2014] [Total Time] 68
+[Fri Jun 13 23:59:33 CST 2014] [Result] Correct

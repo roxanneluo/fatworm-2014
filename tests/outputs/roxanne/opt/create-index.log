@@ -1,9 +1,14 @@
-[Thu Jun 05 22:04:17 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:04:17 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:04:17 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:04:17 CST 2014] [Thread0] Executing: use opt
-[Thu Jun 05 22:04:17 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:04:17 CST 2014] [Thread0] Executing: create index idxida on TTAA( id )
-[Thu Jun 05 22:04:17 CST 2014] [Thread Time] 1
-[Thu Jun 05 22:04:17 CST 2014] [Total Time] 1
-[Thu Jun 05 22:04:17 CST 2014] [Result] Correct
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] Executing: use opt
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] Executing: create index idxida on TTAA( id )
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] Executing: create unique index idxidb on TTBB( id )
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] Executing: create index idxidc on CTA( id )
+[Fri Jun 13 23:57:30 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:30 CST 2014] [Thread Time] 1
+[Fri Jun 13 23:57:30 CST 2014] [Total Time] 1
+[Fri Jun 13 23:57:30 CST 2014] [Result] Correct

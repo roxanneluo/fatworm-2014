@@ -1,0 +1,33 @@
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Executing: use ATIS
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Executing: select citycode, avg(groundfare) as avgfare from groundservice where groundfare<>0 group by citycode order by citycode ASC
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 1 is 1
+[Fri Jun 13 23:55:52 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:55:52 CST 2014] [Thread Time] 1
+[Fri Jun 13 23:55:52 CST 2014] [Total Time] 2
+[Fri Jun 13 23:55:52 CST 2014] [Result] Correct

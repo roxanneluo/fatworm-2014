@@ -19,3 +19,15 @@ roxanne	insert	Correct	1317
 date: Thu Jun 05 22:08:29 CST 2014
 roxanne	create	Correct	61
 roxanne	insert	Correct	1294
+date: Fri Jun 13 21:02:26 CST 2014
+roxanne	create	Correct	290
+roxanne	insert	Correct	2303
+date: Fri Jun 13 23:34:13 CST 2014
+roxanne	create	Correct	191
+roxanne	insert	Correct	2341
+date: Fri Jun 13 23:48:24 CST 2014
+roxanne	create	Correct	316
+roxanne	insert	Correct	2665
+date: Fri Jun 13 23:55:06 CST 2014
+roxanne	create	Correct	94
+roxanne	insert	Correct	2270

@@ -15,14 +15,15 @@ public class TablePlan extends Plan {
 	public String tableName;
 	public TablePlan(String name, Plan parent) throws SQLException {
 		super(parent);
-		this.tableName = name;
+		this.tableName = name.toLowerCase();
 		
 		DBDataManager data = DBDataManager.getInstance();
 		
-		Table table = data.currentDB.getTable(tableName);
+		Table table = data.getTable(tableName);
 		if (table == null)
 			throw new SQLException("table "+tableName+" does not exist");
 		
+//		schema = table.schema;
 		Schema tableSchema = table.schema; 
 		schema = new Schema();
 		schema.primaryKey = tableSchema.primaryKey;

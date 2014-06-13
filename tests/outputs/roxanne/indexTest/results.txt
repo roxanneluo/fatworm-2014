@@ -12,3 +12,25 @@ roxanne	testIndex_insertAfterCreateIndex	Wrong Answer	4
 roxanne	testIndex_range_select	Wrong Answer	474
 roxanne	testIndex_hugeIndex	Wrong Answer	3086
 roxanne	testIndex_string	Wrong Answer	321
+date: Fri Jun 13 21:03:49 CST 2014
+roxanne	testIndex_nonduplicated_select	Correct	878
+roxanne	testIndex_duplicated_select	Correct	2225
+roxanne	testIndex_insertAfterCreateIndex	Correct	185
+roxanne	testIndex_range_select	Correct	1445
+roxanne	testIndex_string	Correct	982
+date: Fri Jun 13 23:35:37 CST 2014
+roxanne	testIndex_nonduplicated_select	Correct	815
+roxanne	testIndex_duplicated_select	Correct	2288
+roxanne	testIndex_insertAfterCreateIndex	Correct	183
+roxanne	testIndex_range_select	Correct	1408
+roxanne	testIndex_string	Correct	1082
+date: Fri Jun 13 23:49:46 CST 2014
+roxanne	testIndex_nonduplicated_select	Wrong Answer	109
+roxanne	testIndex_duplicated_select	Wrong Answer	22
+roxanne	testIndex_insertAfterCreateIndex	Wrong Answer	22
+date: Fri Jun 13 23:56:29 CST 2014
+roxanne	testIndex_nonduplicated_select	Correct	694
+roxanne	testIndex_duplicated_select	Correct	2227
+roxanne	testIndex_insertAfterCreateIndex	Correct	162
+roxanne	testIndex_range_select	Correct	1404
+roxanne	testIndex_string	Correct	1163

@@ -2,6 +2,6 @@
 use ATIS
 ;
 
-@ORDERED_SELECT;
+@ORDERED_SELECT
 select airline.airlinename,aircraft.aircrafttype from aircraft,airline,flight where flight.aircraftcode=aircraft.aircraftcode and flight.airlinecode=airline.airlinecode order by airline.airlinename ASC, aircraft.aircrafttype ASC
 ;

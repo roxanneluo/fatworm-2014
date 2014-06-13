@@ -1,46 +1,46 @@
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: drop database nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create database nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: use nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create table InfraTest( k int, v int)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(1, 1)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(2, 2)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(3, 3)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(4, 4)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(5, 5)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(6, 5)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(7, 5)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(8, 5)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(9, 5)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(5, 5)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select avg(k) from InfraTest
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 6
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select sum(v) from InfraTest
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 6
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select sum(k) from InfraTest
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 6
-[Thu Jun 05 22:40:07 CST 2014] [Thread Time] 10
-[Thu Jun 05 22:40:07 CST 2014] [Total Time] 17
-[Thu Jun 05 22:40:07 CST 2014] [Result] Correct
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: drop database nano
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: create database nano
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: use nano
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: create table InfraTest( k int, v int)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(1, 1)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(2, 2)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(3, 3)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(4, 4)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(5, 5)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(6, 5)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(7, 5)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(8, 5)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(9, 5)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(5, 5)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: select avg(k) from InfraTest
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: select sum(v) from InfraTest
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: select sum(k) from InfraTest
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:56:27 CST 2014] [Thread Time] 53
+[Fri Jun 13 23:56:27 CST 2014] [Total Time] 60
+[Fri Jun 13 23:56:27 CST 2014] [Result] Correct

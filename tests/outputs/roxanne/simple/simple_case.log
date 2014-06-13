@@ -1,20 +1,20 @@
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use db
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table AAAAA ( a int )
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into aaaaa values ( 1 )
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into aaaaa values ( 2 )
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into aaaaa values ( 3 )
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from aaaaa where aaaaa.a = 1
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread Time] 2
-[Thu Jun 05 22:40:31 CST 2014] [Total Time] 4
-[Thu Jun 05 22:40:31 CST 2014] [Result] Correct
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: use db
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: create table AAAAA ( a int )
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into aaaaa values ( 1 )
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into aaaaa values ( 2 )
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into aaaaa values ( 3 )
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: select * from aaaaa where aaaaa.a = 1
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread Time] 11
+[Fri Jun 13 23:58:08 CST 2014] [Total Time] 14
+[Fri Jun 13 23:58:08 CST 2014] [Result] Correct

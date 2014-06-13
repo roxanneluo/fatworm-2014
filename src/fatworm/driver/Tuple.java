@@ -7,7 +7,7 @@ import fatworm.field.NULL;
 import fatworm.util.Util;
 
 public class Tuple implements Cloneable{
-	private ArrayList<Field> fields = new ArrayList<Field>();
+	public ArrayList<Field> fields = new ArrayList<Field>();
 	
 	public Tuple (ArrayList<Field> types) {
 		fields = (ArrayList<Field>)Util.cloneFieldList(types);

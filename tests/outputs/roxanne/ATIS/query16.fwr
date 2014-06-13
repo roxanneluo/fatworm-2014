@@ -1,0 +1,3 @@
+# select count(aircraftcode) as num, min(payload) as min ,max(payload) as max from aircraft where payload>0
+94	240	165710
+;

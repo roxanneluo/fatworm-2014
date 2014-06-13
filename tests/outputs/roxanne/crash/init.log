@@ -1,30 +1,30 @@
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Setting AUTO_COMMIT mode as true
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: drop database nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create database nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: use nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create table Salary (id INT, salary INT)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (1, 158235)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (2, 157999)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (3, 918231)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (4, 183952)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (5, 348583)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (6, 982923)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (7, 827374)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into Salary values (8, 987582)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread Time] 63
-[Thu Jun 05 22:40:07 CST 2014] [Total Time] 69
-[Thu Jun 05 22:40:07 CST 2014] [Result] Correct
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Setting AUTO_COMMIT mode as true
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: drop database nano
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: create database nano
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: use nano
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: create table Salary (id INT, salary INT)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: insert into Salary values (1, 158235)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: insert into Salary values (2, 157999)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: insert into Salary values (3, 918231)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: insert into Salary values (4, 183952)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: insert into Salary values (5, 348583)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: insert into Salary values (6, 982923)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: insert into Salary values (7, 827374)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: insert into Salary values (8, 987582)
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread Time] 142
+[Fri Jun 13 23:56:28 CST 2014] [Total Time] 205
+[Fri Jun 13 23:56:28 CST 2014] [Result] Correct

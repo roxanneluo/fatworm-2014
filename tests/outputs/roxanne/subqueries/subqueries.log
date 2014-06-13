@@ -1,141 +1,141 @@
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: use bank
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select distinct customer_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from borrower
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where customer_name in (select customer_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from depositor)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select distinct customer_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from borrower,loan
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where borrower.loan_number = loan.loan_number and
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] branch_name = 'Perryridge' and
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] customer_name in
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] (select customer_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from depositor, account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where depositor.account_number = account.account_number) and
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] branch_name in
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] (select branch_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from depositor, account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where depositor.account_number = account.account_number)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select distinct customer_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from borrower
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where customer_name in (select customer_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from depositor)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select branch_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from branch
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where assets > any (select assets
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from branch
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where branch_city = 'Brooklyn')
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select branch_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from branch
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where assets > all (select assets
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from branch
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where branch_city = 'Brooklyn')
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select branch_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] group by branch_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] having avg(balance) >= all(select avg(balance)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] group by branch_name)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select customer_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from borrower
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where exists (select *
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from depositor
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where depositor.customer_name = borrower.customer_name)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select distinct S.customer_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from depositor as S
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where not exists (select R.branch_name
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from depositor as T, account as R
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where T.account_number = R.account_number and S.customer_name = T.customer_name)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select branch_name, avg_balance
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from (select branch_name, avg(balance) as avg_balance
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] group by branch_name)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] as branch_avg
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where avg_balance > 1200
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select max(tot_balance)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from (select branch_name, sum(balance) as tot_balance
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] group by branch_name)
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] as branch_total
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 6
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: insert into account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] (select loan_number, branch_name, 200
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from loan
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where branch_name = 'Perryridge')
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: update account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] set balance = (select amount
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] from loan
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where branch_name = 'Mianus')
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] where balance >= 900
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Executing: select * from account
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 1 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:31 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:31 CST 2014] [Thread Time] 80
-[Thu Jun 05 22:41:31 CST 2014] [Total Time] 128
-[Thu Jun 05 22:41:31 CST 2014] [Result] Correct
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: use bank
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select distinct customer_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from borrower
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where customer_name in (select customer_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from depositor)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select distinct customer_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from borrower,loan
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where borrower.loan_number = loan.loan_number and
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] branch_name = 'Perryridge' and
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] customer_name in
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] (select customer_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from depositor, account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where depositor.account_number = account.account_number) and
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] branch_name in
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] (select branch_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from depositor, account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where depositor.account_number = account.account_number)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select distinct customer_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from borrower
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where customer_name in (select customer_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from depositor)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select branch_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from branch
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where assets > any (select assets
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from branch
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where branch_city = 'Brooklyn')
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select branch_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from branch
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where assets > all (select assets
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from branch
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where branch_city = 'Brooklyn')
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select branch_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] group by branch_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] having avg(balance) >= all(select avg(balance)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] group by branch_name)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select customer_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from borrower
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where exists (select *
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from depositor
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where depositor.customer_name = borrower.customer_name)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select distinct S.customer_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from depositor as S
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where not exists (select R.branch_name
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from depositor as T, account as R
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where T.account_number = R.account_number and S.customer_name = T.customer_name)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select branch_name, avg_balance
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from (select branch_name, avg(balance) as avg_balance
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] group by branch_name)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] as branch_avg
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where avg_balance > 1200
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select max(tot_balance)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from (select branch_name, sum(balance) as tot_balance
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] group by branch_name)
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] as branch_total
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: insert into account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] (select loan_number, branch_name, 200
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from loan
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where branch_name = 'Perryridge')
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: update account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] set balance = (select amount
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] from loan
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where branch_name = 'Mianus')
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] where balance >= 900
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Executing: select * from account
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:10 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:10 CST 2014] [Thread Time] 78
+[Fri Jun 13 23:59:10 CST 2014] [Total Time] 116
+[Fri Jun 13 23:59:10 CST 2014] [Result] Correct

@@ -28,7 +28,7 @@ public abstract class Field extends Expr implements Serializable, Cloneable, Com
 			return new BOOL(x);
 		case java.sql.Types.DECIMAL:
 			DECIMAL d = (DECIMAL)type;
-			return new DECIMAL(x, d.v.precision()-d.v.scale(),d.v.scale());
+			return new DECIMAL(x, d.precision);
 		case java.sql.Types.TIMESTAMP:
 			return new TIMESTAMP(x);
 		case java.sql.Types.VARCHAR:
@@ -52,6 +52,17 @@ public abstract class Field extends Expr implements Serializable, Cloneable, Com
 		}
 		return null;
 	}
+	
+//	public abstract  Field bytes2Field(byte[] bytes);
+	public abstract  Field bytes2Field(byte[] bytes, int start, int len);
+	public abstract int maxSize();	// max number of bytes needed
+	public int size() {
+		// number of bytes needed for this data
+		// variable length should override this
+		return maxSize();
+	}
+	public abstract byte[] toBytes();
+	public abstract boolean fix();
 	public abstract Object getVal();
 	public abstract String typeString();
 	public abstract String typeValString();

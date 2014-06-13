@@ -1,11 +1,18 @@
 package fatworm.driver;
 
+import java.io.Serializable;
+
 import fatworm.absyn.Expr;
 import fatworm.field.Field;
 import fatworm.field.INT;
+import fatworm.field.NULL;
 import fatworm.field.TIMESTAMP;
 
-public class Attribute extends Expr implements Cloneable{
+public class Attribute extends Expr implements Cloneable, Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7764911407031193184L;
 	public String colName;
 	public Integer idx;	// the idx th attribute in the table.
 	// here I'm too lazy to build a class for each type,
@@ -39,7 +46,7 @@ public class Attribute extends Expr implements Cloneable{
 		} 
 		if (type instanceof TIMESTAMP)
 			return new TIMESTAMP();
-		return null;
+		return NULL.getInstance();
 	}
 	
 	public String toString() {

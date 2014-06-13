@@ -1,134 +1,134 @@
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: drop database nano
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: create database nano
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: use nano
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: create table Classes(
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] class varchar(20),
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] type varchar(20),
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] country varchar(20),
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] numGuns int,
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] bore int,
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] displacement int)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Classes values('Bismarck','battleship','Germany',8,15,42000)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Classes values('Iowa','battleship','USA',9,16,46000)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Classes values('Kongo','battlecruiser','Japan',8,14,32000)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Classes values('North Carolina','battleship','USA',9,16,37000)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Classes values('Renown','battlecruiser','Gt. Britain',6,15,32000)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Classes values('Revenge','battleship','Gt. Britain',8,15,29000)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Classes values('Tennessee','battleship','USA',12,14,32000)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Classes values('Yamato','battleship','Japan',9,18,65000)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: create table Ships(
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] name varchar(20),
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] class varchar(20),
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] launched int)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('California','Tennessee',1921)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Haruna','Kongo',1915)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Hiei','Kongo',1914)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Iowa','Iowa',1943)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Kirishima','Kongo',1915)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Kongo','Kongo',1913)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Missouri','Iowa',1944)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Musashi','Yamato',1942)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('New Jersey','Iowa',1943)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('North Carolian','North Carolina',1941)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Ramillies','Revenge',1917)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Renown','Renown',1916)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Repulse','Renown',1916)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Resolution','Revenge',1916)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Revenge','Revenge',1916)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Royal Oak','Revenge',1916)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Royal Sovereign','Revenge',1916)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Tennessee','Tennessee',1920)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Washington','North Carolina',1941)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Wisconsin','Iowa',1944)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Ships values('Yamato','Yamato',1941)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: create table Battles(
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] name varchar(20),
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] date datetime)
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Battles values('North Atlantic','1941-05-24 00:00:00')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Battles values('Guadalcanal','1942-11-15 00:00:00')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Battles values('North Cape','1943-12-26 00:00:00')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Battles values('Surigao Straint','1944-10-25 00:00:00')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: create table Outcomes(
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] ship varchar(20),
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] battle varchar(20),
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] result varchar(10))
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Bismarck','North Atlantic','sunk')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('California','Surigao Strait','ok')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Duke of York','North Cape','ok')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Fuso','Surigao Strait','sunk')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Hood','North Atlantic','sunk')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('King George V','North Atlantic','ok')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Kirishima','Guadalcanal','sunk')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Prince of Wales','North Atlantic','damaged')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Prince of Wales','Guadalcanal','ok')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Prince of Wales','North Cape','sunk')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Rodney','North Atlantic','ok')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Scharnhorst','North Cape','sunk')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('South Dakota','Guadalcanal','damaged')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Tennessee','Surigao Strait','ok')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Washington','Guadalcanal','ok')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('West Virginia','Surigao Strait','ok')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] Executing: insert into Outcomes values('Yamashiro','Surigao Strait','sunk')
-[Thu Jun 05 22:40:20 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:20 CST 2014] [Thread Time] 120
-[Thu Jun 05 22:40:20 CST 2014] [Total Time] 137
-[Thu Jun 05 22:40:20 CST 2014] [Result] Correct
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: drop database nano
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: create database nano
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: use nano
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: create table Classes(
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] class varchar(20),
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] type varchar(20),
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] country varchar(20),
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] numGuns int,
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] bore int,
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] displacement int)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Classes values('Bismarck','battleship','Germany',8,15,42000)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Classes values('Iowa','battleship','USA',9,16,46000)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Classes values('Kongo','battlecruiser','Japan',8,14,32000)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Classes values('North Carolina','battleship','USA',9,16,37000)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Classes values('Renown','battlecruiser','Gt. Britain',6,15,32000)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Classes values('Revenge','battleship','Gt. Britain',8,15,29000)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Classes values('Tennessee','battleship','USA',12,14,32000)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Classes values('Yamato','battleship','Japan',9,18,65000)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: create table Ships(
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] name varchar(20),
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] class varchar(20),
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] launched int)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('California','Tennessee',1921)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Haruna','Kongo',1915)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Hiei','Kongo',1914)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Iowa','Iowa',1943)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Kirishima','Kongo',1915)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Kongo','Kongo',1913)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Missouri','Iowa',1944)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Musashi','Yamato',1942)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('New Jersey','Iowa',1943)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('North Carolian','North Carolina',1941)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Ramillies','Revenge',1917)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Renown','Renown',1916)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Repulse','Renown',1916)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Resolution','Revenge',1916)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Revenge','Revenge',1916)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Royal Oak','Revenge',1916)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Royal Sovereign','Revenge',1916)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Tennessee','Tennessee',1920)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Washington','North Carolina',1941)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Wisconsin','Iowa',1944)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Ships values('Yamato','Yamato',1941)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: create table Battles(
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] name varchar(20),
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] date datetime)
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Battles values('North Atlantic','1941-05-24 00:00:00')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Battles values('Guadalcanal','1942-11-15 00:00:00')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Battles values('North Cape','1943-12-26 00:00:00')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Battles values('Surigao Straint','1944-10-25 00:00:00')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: create table Outcomes(
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] ship varchar(20),
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] battle varchar(20),
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] result varchar(10))
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Bismarck','North Atlantic','sunk')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('California','Surigao Strait','ok')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Duke of York','North Cape','ok')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Fuso','Surigao Strait','sunk')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Hood','North Atlantic','sunk')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('King George V','North Atlantic','ok')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Kirishima','Guadalcanal','sunk')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Prince of Wales','North Atlantic','damaged')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Prince of Wales','Guadalcanal','ok')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Prince of Wales','North Cape','sunk')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Rodney','North Atlantic','ok')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Scharnhorst','North Cape','sunk')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('South Dakota','Guadalcanal','damaged')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Tennessee','Surigao Strait','ok')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Washington','Guadalcanal','ok')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('West Virginia','Surigao Strait','ok')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] Executing: insert into Outcomes values('Yamashiro','Surigao Strait','sunk')
+[Fri Jun 13 23:57:56 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:56 CST 2014] [Thread Time] 246
+[Fri Jun 13 23:57:56 CST 2014] [Total Time] 319
+[Fri Jun 13 23:57:56 CST 2014] [Result] Correct

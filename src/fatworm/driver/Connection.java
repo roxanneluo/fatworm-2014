@@ -23,13 +23,16 @@ import java.util.Properties;
 public class Connection implements java.sql.Connection{
 
 	public Connection(String url) {
-		String file = url.substring("jdbc:fatworm:/".length())+File.separator+"fatworm";
+		String path = url.substring("jdbc:fatworm:/".length())+File.separator;
+		DBDataManager.path = path;
 		//TODO
-//		try {
-////			DBDataManager.getInstance().open(file);
-//		} catch (ClassNotFoundException e) {
-//			e.printStackTrace();
-//		} catch (IOException e) {
+		try {
+			DBDataManager.getInstance().inputMeta();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 //			try {
 //				System.out.println("File not accessible, falling back to default file /tmp/meow.");
 ////				DBDataManager.getInstance().open("/tmp/meow");
@@ -38,14 +41,14 @@ public class Connection implements java.sql.Connection{
 //			} catch (IOException e1) {
 //				e1.printStackTrace();
 //			}
-//		}
+		}
 	}
 	
 
 	@Override
 	public void close() throws SQLException {
 		try {
-//			DBDataManager.getInstance().close();
+			DBDataManager.getInstance();
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}

@@ -1,47 +1,47 @@
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: drop database ts
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create database ts
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use ts
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create table tsa(
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] id int,
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] ts timestamp
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] )
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create table tsb(
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] id int,
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] ts timestamp
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] )
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (1)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (2)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (3)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (4)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (5)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (6)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (7)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (8)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (9)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into tsb (id) values (10)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select count(id) from tsa
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] where ts <= ALL (select ts from tsb)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 71
-[Thu Jun 05 22:41:32 CST 2014] [Total Time] 95
-[Thu Jun 05 22:41:32 CST 2014] [Result] Correct
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: drop database ts
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: create database ts
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: use ts
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: create table tsa(
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] id int,
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] ts timestamp
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] )
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: create table tsb(
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] id int,
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] ts timestamp
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] )
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (1)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (2)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (3)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (4)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (5)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (6)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (7)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (8)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsa (id) values (9)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: insert into tsb (id) values (10)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Executing: select count(id) from tsa
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] where ts <= ALL (select ts from tsb)
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:32 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:32 CST 2014] [Thread Time] 350
+[Fri Jun 13 23:59:32 CST 2014] [Total Time] 488
+[Fri Jun 13 23:59:32 CST 2014] [Result] Correct

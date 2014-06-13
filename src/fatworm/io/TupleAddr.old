@@ -1,0 +1,8 @@
+package fatworm.io;
+
+import fatworm.driver.Tuple;
+
+public class TupleAddr {
+	Tuple t;
+	long nextAddr;
+}

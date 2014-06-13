@@ -5,29 +5,37 @@ import java.util.LinkedList;
 
 import fatworm.absyn.Column;
 import fatworm.absyn.Expr;
+import fatworm.driver.Schema;
 import fatworm.driver.Tuple;
 import fatworm.util.ExprManager;
 
-public class UpdateScan extends UScan {
+public class UpdateScan extends Scan {
 	public LinkedList<Column> cols;
 	public LinkedList<Expr> vals;
 	public Expr cond;
-	public UpdateScan(Scan scan, Expr cond, LinkedList<Column> cols, LinkedList<Expr> vals) {
-		super(scan);
+	public TableScan scan;
+	public Schema schema;
+	
+	public UpdateScan(TableScan scan, Expr cond, LinkedList<Column> cols, LinkedList<Expr> vals, Schema schema) {
+		this.scan = scan;
+		this.scan.update = true;
 		this.cond = cond;
 		this.cols = cols;
 		this.vals = vals;
+		this.schema = schema;
 	}
 	public boolean update() throws SQLException {
 		Tuple t;
 		while(scan.hasNext()) {
 			t = scan.next();
-			if (ExprManager.toFinalBool(ExprManager.eval(cond, t, null))) {
+			if (cond == null || ExprManager.toFinalBool(ExprManager.eval(cond, t, null))) {
+//				System.out.println(t);
 				Column col; Expr val;
 				for (int i = 0; i < cols.size(); ++i) {
 					col = cols.get(i);
 					val = vals.get(i);
-					t.set(col.idx, ExprManager.eval(val, t, null));
+					t.set(col.idx, schema.types.get(col.idx).toMe(ExprManager.eval(val, t, null)));
+//					System.out.println(t+" after eval "+val);
 				}
 				if (!((TableScan)scan).update(t)) //FIXME: remove this if not need
 					return false;
@@ -51,6 +59,10 @@ public class UpdateScan extends UScan {
 	public void restart() throws SQLException {
 		// TODO Auto-generated method stub
 		
+	}
+	@Override
+	public void close() throws SQLException {
+		scan.close();
 	}
 
 }

@@ -2,22 +2,21 @@
 3	AAA
 ;
 # select * from auto
-1	BBB
 3	AAA
+4	BBB
 ;
 # select * from auto where id = 4
-# EMPTY
+4	BBB
 ;
 # select * from auto where id = 5
-# EMPTY
+5	CCC
 ;
 # select * from auto where id = 6
-# EMPTY
+6	DDD
 ;
 # select * from auto where id = 1
-1	BBB
 1	EEE
 ;
 # select * from auto where id = 7
-# EMPTY
+7	FFF
 ;

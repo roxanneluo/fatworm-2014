@@ -74,8 +74,7 @@ public class ResultSet implements java.sql.ResultSet{
 
 	@Override
 	public void close() throws SQLException {
-		// TODO Auto-generated method stub
-		
+		scan.close();
 	}
 
 	@Override

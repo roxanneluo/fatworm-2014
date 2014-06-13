@@ -1,0 +1,15 @@
+# select * from IndexTest where k=100
+# EMPTY
+;
+# select * from IndexTest where k=99932
+99932	99932
+;
+# select * from IndexTest where k=90000
+90000	90000
+;
+# select * from IndexTest where k=569
+569	569
+;
+# select * from IndexTest where k=81
+81	81
+;

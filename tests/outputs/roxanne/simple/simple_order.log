@@ -1,91 +1,91 @@
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: use db
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: create table testorder (
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] a int,
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] b varchar(200)
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] )
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (10, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (9, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (8, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (4, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (6, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (2, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (3, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (1, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (7, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (5, 'b')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (10, 'a')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: insert into testorder values (10, 'c')
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from testorder
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Executing: select * from testorder order by a DESC, b
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:31 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:40:31 CST 2014] [Thread Time] 10
-[Thu Jun 05 22:40:31 CST 2014] [Total Time] 17
-[Thu Jun 05 22:40:31 CST 2014] [Result] Correct
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: use db
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: create table testorder (
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] a int,
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] b varchar(200)
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] )
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (10, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (9, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (8, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (4, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (6, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (2, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (3, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (1, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (7, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (5, 'b')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (10, 'a')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: insert into testorder values (10, 'c')
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: select * from testorder
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Executing: select * from testorder order by a DESC, b
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:58:08 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:58:08 CST 2014] [Thread Time] 24
+[Fri Jun 13 23:58:08 CST 2014] [Total Time] 30
+[Fri Jun 13 23:58:08 CST 2014] [Result] Correct

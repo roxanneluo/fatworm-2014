@@ -1,36 +1,36 @@
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: drop database nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create database nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: use nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: create table InfraTest( k int, v int)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(1, 1)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(2, 2)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(2, 3)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(3, 4)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: insert into InfraTest values(3, 5)
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select count(k) from InfraTest
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select count(v) from InfraTest where k=2
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select count(v) from InfraTest where v=1
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:07 CST 2014] [Thread Time] 8
-[Thu Jun 05 22:40:07 CST 2014] [Total Time] 14
-[Thu Jun 05 22:40:07 CST 2014] [Result] Correct
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: drop database nano
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: create database nano
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: use nano
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: create table InfraTest( k int, v int)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(1, 1)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(2, 2)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(2, 3)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(3, 4)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: insert into InfraTest values(3, 5)
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: select count(k) from InfraTest
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: select count(v) from InfraTest where k=2
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Executing: select count(v) from InfraTest where v=1
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:27 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:27 CST 2014] [Thread Time] 30
+[Fri Jun 13 23:56:27 CST 2014] [Total Time] 36
+[Fri Jun 13 23:56:27 CST 2014] [Result] Correct

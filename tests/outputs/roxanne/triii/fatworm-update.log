@@ -1,30 +1,87 @@
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use acm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: update student set malesex = false where name = 'JiangXiao'
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select id, name, age, malesex from student
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 4 is 16
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 4 is 16
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 4 is 16
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 3 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 4 is 16
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: update student set id = id + 1000, id = id + id, id = id / 2 - 1000
-[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 4
-[Thu Jun 05 22:41:32 CST 2014] [Total Time] 5
-[Thu Jun 05 22:41:32 CST 2014] [Result] Wrong Answer
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: use acm
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: update student set malesex = false where name = 'JiangXiao'
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: select id, name, age, malesex from student
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: update student set id = id + 1000, id = id + id, id = id / 2 - 1000
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: select id, name, age, malesex from student
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: update student set age = id, id = age, age = 250 where id > all(
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] select student.id from fatworm where student.id = fatworm.id and fatworm.groupid = 'C')
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: select id, name, age, malesex from student
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: delete from student where deathday > '1989-02-21 0:0:0'
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: select id, name, age, malesex from student
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 4 is 16
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: insert into A (select * from A)
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Executing: select count(id) from A
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:31 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:31 CST 2014] [Thread Time] 13
+[Fri Jun 13 23:59:31 CST 2014] [Total Time] 24
+[Fri Jun 13 23:59:31 CST 2014] [Result] Correct

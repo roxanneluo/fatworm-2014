@@ -40,6 +40,7 @@ public class ProductScan extends Scan{
 	}
 	@Override
 	public boolean hasNext() throws SQLException {
+		if (curLeft == null) return false;
 		if (right.hasNext()) return true;
 		if (left.hasNext()) return true;
 		return false;
@@ -59,5 +60,11 @@ public class ProductScan extends Scan{
 	public Tuple next(Tuple parent) throws SQLException {
 		return next();
 	}
+	@Override
+	public void close() throws SQLException {
+		left.close();
+		right.close();
+	}
+	
 	
 }

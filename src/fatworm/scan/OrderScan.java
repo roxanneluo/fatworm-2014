@@ -42,7 +42,7 @@ public class OrderScan extends UScan{
 		} else {
 			sortedTable = new TableScan(new Table("temp", null));
 			while(scan.hasNext(parent)) {
-				sortedTable.insert(scan.next(parent));
+				sortedTable.insert(scan.next(parent), true);
 			}
 //			System.out.println(sortedTable);
 			sortedTable.sort(by, asc);

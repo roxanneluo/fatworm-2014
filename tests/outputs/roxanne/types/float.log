@@ -1,49 +1,49 @@
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: drop database fatwormTypes
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create database fatwormTypes
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use fatwormTypes
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create table test1(a int, b float)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(1,10000.3)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(2,92385.2)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(3,83745.3)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(4,82348.1)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(5,23713.5)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(6,48241.7)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(7,48234.4)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(8,81824.5)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into test1 values(9,98923.1)
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select sum(b),avg(b) from test1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 6
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 6
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select a from test1 order by b
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 9
-[Thu Jun 05 22:41:32 CST 2014] [Total Time] 15
-[Thu Jun 05 22:41:32 CST 2014] [Result] Correct
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: drop database fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: create database fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: use fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: create table test1(a int, b float)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(1,10000.3)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(2,92385.2)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(3,83745.3)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(4,82348.1)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(5,23713.5)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(6,48241.7)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(7,48234.4)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(8,81824.5)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(9,98923.1)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: select sum(b),avg(b) from test1
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: select a from test1 order by b
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread Time] 101
+[Fri Jun 13 23:59:33 CST 2014] [Total Time] 108
+[Fri Jun 13 23:59:33 CST 2014] [Result] Correct

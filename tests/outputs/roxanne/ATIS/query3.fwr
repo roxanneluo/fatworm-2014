@@ -1,0 +1,9 @@
+# select monthname.monthname,dayname.dayname from monthname,dayname where monthname.monthnumber=dayname.daycode order by monthname.monthname ASC
+APRIL	THURSDAY
+FEBRUARY	TUESDAY
+JANUARY	MONDAY
+JULY	SUNDAY
+JUNE	SATURDAY
+MARCH	WEDNESDAY
+MAY	FRIDAY
+;

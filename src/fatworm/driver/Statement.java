@@ -19,44 +19,49 @@ public class Statement implements java.sql.Statement {
 	@Override
 	public boolean execute(String cmd) throws SQLException {
 		Plan plan = PlanMaker.makePlan(cmd);
-		if (plan instanceof DBPlan) {
+		if (plan == null) return true;
+		else if (plan instanceof DBPlan) {
 			return execute((DBPlan)plan);
 		} else {
 			DBDataManager data = DBDataManager.getInstance();
 //			System.out.println(data);
-			Database db = null;
-			if (data.currentDB == null) {
+			if (data.curDBName == null) {
 				System.out.println("[ERR] currentDB is null");
 				return false;
-			} else db = data.currentDB;
+			} 
 			
 			
 			if(plan instanceof DropTablePlan) {
 				for(String table:((DropTablePlan)plan).tables) {
-					if (!db.dropTable(table))
+					if (!data.dropTable(table.toLowerCase()))
 						return false;
 				}
+				data.outputMeta();
 				return true;
 			} else if (plan instanceof CreateTablePlan) {
 				CreateTablePlan create = (CreateTablePlan) plan;
 				Table table= new Table(create.tableName, create.schema);
-				return db.createTable(table);
+				return data.createTable(table);
 			} else if (plan instanceof InsertValuePlan) {
 				InsertValuePlan insert = (InsertValuePlan) plan;
-				TableScan scan = (TableScan) ScanMaker.plan2Scan(insert.table);
-				return scan.insert(insert.value);
+				TableScan scan = (TableScan) ScanMaker.transTable(insert.table, true, true);
+				boolean ans = scan.insert(insert.value);
+				scan.close();
+				return ans;
 			} else if (plan instanceof InsertQueryPlan) {
-				return execute((InsertQueryPlan)plan, db);
+				return execute((InsertQueryPlan)plan);
 			} else if (plan instanceof DeletePlan){
 				DeleteScan scan = (DeleteScan)ScanMaker.plan2Scan(plan);
-				return scan.delete();
+				boolean ans = scan.delete();
+				scan.close();
+				return ans;
 			} else if (plan instanceof UpdatePlan) {
 				return execute((UpdatePlan)plan);
 			} else {
 				rs = new ResultSet();
 				rs.scan = ScanMaker.plan2Scan(plan);
 //				System.out.println(rs.scan);
-				System.out.println(plan);
+//				System.out.println(plan);
 				rs.schema = plan.schema;
 				return true;
 			}
@@ -64,11 +69,14 @@ public class Statement implements java.sql.Statement {
 	}
 	private boolean execute(UpdatePlan plan) throws SQLException {
 		UpdateScan scan = (UpdateScan) ScanMaker.plan2Scan(plan);
-		return scan.update();
+		boolean ans = scan.update();
+		scan.close();
+		return ans;
 	}
-	private boolean execute(InsertQueryPlan plan, Database db) throws SQLException {
+	private boolean execute(InsertQueryPlan plan) throws SQLException {
 		InsertQueryPlan insert = (InsertQueryPlan)plan;
-		Table table = db.getTable(insert.tableName);
+		Table table = DBDataManager.getInstance().getTable(insert.tableName);
+		TableScan toInsert = new TableScan(table, true, true);
 		if (table == null)
 			throw new SQLException("[table]"+insert.tableName+"does not exist");
 		
@@ -80,17 +88,23 @@ public class Statement implements java.sql.Statement {
 		/*create a copy of the table to insert, since it could probably using one of the table to be
 		 * inserted
 		 */
-		TableScan tempScan = new TableScan(new Table("temp",insert.plan.schema));
+//		TableScan tempScan = new TableScan(new Table("temp",insert.plan.schema));
+		Tuple t;
 		while(subQuery.hasNext()) {
-			if (!tempScan.insert(subQuery.next())) 
+			t = subQuery.next();
+//			if (!tempScan.insert(t)) 
+//				return false;
+			if (!toInsert.insert(t))
 				return false;
 		}
-		tempScan.restart();
-		/*really insert into desired table now*/
-		while (tempScan.hasNext()) {
-			if (!table.insert(tempScan.next()))
-				return false;
-		}
+//		tempScan.restart();
+//		/*really insert into desired table now*/
+//		while (tempScan.hasNext()) {
+//			if (!table.insert(tempScan.next()))
+//				return false;
+//		}
+		toInsert.close();
+		subQuery.close();
 		return true;
 	}
 	private boolean execute(DBPlan plan) {

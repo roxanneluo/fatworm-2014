@@ -1,58 +1,64 @@
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use acm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create table auto(
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] id int auto_increment,
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] name varchar(20),
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] primary key(id))
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into auto values (3, 'AAA')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from auto where id = 3
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into auto values (null, 'BBB')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from auto
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from auto where id = 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into auto values (default, 'CCC')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from auto where id = 5
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into auto values (default, 'DDD')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from auto where id = 6
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into auto values (1, 'EEE')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from auto where id = 1
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Type 2 is 12
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: insert into auto values (null, 'FFF')
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: select * from auto where id = 7
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: drop table auto
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 5
-[Thu Jun 05 22:41:32 CST 2014] [Total Time] 19
-[Thu Jun 05 22:41:32 CST 2014] [Result] Wrong Answer
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: use acm
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: create table auto(
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] id int auto_increment,
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] name varchar(20),
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] primary key(id))
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: insert into auto values (3, 'AAA')
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select * from auto where id = 3
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: insert into auto values (null, 'BBB')
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select * from auto
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select * from auto where id = 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: insert into auto values (default, 'CCC')
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select * from auto where id = 5
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: insert into auto values (default, 'DDD')
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select * from auto where id = 6
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: insert into auto values (1, 'EEE')
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select * from auto where id = 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: insert into auto values (null, 'FFF')
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select * from auto where id = 7
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: drop table auto
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread Time] 36
+[Fri Jun 13 23:59:21 CST 2014] [Total Time] 47
+[Fri Jun 13 23:59:21 CST 2014] [Result] Correct

@@ -1,0 +1,1 @@
+# select DISTINCT flightnumber,rangemiles,fareclass FROM aircraft,flight,flightclass WHERE flight.flightcode=flightclass.flightcode AND flight.aircraftcode=aircraft.aircraftcode AND rangemiles<>0 AND (stops=1 OR stops=2) order by flightnumber,rangemiles,fareclass

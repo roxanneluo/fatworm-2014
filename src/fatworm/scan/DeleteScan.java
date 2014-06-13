@@ -51,4 +51,12 @@ public class DeleteScan extends Scan{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public void close() throws SQLException {
+		scan.close();
+		
+	}
+
+	
 }

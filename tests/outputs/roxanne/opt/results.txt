@@ -4,3 +4,24 @@ roxanne	prepare-data	Correct	160
 roxanne	create-index	Correct	1
 roxanne	index-select	Correct	34
 roxanne	index-update	Correct	6
+date: Fri Jun 13 21:04:25 CST 2014
+roxanne	opt-create	Correct	5293
+roxanne	prepare-data	Correct	106
+roxanne	create-index	Correct	1
+roxanne	index-select	Correct	47
+roxanne	subquery-index-join	Correct	7454
+roxanne	index-update	Correct	7
+date: Fri Jun 13 23:36:17 CST 2014
+roxanne	opt-create	Correct	5452
+roxanne	prepare-data	Correct	113
+roxanne	create-index	Correct	2
+roxanne	index-select	Correct	58
+roxanne	subquery-index-join	Correct	5987
+roxanne	index-update	Correct	8
+date: Fri Jun 13 23:57:04 CST 2014
+roxanne	opt-create	Correct	4849
+roxanne	prepare-data	Correct	99
+roxanne	create-index	Correct	1
+roxanne	index-select	Correct	47
+roxanne	subquery-index-join	Correct	5968
+roxanne	index-update	Correct	8

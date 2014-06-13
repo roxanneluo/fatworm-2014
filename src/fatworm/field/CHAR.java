@@ -76,4 +76,32 @@ public class CHAR extends Field{
 	public String getVal() {
 		return v;
 	}
+
+	@Override
+	public Field bytes2Field(byte[] bytes, int start, int l) {
+		return new CHAR(new String(bytes, start,l), len);
+	}
+
+	@Override
+	public int maxSize() {
+		return len;
+	}
+
+	
+
+	@Override
+	public byte[] toBytes() {
+		byte[] b = v.getBytes();
+		if (b.length == len)
+			return b;
+		byte[] bytes = new byte[len];
+		for (int i = 0; i < b.length; ++i)
+			bytes[i] = b[i];
+		return bytes;
+	}
+
+	@Override
+	public boolean fix() {
+		return true;
+	}
 }

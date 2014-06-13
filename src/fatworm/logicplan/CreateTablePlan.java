@@ -7,7 +7,7 @@ public class CreateTablePlan extends Plan {
 	public Schema schema;
 	
 	public CreateTablePlan(String tableName, Schema schema) {
-		this.tableName = tableName;
+		this.tableName = tableName.toLowerCase();
 		this.schema = schema;
 	}
 	

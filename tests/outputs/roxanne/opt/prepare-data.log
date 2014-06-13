@@ -1,56 +1,56 @@
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: use opt
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: create table TTAA(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] id  int,
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] val int
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: create table TTAD(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] id  int,
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] val int
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: create table TTBB(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] id  int,
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] val int
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: create table TTBD(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] id  int,
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] val int
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: insert into TTAA(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] select * from TTA
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: insert into TTAA(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] select id, val+10 from TTT
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: insert into TTBB(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] select * from TTB
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: insert into TTAD(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] select * from TTA
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: insert into TTBD(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] select * from TTB
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: insert into TTAD(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] select id, val+10 from TTT
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] Executing: insert into TTBD(
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] select id, val+11 from TTT
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] )
-[Thu Jun 05 22:03:57 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:03:57 CST 2014] [Thread Time] 158
-[Thu Jun 05 22:03:57 CST 2014] [Total Time] 160
-[Thu Jun 05 22:03:57 CST 2014] [Result] Correct
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: use opt
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: create table TTAA(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] id  int,
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] val int
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: create table TTAD(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] id  int,
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] val int
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: create table TTBB(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] id  int,
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] val int
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: create table TTBD(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] id  int,
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] val int
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: insert into TTAA(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] select * from TTA
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: insert into TTAA(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] select id, val+10 from TTT
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: insert into TTBB(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] select * from TTB
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: insert into TTAD(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] select * from TTA
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: insert into TTBD(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] select * from TTB
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: insert into TTAD(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] select id, val+10 from TTT
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] Executing: insert into TTBD(
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] select id, val+11 from TTT
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] )
+[Fri Jun 13 23:57:10 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:57:10 CST 2014] [Thread Time] 99
+[Fri Jun 13 23:57:10 CST 2014] [Total Time] 99
+[Fri Jun 13 23:57:10 CST 2014] [Result] Correct

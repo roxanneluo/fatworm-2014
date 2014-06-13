@@ -17,6 +17,7 @@ import org.antlr.runtime.tree.Tree;
 import fatworm.absyn.AnyAll;
 import fatworm.absyn.BExpr;
 import fatworm.absyn.BExpr.BopType;
+import fatworm.absyn.BQExpr;
 import fatworm.absyn.Column;
 import fatworm.absyn.Default;
 import fatworm.absyn.Exists;
@@ -88,7 +89,7 @@ public class PlanMaker {
 		case DROP_TABLE:
 			DropTablePlan drop = new DropTablePlan();
 			for (int i = 0; i < t.getChildCount(); ++i) {
-				drop.tables.add(t.getChild(i).getText());
+				drop.tables.add(t.getChild(i).getText().toLowerCase());
 			}
 			return drop;
 		case CREATE_TABLE:
@@ -172,11 +173,18 @@ public class PlanMaker {
 				Field type = null;
 				for (int i = 0; i < value.getChildCount(); ++i) {
 					attr = (CommonTree) value.getChild(i);
-					if (attr.getType() == DEFAULT) {
-						tuple.add(table.schema.attrNames.get(i).getDefault());
+					if (attr.getType() == DEFAULT || attr.getType() == NULL) {
+						Field f= table.schema.attrNames.get(i).getDefault();
+//						System.out.println(f);
+						tuple.add(f);
 					} else {
 						type = table.schema.types.get(i);
-						tuple.add(ExprManager.eval(transExpr(attr, null, type),null));
+						Field f = ExprManager.eval(transExpr(attr, null, type),null);
+						tuple.add(f);
+						Attribute a = table.schema.attrNames.get(i);
+						if (a.autoInc) {
+							a.cnt.v = Math.max(((INT)f).v,a.cnt.v);
+						}
 //						tuple.add(Field.getField(type, attr.getText()));
 					}
 				}
@@ -215,7 +223,7 @@ public class PlanMaker {
 			int headLen = Integer.parseInt(t.getChild(0).getText());
 			int tailLen = t.getChildCount()>1? Integer.parseInt(t.getChild(1).getText()):0;
 			System.out.println("head:"+headLen+", tailLen:"+tailLen);
-			DECIMAL d = new DECIMAL(headLen+tailLen, tailLen);
+			DECIMAL d = new DECIMAL(headLen+tailLen);
 			System.out.println(d.typeValString());
 			return d;
 		case TIMESTAMP:
@@ -230,7 +238,7 @@ public class PlanMaker {
 	
 	private static Attribute transAttribute(CommonTree t, int idx) throws SQLException {
 		Attribute attr = new Attribute();
-		attr.colName = t.getChild(0).getText();
+		attr.colName = t.getChild(0).getText().toLowerCase();
 		attr.type = getType((CommonTree)t.getChild(1));
 		attr.idx = idx;
 		CommonTree child = null;
@@ -302,7 +310,7 @@ public class PlanMaker {
 				}
 				break;
 			case AS:
-				RenameExpr rename = (RenameExpr)transExpr(child);
+				RenameExpr rename = (RenameExpr)transExpr(child, needAgg, null);
 				attributes.add(rename);
 				renames.add(rename);
 				break;
@@ -342,6 +350,9 @@ public class PlanMaker {
 			// check attributes == groupBy
 			
 			if (groupBy.isEmpty()) groupBy = null;
+			else {
+				renameBack(groupBy, renames);
+			}
 			ans = new AggPlan(ans,attributes, groupBy);
 			if (having != null) {
 				if (!renames.isEmpty())
@@ -354,6 +365,21 @@ public class PlanMaker {
 			ans = new OrderPlan(ans, orderBy, asc);
 		if (distinct) ans = new DistinctPlan(ans, !orderBy.isEmpty());
 		return ans;
+	}
+	
+	private static void renameBack(LinkedList<Column> group, LinkedList<RenameExpr> renames) {
+		Column col;
+		RenameExpr recol;
+		for (int i = 0; i < group.size(); ++i) {
+			col = group.get(i);
+			for (int j = 0; j < renames.size(); ++j) {
+				recol = renames.get(j);
+				if (recol.expr instanceof Column && recol.alias.equals(col.colName)) {
+					col.colName = ((Column)recol.expr).colName;
+					break;
+				}
+			}
+		}
 	}
 	
 	private static boolean extraColInOrderBy(ArrayList<Column> orderBy, LinkedList<Expr> attributes) {
@@ -381,7 +407,9 @@ public class PlanMaker {
 			}
 			return e;
 		} 
-		
+		if (e instanceof Field) {
+			return e;
+		}
 		if (e instanceof BExpr) {
 			BExpr be = (BExpr)e;
 			be.left = replaceByAlias(be.left, renames);
@@ -393,6 +421,20 @@ public class PlanMaker {
 			((UExpr)e).expr = replaceByAlias(((UExpr)e).expr, renames);
 			return e;
 		}
+		
+		if (e instanceof AnyAll) {
+			((AnyAll)e).col = (Column)replaceByAlias(((AnyAll)e).col, renames);
+			return e;
+		}
+
+		if (e instanceof In) {
+			In in = (In)e;
+			in.col = (Column)replaceByAlias(in.col,renames);
+			return in;
+		} 
+		
+
+//		System.out.println(e);
 		throw new SQLException("replacing "+e+" be alias");
 	}
 	
@@ -401,13 +443,13 @@ public class PlanMaker {
 		switch(t.getType()) {
 		case AS:
 			Plan plan = transTable((CommonTree)t.getChild(0));
-			plan.alias = t.getChild(1).getText();
+			plan.alias = t.getChild(1).getText().toLowerCase();
 			return plan;
 		case SELECT: case SELECT_DISTINCT:
 			return transSelect(t);
 		default:
 			assert(t.getType() == ID);
-			return new TablePlan(t.getText());
+			return new TablePlan(t.getText().toLowerCase());
 		}
 	}
 	
@@ -493,15 +535,17 @@ public class PlanMaker {
 		case INTEGER_LITERAL: 
 			if (type instanceof DECIMAL) {
 				DECIMAL dt = (DECIMAL)type;
-				DECIMAL d =  new DECIMAL(t.getText(),dt.v.precision(), dt.v.scale());
+				DECIMAL d =  new DECIMAL(t.getText(),dt.precision);
 				return d;
 			} else if (type instanceof FLOAT)
 				return new FLOAT(t.getText());// FIXME: need this?
 			else return new INT(t.getText());	// include null
 		case FLOAT_LITERAL:
-			if (type instanceof DECIMAL)
-				return new DECIMAL(t.getText(), ((DECIMAL) type).v.precision(), ((DECIMAL) type).v.scale());
-			else return new FLOAT(t.getText());
+			if (type instanceof DECIMAL) {
+//				DECIMAL d = 
+//				System.out.println("planmaker:"+d.typeValString());
+				return new DECIMAL(t.getText(), ((DECIMAL) type).precision);
+			} else return new FLOAT(t.getText());
 		case STRING_LITERAL:
 			String str = strip(t.getText());
 			if (type instanceof VARCHAR)

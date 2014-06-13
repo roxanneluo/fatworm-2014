@@ -1,0 +1,127 @@
+# select count(y) from IndexTest where x >= -32282 and x <= -47060 and y >= -6633 and y <= -16974
+0
+;
+# select count(y) from IndexTest where x >= -24746 and x <= -9542 and y >= -10713 and y <= -29503
+0
+;
+# select count(y) from IndexTest where x >= 1640 and x <= -9358 and y >= -6493 and y <= 28758
+0
+;
+# select count(y) from IndexTest where x >= -260 and x <= 27609 and y >= -42378 and y <= -12462
+8327
+;
+# select count(y) from IndexTest where x >= -45299 and x <= -18765 and y >= -21050 and y <= 14404
+9497
+;
+# select count(y) from IndexTest where x >= -37133 and x <= -33859 and y >= -41586 and y <= -5246
+1187
+;
+# select count(y) from IndexTest where x >= -38133 and x <= 5728 and y >= -24664 and y <= -31236
+0
+;
+# select count(y) from IndexTest where x >= -10931 and x <= 27453 and y >= -41529 and y <= 23139
+24744
+;
+# select count(y) from IndexTest where x >= 30393 and x <= 1838 and y >= -27482 and y <= -44353
+0
+;
+# select count(y) from IndexTest where x >= -41352 and x <= 11805 and y >= -7503 and y <= 10289
+9549
+;
+# select count(y) from IndexTest where x >= -31201 and x <= -47644 and y >= 5399 and y <= 34891
+0
+;
+# select count(y) from IndexTest where x >= 46317 and x <= 13021 and y >= -27571 and y <= -48981
+0
+;
+# select count(y) from IndexTest where x >= -39391 and x <= 17731 and y >= 31775 and y <= -26524
+0
+;
+# select count(y) from IndexTest where x >= 33872 and x <= 40189 and y >= 34582 and y <= -37908
+0
+;
+# select count(y) from IndexTest where x >= -4083 and x <= -40082 and y >= -19144 and y <= -48662
+0
+;
+# select count(y) from IndexTest where x >= -46277 and x <= 5679 and y >= 24478 and y <= 34116
+5111
+;
+# select count(y) from IndexTest where x >= -42483 and x <= -36652 and y >= -43884 and y <= -33834
+603
+;
+# select count(y) from IndexTest where x >= 41505 and x <= 14965 and y >= 42807 and y <= -39696
+0
+;
+# select count(y) from IndexTest where x >= 33673 and x <= 14558 and y >= 45195 and y <= 29991
+0
+;
+# select count(y) from IndexTest where x >= -22421 and x <= -16024 and y >= 31010 and y <= -11812
+0
+;
+# select count(y) from IndexTest where x >= -31941 and x <= 12785 and y >= 28016 and y <= -31716
+0
+;
+# select count(y) from IndexTest where x >= 19327 and x <= 12598 and y >= -19624 and y <= -18404
+0
+;
+# select count(y) from IndexTest where x >= 38869 and x <= 27584 and y >= -17065 and y <= 42592
+0
+;
+# select count(y) from IndexTest where x >= -16736 and x <= -26235 and y >= 43061 and y <= 7133
+0
+;
+# select count(y) from IndexTest where x >= -12887 and x <= 49177 and y >= 39651 and y <= -21382
+0
+;
+# select count(y) from IndexTest where x >= 30494 and x <= 48810 and y >= 5274 and y <= 14167
+1625
+;
+# select count(y) from IndexTest where x >= 13368 and x <= 16821 and y >= 10510 and y <= -42700
+0
+;
+# select count(y) from IndexTest where x >= -32851 and x <= 7872 and y >= -4512 and y <= -14792
+0
+;
+# select count(y) from IndexTest where x >= -12990 and x <= -10143 and y >= 3492 and y <= -43663
+0
+;
+# select count(y) from IndexTest where x >= -47545 and x <= -49780 and y >= -12067 and y <= 41324
+0
+;
+# select count(y) from IndexTest where x >= 44157 and x <= 20868 and y >= 33917 and y <= -6227
+0
+;
+# select count(y) from IndexTest where x >= 44633 and x <= 26978 and y >= -49094 and y <= -1902
+0
+;
+# select count(y) from IndexTest where x >= 42507 and x <= 40558 and y >= 43068 and y <= 39353
+0
+;
+# select count(y) from IndexTest where x >= -44280 and x <= -1658 and y >= 19872 and y <= 19089
+0
+;
+# select count(y) from IndexTest where x >= -18485 and x <= -19617 and y >= 26389 and y <= -1336
+0
+;
+# select count(y) from IndexTest where x >= 38255 and x <= -11771 and y >= 33873 and y <= -24735
+0
+;
+# select count(y) from IndexTest where x >= 28086 and x <= 3717 and y >= -2046 and y <= 30542
+0
+;
+# select count(y) from IndexTest where x >= 20290 and x <= 35888 and y >= 38218 and y <= 14447
+0
+;
+# select count(y) from IndexTest where x >= 23108 and x <= 22135 and y >= -41780 and y <= 34094
+0
+;
+# select count(y) from IndexTest where x >= 15465 and x <= -24522 and y >= -1456 and y <= 24324
+0
+;
+# select count(y) from IndexTest where x >= -17612 and x <= -8387 and y >= 13677 and y <= -11891
+0
+;
+# select count(y) from IndexTest where x >= -43693 and x <= -16450 and y >= -26450 and y <= -12177
+3919
+;
+# select count(y) from IndexTest where x >= 30285 and x <= 49939 and y >= 36487 and y <= 34892

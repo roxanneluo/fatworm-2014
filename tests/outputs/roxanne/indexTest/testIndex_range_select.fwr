@@ -1,0 +1,300 @@
+# select count(value) from IndexTest where k >= 2537 and k <= 3410
+856
+;
+# select count(value) from IndexTest where k >= -1244 and k <= 2667
+4004
+;
+# select count(value) from IndexTest where k >= 312 and k <= -2938
+0
+;
+# select count(value) from IndexTest where k >= -864 and k <= 2229
+3155
+;
+# select count(value) from IndexTest where k >= 1846 and k <= 4902
+3019
+;
+# select count(value) from IndexTest where k >= 3956 and k <= -248
+0
+;
+# select count(value) from IndexTest where k >= -1147 and k <= -1
+1125
+;
+# select count(value) from IndexTest where k >= 1547 and k <= -2755
+0
+;
+# select count(value) from IndexTest where k >= -95 and k <= 4807
+4955
+;
+# select count(value) from IndexTest where k >= 1594 and k <= -1613
+0
+;
+# select count(value) from IndexTest where k >= -2909 and k <= 3165
+6107
+;
+# select count(value) from IndexTest where k >= -508 and k <= 2053
+2654
+;
+# select count(value) from IndexTest where k >= 1268 and k <= 417
+0
+;
+# select count(value) from IndexTest where k >= -3798 and k <= -2359
+1403
+;
+# select count(value) from IndexTest where k >= 709 and k <= -4491
+0
+;
+# select count(value) from IndexTest where k >= 3423 and k <= -1753
+0
+;
+# select count(value) from IndexTest where k >= 271 and k <= -2820
+0
+;
+# select count(value) from IndexTest where k >= 2266 and k <= 1936
+0
+;
+# select count(value) from IndexTest where k >= -4406 and k <= 2754
+7212
+;
+# select count(value) from IndexTest where k >= -835 and k <= 2440
+3328
+;
+# select count(value) from IndexTest where k >= 2656 and k <= 4473
+1812
+;
+# select count(value) from IndexTest where k >= 3545 and k <= -3490
+0
+;
+# select count(value) from IndexTest where k >= -4176 and k <= 92
+4211
+;
+# select count(value) from IndexTest where k >= -4893 and k <= 729
+5570
+;
+# select count(value) from IndexTest where k >= -3749 and k <= -1946
+1753
+;
+# select count(value) from IndexTest where k >= 468 and k <= -1658
+0
+;
+# select count(value) from IndexTest where k >= -3781 and k <= 4960
+8717
+;
+# select count(value) from IndexTest where k >= -4605 and k <= 2487
+7103
+;
+# select count(value) from IndexTest where k >= -3271 and k <= 2950
+6264
+;
+# select count(value) from IndexTest where k >= -4872 and k <= -1209
+3598
+;
+# select count(value) from IndexTest where k >= -189 and k <= -96
+106
+;
+# select count(value) from IndexTest where k >= -1610 and k <= 1435
+3063
+;
+# select count(value) from IndexTest where k >= 2084 and k <= -4344
+0
+;
+# select count(value) from IndexTest where k >= -1629 and k <= 2678
+4374
+;
+# select count(value) from IndexTest where k >= 3411 and k <= -1112
+0
+;
+# select count(value) from IndexTest where k >= -3529 and k <= -2581
+941
+;
+# select count(value) from IndexTest where k >= -1639 and k <= -4984
+0
+;
+# select count(value) from IndexTest where k >= -4719 and k <= -815
+3842
+;
+# select count(value) from IndexTest where k >= -3540 and k <= -4611
+0
+;
+# select count(value) from IndexTest where k >= 1266 and k <= -2289
+0
+;
+# select count(value) from IndexTest where k >= -1557 and k <= -3266
+0
+;
+# select count(value) from IndexTest where k >= 1053 and k <= -3986
+0
+;
+# select count(value) from IndexTest where k >= 3046 and k <= -2200
+0
+;
+# select count(value) from IndexTest where k >= 3501 and k <= 4775
+1248
+;
+# select count(value) from IndexTest where k >= -4250 and k <= -19
+4181
+;
+# select count(value) from IndexTest where k >= 4918 and k <= 562
+0
+;
+# select count(value) from IndexTest where k >= 4885 and k <= -1692
+0
+;
+# select count(value) from IndexTest where k >= 3349 and k <= 1969
+0
+;
+# select count(value) from IndexTest where k >= -4683 and k <= -3280
+1354
+;
+# select count(value) from IndexTest where k >= -4000 and k <= 3728
+7729
+;
+# select count(value) from IndexTest where k >= -3040 and k <= -2529
+522
+;
+# select count(value) from IndexTest where k >= 2499 and k <= 321
+0
+;
+# select count(value) from IndexTest where k >= 3839 and k <= 2781
+0
+;
+# select count(value) from IndexTest where k >= 858 and k <= -4701
+0
+;
+# select count(value) from IndexTest where k >= -478 and k <= -2876
+0
+;
+# select count(value) from IndexTest where k >= -1990 and k <= -683
+1284
+;
+# select count(value) from IndexTest where k >= -1142 and k <= 4063
+5263
+;
+# select count(value) from IndexTest where k >= 331 and k <= -3096
+0
+;
+# select count(value) from IndexTest where k >= -3137 and k <= -4816
+0
+;
+# select count(value) from IndexTest where k >= 3031 and k <= 3966
+915
+;
+# select count(value) from IndexTest where k >= 165 and k <= 2950
+2865
+;
+# select count(value) from IndexTest where k >= -4120 and k <= -3597
+523
+;
+# select count(value) from IndexTest where k >= -3742 and k <= 4229
+7963
+;
+# select count(value) from IndexTest where k >= -276 and k <= -3425
+0
+;
+# select count(value) from IndexTest where k >= -4051 and k <= 724
+4724
+;
+# select count(value) from IndexTest where k >= 1655 and k <= 4261
+2620
+;
+# select count(value) from IndexTest where k >= -453 and k <= -4493
+0
+;
+# select count(value) from IndexTest where k >= -418 and k <= -1614
+0
+;
+# select count(value) from IndexTest where k >= 3288 and k <= 1792
+0
+;
+# select count(value) from IndexTest where k >= -1315 and k <= 4162
+5524
+;
+# select count(value) from IndexTest where k >= 3916 and k <= 1695
+0
+;
+# select count(value) from IndexTest where k >= 4831 and k <= 4126
+0
+;
+# select count(value) from IndexTest where k >= -2890 and k <= -3486
+0
+;
+# select count(value) from IndexTest where k >= -3970 and k <= -1026
+2890
+;
+# select count(value) from IndexTest where k >= -3302 and k <= 4061
+7392
+;
+# select count(value) from IndexTest where k >= 4292 and k <= -1785
+0
+;
+# select count(value) from IndexTest where k >= 2011 and k <= -4828
+0
+;
+# select count(value) from IndexTest where k >= -382 and k <= -378
+3
+;
+# select count(value) from IndexTest where k >= 4401 and k <= 695
+0
+;
+# select count(value) from IndexTest where k >= -2451 and k <= 1702
+4173
+;
+# select count(value) from IndexTest where k >= -3581 and k <= 4205
+7808
+;
+# select count(value) from IndexTest where k >= 963 and k <= 967
+2
+;
+# select count(value) from IndexTest where k >= 1064 and k <= 1897
+918
+;
+# select count(value) from IndexTest where k >= 4353 and k <= -4296
+0
+;
+# select count(value) from IndexTest where k >= -1311 and k <= 4391
+5767
+;
+# select count(value) from IndexTest where k >= 4866 and k <= -2395
+0
+;
+# select count(value) from IndexTest where k >= -2562 and k <= 1049
+3566
+;
+# select count(value) from IndexTest where k >= -3269 and k <= -451
+2778
+;
+# select count(value) from IndexTest where k >= 2563 and k <= 4113
+1529
+;
+# select count(value) from IndexTest where k >= -125 and k <= 613
+759
+;
+# select count(value) from IndexTest where k >= -474 and k <= -833
+0
+;
+# select count(value) from IndexTest where k >= 3828 and k <= 2890
+0
+;
+# select count(value) from IndexTest where k >= -661 and k <= 4799
+5501
+;
+# select count(value) from IndexTest where k >= -2488 and k <= -4908
+0
+;
+# select count(value) from IndexTest where k >= -3154 and k <= -3587
+0
+;
+# select count(value) from IndexTest where k >= 1794 and k <= -1735
+0
+;
+# select count(value) from IndexTest where k >= 1970 and k <= 4109
+2111
+;
+# select count(value) from IndexTest where k >= 584 and k <= -1966
+0
+;
+# select count(value) from IndexTest where k >= 1006 and k <= -62
+0
+;
+# select count(value) from IndexTest where k >= -1262 and k <= 4695
+6012
+;

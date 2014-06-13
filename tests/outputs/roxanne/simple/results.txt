@@ -322,3 +322,123 @@ roxanne	simple_timestamp	Correct	10
 roxanne	simple_ts	Correct	8
 roxanne	simple_trim	Correct	6
 roxanne	simple_case	Correct	4
+date: Fri Jun 06 13:50:53 CST 2014
+roxanne	create	Correct	72
+roxanne	simple_select	Correct	80
+roxanne	simple_order	Correct	17
+roxanne	simple_group	Correct	17
+roxanne	simple_compare	Correct	27
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	14
+roxanne	simple_timestamp	Correct	9
+roxanne	simple_ts	Correct	9
+roxanne	simple_trim	Correct	7
+roxanne	simple_case	Correct	5
+date: Fri Jun 13 07:39:19 CST 2014
+roxanne	create	Correct	143
+roxanne	simple_select	Correct	80
+roxanne	simple_order	Correct	21
+roxanne	simple_group	Wrong Answer	16
+roxanne	simple_compare	Wrong Answer	30
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	10
+roxanne	simple_timestamp	Correct	15
+roxanne	simple_ts	Correct	17
+roxanne	simple_trim	Correct	17
+roxanne	simple_case	Correct	8
+date: Fri Jun 13 07:40:05 CST 2014
+roxanne	create	Correct	169
+roxanne	simple_select	Correct	75
+roxanne	simple_order	Correct	21
+roxanne	simple_group	Wrong Answer	15
+roxanne	simple_compare	Wrong Answer	32
+roxanne	simple_subquery	Correct	5
+roxanne	simple_opt	Correct	10
+roxanne	simple_timestamp	Correct	16
+roxanne	simple_ts	Correct	18
+roxanne	simple_trim	Correct	18
+roxanne	simple_case	Correct	9
+date: Fri Jun 13 09:54:14 CST 2014
+roxanne	create	Correct	169
+roxanne	simple_select	Correct	71
+roxanne	simple_order	Correct	25
+roxanne	simple_group	Correct	18
+roxanne	simple_compare	Correct	36
+roxanne	simple_subquery	Correct	6
+roxanne	simple_opt	Correct	10
+roxanne	simple_timestamp	Correct	13
+roxanne	simple_ts	Correct	21
+roxanne	simple_trim	Correct	19
+roxanne	simple_case	Correct	10
+date: Fri Jun 13 13:09:33 CST 2014
+roxanne	create	Correct	223
+roxanne	simple_select	Correct	76
+roxanne	simple_order	Correct	26
+roxanne	simple_group	Correct	16
+roxanne	simple_compare	Correct	34
+roxanne	simple_subquery	Correct	6
+roxanne	simple_opt	Correct	9
+roxanne	simple_timestamp	Correct	17
+roxanne	simple_ts	Correct	27
+roxanne	simple_trim	Correct	20
+roxanne	simple_case	Correct	11
+date: Fri Jun 13 16:54:19 CST 2014
+roxanne	create	Correct	321
+roxanne	simple_select	Correct	72
+roxanne	simple_order	Correct	26
+roxanne	simple_group	Correct	19
+roxanne	simple_compare	Correct	25
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	8
+roxanne	simple_timestamp	Correct	22
+roxanne	simple_ts	Correct	27
+roxanne	simple_trim	Correct	25
+roxanne	simple_case	Correct	14
+date: Fri Jun 13 20:56:20 CST 2014
+roxanne	create	Correct	328
+roxanne	simple_select	Correct	81
+roxanne	simple_order	Correct	35
+roxanne	simple_group	Correct	23
+roxanne	simple_compare	Correct	32
+roxanne	simple_subquery	Correct	5
+roxanne	simple_opt	Correct	11
+roxanne	simple_timestamp	Correct	20
+roxanne	simple_ts	Correct	30
+roxanne	simple_trim	Correct	24
+roxanne	simple_case	Correct	13
+date: Fri Jun 13 21:05:30 CST 2014
+roxanne	create	Correct	373
+roxanne	simple_select	Correct	73
+roxanne	simple_order	Correct	29
+roxanne	simple_group	Correct	20
+roxanne	simple_compare	Correct	25
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	11
+roxanne	simple_timestamp	Correct	18
+roxanne	simple_ts	Correct	48
+roxanne	simple_trim	Correct	31
+roxanne	simple_case	Correct	16
+date: Fri Jun 13 23:37:21 CST 2014
+roxanne	create	Correct	339
+roxanne	simple_select	Correct	81
+roxanne	simple_order	Correct	31
+roxanne	simple_group	Correct	18
+roxanne	simple_compare	Correct	29
+roxanne	simple_subquery	Correct	5
+roxanne	simple_opt	Correct	10
+roxanne	simple_timestamp	Correct	20
+roxanne	simple_ts	Correct	35
+roxanne	simple_trim	Correct	27
+roxanne	simple_case	Correct	16
+date: Fri Jun 13 23:58:07 CST 2014
+roxanne	create	Correct	297
+roxanne	simple_select	Correct	78
+roxanne	simple_order	Correct	30
+roxanne	simple_group	Correct	20
+roxanne	simple_compare	Correct	32
+roxanne	simple_subquery	Correct	4
+roxanne	simple_opt	Correct	9
+roxanne	simple_timestamp	Correct	23
+roxanne	simple_ts	Correct	27
+roxanne	simple_trim	Correct	25
+roxanne	simple_case	Correct	14

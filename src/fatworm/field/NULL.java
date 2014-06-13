@@ -56,5 +56,21 @@ public class NULL extends Field {
 	public Object getVal() {
 		return null;
 	}
+	@Override
+	public Field bytes2Field(byte[] bytes, int start, int l) {
+		return NULL.getInstance();
+	}
+	@Override
+	public int maxSize() {
+		return 0;
+	}
+	@Override
+	public byte[] toBytes() {
+		return new byte[0];
+	}
+	@Override
+	public boolean fix() {
+		return true;
+	}
 }
 

@@ -43,3 +43,81 @@ roxanne	syntactic-crash	Correct	6
 roxanne	select	Correct	14
 roxanne	semantic-crash	Correct	10
 roxanne	select	Correct	7
+date: Fri Jun 06 13:50:29 CST 2014
+roxanne	init	Correct	68
+roxanne	syntactic-crash	Correct	5
+roxanne	select	Correct	13
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	8
+date: Fri Jun 13 07:37:07 CST 2014
+roxanne	init	Correct	106
+roxanne	syntactic-crash	Correct	6
+roxanne	select	Correct	13
+roxanne	semantic-crash	Correct	10
+roxanne	select	Correct	6
+date: Fri Jun 13 07:37:57 CST 2014
+roxanne	init	Correct	129
+roxanne	syntactic-crash	Correct	7
+roxanne	select	Correct	17
+roxanne	semantic-crash	Correct	11
+roxanne	select	Correct	9
+date: Fri Jun 13 07:38:50 CST 2014
+roxanne	init	Correct	107
+roxanne	syntactic-crash	Correct	5
+roxanne	select	Correct	13
+roxanne	semantic-crash	Correct	9
+roxanne	select	Correct	8
+date: Fri Jun 13 07:39:37 CST 2014
+roxanne	init	Correct	149
+roxanne	syntactic-crash	Correct	7
+roxanne	select	Correct	13
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	6
+date: Fri Jun 13 09:53:56 CST 2014
+roxanne	init	Correct	160
+roxanne	syntactic-crash	Correct	6
+roxanne	select	Correct	12
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	8
+date: Fri Jun 13 13:09:05 CST 2014
+roxanne	init	Correct	174
+roxanne	syntactic-crash	Correct	4
+roxanne	select	Correct	14
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	8
+date: Fri Jun 13 16:53:49 CST 2014
+roxanne	init	Correct	273
+roxanne	syntactic-crash	Correct	5
+roxanne	select	Correct	14
+roxanne	semantic-crash	Correct	9
+roxanne	select	Correct	7
+date: Fri Jun 13 20:55:50 CST 2014
+roxanne	init	Correct	271
+roxanne	syntactic-crash	Correct	4
+roxanne	select	Correct	13
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	6
+date: Fri Jun 13 21:03:49 CST 2014
+roxanne	init	Correct	294
+roxanne	syntactic-crash	Correct	5
+roxanne	select	Correct	14
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	7
+date: Fri Jun 13 23:35:36 CST 2014
+roxanne	init	Correct	289
+roxanne	syntactic-crash	Correct	4
+roxanne	select	Correct	15
+roxanne	semantic-crash	Correct	8
+roxanne	select	Correct	7
+date: Fri Jun 13 23:49:45 CST 2014
+roxanne	init	Correct	105
+roxanne	syntactic-crash	Correct	18
+roxanne	select	Wrong Answer	22
+roxanne	semantic-crash	Wrong Answer	18
+roxanne	select	Wrong Answer	17
+date: Fri Jun 13 23:56:28 CST 2014
+roxanne	init	Correct	205
+roxanne	syntactic-crash	Correct	5
+roxanne	select	Correct	15
+roxanne	semantic-crash	Correct	9
+roxanne	select	Correct	7

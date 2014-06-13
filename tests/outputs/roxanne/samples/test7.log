@@ -1,17 +1,17 @@
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Executing: select 1 / 2, 3/4, 1/ 2 -4, 0.5 + 1, 0.5* 0.3, 0.7+1.2, 0.7 - 1.2 * 3, 0.7 - 1.2 +2
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 1 is 6
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 2 is 6
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 3 is 6
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 4 is 6
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 5 is 6
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 6 is 6
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 7 is 6
-[Thu Jun 05 22:40:30 CST 2014] [Thread0] Type 8 is 6
-[Thu Jun 05 22:40:30 CST 2014] [Thread Time] 2
-[Thu Jun 05 22:40:30 CST 2014] [Total Time] 5
-[Thu Jun 05 22:40:30 CST 2014] [Result] Correct
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Executing: select 1 / 2, 3/4, 1/ 2 -4, 0.5 + 1, 0.5* 0.3, 0.7+1.2, 0.7 - 1.2 * 3, 0.7 - 1.2 +2
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Type 1 is 6
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Type 2 is 6
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Type 3 is 6
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Type 4 is 6
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Type 5 is 6
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Type 6 is 6
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Type 7 is 6
+[Fri Jun 13 23:58:07 CST 2014] [Thread0] Type 8 is 6
+[Fri Jun 13 23:58:07 CST 2014] [Thread Time] 2
+[Fri Jun 13 23:58:07 CST 2014] [Total Time] 5
+[Fri Jun 13 23:58:07 CST 2014] [Result] Correct

@@ -72,4 +72,22 @@ public class BOOL extends Field{
 	public Boolean getVal() {
 		return v;
 	}
+	@Override
+	public Field bytes2Field(byte[] bytes, int start, int len) {
+		return new BOOL(bytes[start]==1);
+	}
+	
+	public boolean fix() {
+		return true;
+	}
+	@Override
+	public int maxSize() {
+		return 1;
+	}
+	
+	@Override
+	public byte[] toBytes() {
+		byte[] ans = {(byte) (v? 1:0)};
+		return ans;
+	}
 }

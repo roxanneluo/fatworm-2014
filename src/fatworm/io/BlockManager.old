@@ -1,0 +1,207 @@
+package fatworm.io;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.sql.SQLException;
+import java.util.LinkedList;
+
+import fatworm.util.Constant;
+import fatworm.driver.Schema;
+import fatworm.driver.Tuple;
+
+/**
+ * tuple Start  = header size;
+ * tuple end = the addr of the last tuple, -1 if empty
+ * freeStart =  -1; => empty so far don't have free end
+ * @author roxanne
+ *
+ */
+public class BlockManager {
+	private Block curBlock = null;
+	private long nextAddr = -1;
+	private long prevAddr = -1;
+	private long secPrevAddr = -1; //prev of prev
+	private WriteBuffer buffer = null;
+//	private File file;
+	private RandomAccessFile ra;
+	private boolean fix;
+	private long tupleStartAddr, tupleEndAddr;//start default 0, end default
+	private long freeStartAddr;/*, freeEndAddr*///default -1
+	private int tupleSize = -1;
+	private Schema schema;
+	
+	
+	public final static int HEADERSIZE = Constant.LONGSIZE*3;
+	
+
+	public BlockManager(File file, boolean fix, String mode, Schema schema) {
+		try {
+	//		this.file = file;
+			this.fix = fix;
+			this.schema = schema;
+			if (fix)
+				tupleSize = schema.tupleSize();
+			ra = new RandomAccessFile(file, mode);
+			readHeader();
+	//		freeEndAddr = readInt();
+			secPrevAddr = prevAddr = -1;
+			nextAddr = tupleStartAddr;
+			if (mode.contains("w")) {
+				buffer = new WriteBuffer(ra);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+			
+	}
+	public void close() throws SQLException {
+		try {
+			output();
+			ra.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	private void output() throws SQLException {
+		Block start;
+		try {
+			start = buffer.get(0, fix, tupleSize, schema);
+			start.writeLong(0, tupleStartAddr);
+			start.writeLong(Constant.LONGSIZE, tupleEndAddr);
+			start.writeLong(2*Constant.LONGSIZE, freeStartAddr);
+			buffer.output();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public boolean insert(Tuple t) throws SQLException {
+		try {
+			if (freeStartAddr != -1) {
+				Block ins = buffer.get(freeStartAddr, fix, tupleSize, schema);
+				Block lastBlock = buffer.get(tupleEndAddr, fix, tupleSize, schema);
+				lastBlock.setNext(tupleEndAddr, freeStartAddr);
+				tupleEndAddr = freeStartAddr;
+				if (tupleStartAddr == -1) tupleStartAddr = freeStartAddr; 
+				freeStartAddr = ins.insert(freeStartAddr,t);	// after insert next = -1;
+				return true;
+			} else if (tupleEndAddr == -1) {
+				Block b = new FixBlock(0, tupleSize, HEADERSIZE, schema);
+				buffer.add(b);
+				b.insert(HEADERSIZE, t);
+				tupleEndAddr = tupleStartAddr = HEADERSIZE;
+				return true;
+			} else {
+				Block last = buffer.get(tupleEndAddr, fix, tupleSize,schema);
+				if (last.inBlock(tupleEndAddr+tupleSize)) {
+					last.setNext(tupleEndAddr,tupleEndAddr+tupleSize);
+					tupleEndAddr += tupleSize;
+					last.insert(tupleEndAddr, t);
+					return true;
+				} else {
+					long idx = tupleEndAddr/Constant.BLOCKSIZE+1;
+					Block b = new FixBlock(idx, tupleSize, schema);
+					buffer.add(b);
+					long newEndAddr = idx*Constant.BLOCKSIZE;
+					last.setNext(tupleEndAddr, newEndAddr);
+					b.insert(newEndAddr, t);
+					tupleEndAddr = newEndAddr;
+					return true;
+				}
+			}
+		} catch(IOException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean readHeader() {
+		try {
+			tupleStartAddr = ra.readLong();
+			tupleEndAddr = ra.readLong();
+			freeStartAddr = ra.readLong();
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean initHeader() {
+		try {
+			tupleStartAddr = -1;
+			tupleEndAddr = -1;
+			freeStartAddr = -1;
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	public boolean hasNext() {
+		return nextAddr != -1;
+	}
+	public Tuple next() {
+		if (!hasNext()) return null;
+		TupleAddr ans;
+		if (curBlock == null || !curBlock.inBlock(nextAddr))
+			curBlock = getBlock(nextAddr);
+		ans = curBlock.getTuple(nextAddr);
+		secPrevAddr = prevAddr;
+		prevAddr = nextAddr;
+		nextAddr = ans.nextAddr;
+		return ans.t;
+	}
+	
+	private Block getBlock(long addr) {
+		try {
+			if (addr == -1) return null;
+			ra.seek(addr & ~(Constant.BLOCKSIZE-1));
+			byte[] bytes = new byte[Constant.BLOCKSIZE];
+			ra.read(bytes);
+			Block b;
+			if (fix)
+				b = new FixBlock(addr >> Constant.BLOCKSHIFT, bytes, tupleSize, schema);
+			else //b = new VarBlock(bytes, addr/BLOCKSIZE);
+				b = null; // TODO
+			return b;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+ 	public boolean update(Tuple t) throws SQLException{
+ 		if (curBlock == null)
+ 			return false;
+ 		curBlock.writeTuple(prevAddr, t);
+ 		buffer.add(curBlock);
+ 		return true;
+ 	}
+ 	public boolean remove() throws SQLException {
+ 		try {
+			if (curBlock == null || prevAddr == -1)
+				return false;
+			//remove the tuple set its next to be freeStartAddr
+			curBlock.delete(prevAddr, freeStartAddr);
+			freeStartAddr = prevAddr;
+			if (secPrevAddr == -1) {
+				tupleStartAddr = nextAddr;
+				prevAddr = -1;
+			} else {
+				Block prev = buffer.get(secPrevAddr, fix, tupleSize, schema);
+				prev.setNext(secPrevAddr, nextAddr);
+			}
+			buffer.add(curBlock);
+			if (tupleEndAddr == prevAddr)
+				tupleEndAddr = secPrevAddr;
+			prevAddr = secPrevAddr;
+			return true;
+ 		} catch (IOException e) {
+ 			e.printStackTrace();
+ 			return false;
+ 		}
+	}
+	
+}

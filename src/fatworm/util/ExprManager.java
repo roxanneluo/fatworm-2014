@@ -31,7 +31,16 @@ public class ExprManager {
 			}
 		}
 	}
-	
+	public static void close(Expr e) throws SQLException {
+		if (e instanceof BQExpr) {
+			((BQExpr)e).scan.close();
+		} else if (e instanceof BExpr) {
+			close(((BExpr)e).left);
+			close(((BExpr)e).right);
+		} else if (e instanceof UExpr) {
+			close(((UExpr)e).expr);
+		}
+	}
 	public static Field eval(Expr e, Tuple t) throws SQLException {
 		return eval(e,t,null);
 	}
@@ -79,6 +88,7 @@ public class ExprManager {
 	} 
 	
 	private static Field evalScan(Scan scan, Tuple parent) throws SQLException {
+		scan.restart();
 		if (!scan.hasNext(parent))
  			return null;	// FIXME: or NULL.getInstance()?
 		else return scan.next(parent).get(0);
@@ -105,6 +115,7 @@ public class ExprManager {
 	}
 	private static Field evalIn(In in, Tuple t, Tuple parent) throws SQLException {
 		Field col = eval(in.col, t, parent);
+//		System.out.println(col);
 		in.scan.restart();
 		while(in.scan.hasNext(t)) {
 			if (col.equals(in.scan.next().get(0)))
@@ -202,10 +213,14 @@ public class ExprManager {
 			func.val = new INT(evalAgg(func.func, af.isNull()? null:(float)(((INT)af).v), ((INT)tf).v));
 		} else if (tf instanceof DECIMAL) {
 			DECIMAL td = (DECIMAL)tf;
-			int prec = td.v.precision(), scale = td.v.scale();
-			func.val = new DECIMAL(evalAgg(func.func, af.isNull()? null:((DECIMAL)af).v.floatValue(), td.v.floatValue()), prec, scale); //FIXME: if need to write an exact version for decimal
+			int prec = td.precision;
+			func.val = new DECIMAL(evalAgg(func.func, af.isNull()? null:((DECIMAL)af).v.floatValue(), td.v.floatValue()), prec); //FIXME: if need to write an exact version for decimal
 		} else if (tf instanceof FLOAT) {
 			func.val = new FLOAT(evalAgg(func.func, af.isNull()? null:((FLOAT)af).v, ((FLOAT)tf).v));
+		} else if (tf instanceof CHAR) {
+			func.val = new CHAR(evalAgg(func.func, af.isNull()? null:((CHAR)af).v, ((CHAR)tf).v), ((CHAR)tf).len);
+		} else if (tf instanceof VARCHAR) {
+			func.val = new VARCHAR(evalAgg(func.func, af.isNull()? null:((VARCHAR)af).v, ((VARCHAR)tf).v), ((VARCHAR)tf).len);
 		} else 
 			throw new SQLException("[ERROR]evaluating "+func.func+"("+tf.typeValString()+")");
 	}
@@ -220,6 +235,18 @@ public class ExprManager {
 			return new Float((ans <= t)? ans: t);
 		case MAX:
 			return new Float((ans >= t)? ans: t);
+		default:
+			throw new SQLException(func+" in eval Agg");
+		}
+	}
+	private static String evalAgg(Func.FuncType func, String ans, String t) throws SQLException{
+		if (ans == null)
+			return new String(t);
+		switch(func) {
+		case MIN:
+			return ans.compareTo(t)<=0? ans:t;
+		case MAX:
+			return ans.compareTo(t)>=0? ans:t;
 		default:
 			throw new SQLException(func+" in eval Agg");
 		}
@@ -322,10 +349,14 @@ public class ExprManager {
 	 * FIXME if they need to be distinguished
 	 */
 	private static Field evalBExpr(Field l, BopType op, Field r) throws SQLException {
+		if (l ==null || r == null)
+			return new BOOL(false);
 		switch(op) {
 		case EQ: 
 			return new BOOL(l.compareTo(r) == 0);
 		case NEQ:
+			if (l.isNull() || r.isNull())
+				return new BOOL(false);
 			return new BOOL(l.compareTo(r) != 0);
 		case LEQ: case GEQ: case LT: case GT:
 			if (l instanceof NULL || r instanceof NULL)

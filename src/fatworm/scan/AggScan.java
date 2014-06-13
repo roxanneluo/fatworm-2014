@@ -87,8 +87,8 @@ public class AggScan extends UScan{
 				initIter();
 				while(iter.hasNext())
 					iter.next().restart();
-				initIter();
 			}
+			initIter();
 		}
 	}
 	private void init(Tuple parent) throws SQLException {
@@ -111,11 +111,11 @@ public class AggScan extends UScan{
 				}
 				TableScan scan = (TableScan)buckets.get(key);
 				if (scan != null) {
-					scan.insert(t);
+					scan.insert(t, true);
 					//FIXME: because scan is a reference, I didn't use put
 				} else {
 					scan = new TableScan(new Table("temp",null)); // FIXME: use null as schema so far; add schema if needed in the future
-					scan.insert(t);
+					scan.insert(t, true);
 					buckets.put(key, scan);
 				}
 			}
@@ -131,5 +131,6 @@ public class AggScan extends UScan{
 		ans += "by:"+by;
 		return ans;
 	}
+
 
 }

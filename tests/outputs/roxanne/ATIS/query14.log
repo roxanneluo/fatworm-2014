@@ -1,0 +1,8 @@
+[Fri Jun 13 23:55:42 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:55:42 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:55:42 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:55:42 CST 2014] [Thread0] Executing: use ATIS
+[Fri Jun 13 23:55:42 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:55:42 CST 2014] [Thread0] Executing: select distinct airline.airlinename,aircraft.aircrafttype from aircraft,airline,flight where flight.aircraftcode=aircraft.aircraftcode and flight.airlinecode=airline.airlinecode order by airline.airlinename ASC, aircraft.aircrafttype ASC
+[Fri Jun 13 23:55:42 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:55:42 CST 2014] [Thread0] Query executed, begin to fetch and check result

@@ -56,7 +56,37 @@ public class Schema implements Serializable{
 		}
 		return ans;
 	}
-	
+	public boolean fix() {
+		for (int i = 0; i < types.size(); ++i) {
+			if (!types.get(i).fix())
+				return false;
+		}
+		return true;
+	}
+	public int maxTupleSize() {
+		int size=0;
+		for (int i = 0; i < types.size(); ++i){
+			size += types.get(i).maxSize();
+		}
+		return size;
+	}
+	public int fixSize() {
+		int ans = 0;
+		Field type;
+		for (int i = 0 ;i < types.size(); ++i) {
+			if ((type = types.get(i)).fix())
+				ans += type.maxSize();
+		}
+		return ans;
+	}
+	public int varCnt() {
+		int cnt = 0;
+		for (int i = 0; i < types.size(); ++i) {
+			if (!types.get(i).fix())
+				++cnt;
+		}
+		return cnt;
+	}
 	public Schema clone(String alias) {
 		return clone(alias, true);
 	}
@@ -76,7 +106,7 @@ public class Schema implements Serializable{
 		for (int i = 0; i < attrNames.size(); ++i) {
 			Attribute attr = attrNames.get(i);
 			Field type = types.get(i);
-			ans += attr.colName+"("+type.typeString()+")"+"\t";
+			ans += attr+"("+type.typeString()+")"+"\t";
 		}
 		return ans;
 	}

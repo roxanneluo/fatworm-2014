@@ -1,28 +1,28 @@
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: use nano
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select * from Salary_
-[Thu Jun 05 22:40:07 CST 2014] [Thread0] Executing: select id as Id, salary as Salary from Salary
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread0] Type 2 is 4
-[Thu Jun 05 22:40:08 CST 2014] [Thread Time] 6
-[Thu Jun 05 22:40:08 CST 2014] [Total Time] 10
-[Thu Jun 05 22:40:08 CST 2014] [Result] Correct
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: use nano
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: select * from Salary_
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Executing: select id as Id, salary as Salary from Salary
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread0] Type 2 is 4
+[Fri Jun 13 23:56:28 CST 2014] [Thread Time] 4
+[Fri Jun 13 23:56:28 CST 2014] [Total Time] 9
+[Fri Jun 13 23:56:28 CST 2014] [Result] Correct

@@ -27,7 +27,7 @@ public class SelectScan extends UScan {
 		while(scan.hasNext(null)) {
 			Tuple t = scan.next(null);
 //			System.out.println("eval "+cond+ " over "+t);
-			System.out.println("parent:"+parent);
+//			System.out.println("parent:"+parent);
 			boolean ans = ExprManager.toFinalBool(ExprManager.eval(cond, t, parent));
 //			System.out.println("["+ans+"]eval "+cond+ " over "+t);
 			if (ans) {
@@ -51,5 +51,10 @@ public class SelectScan extends UScan {
 	
 	public String toString(){
 		return cond.toString();
+	}
+	
+	public void close() throws SQLException {
+		scan.close();
+		ExprManager.close(cond);
 	}
 }

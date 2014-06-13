@@ -38,9 +38,10 @@ public class ProjectScan extends UScan {
 		Tuple ans = new Tuple();
 		Field f;
 		for (Expr e:columns) {
-			f = ExprManager.eval(e, t, null);
+			f = ExprManager.eval(e, t, parent);
 			ans.add(f);
 		}
+//		System.out.println("proj:"+t);
 		return ans;
 	}
 	@Override
@@ -50,4 +51,6 @@ public class ProjectScan extends UScan {
 	public String toString() {
 		return columns.toString();
 	}
+	
+	//TODO: scan in columns is unhandled
 }

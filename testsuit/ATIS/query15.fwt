@@ -2,6 +2,6 @@
 use ATIS
 ;
 
-@ORDERED_SELECT;
+@ORDERED_SELECT
 select sum(engines) from aircraft
 ;

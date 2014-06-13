@@ -2,6 +2,6 @@
 use ATIS
 ;
 
-@ORDERED_SELECT;
+@ORDERED_SELECT
 select fare.farecode from restrictcarrier,airline,fare where restrictcarrier.airlinecode=airline.airlinecode and fare.restrictcode=restrictcarrier.restrictcode order by fare.farecode ASC
 ;

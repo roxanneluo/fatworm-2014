@@ -19,4 +19,5 @@ abstract public class Scan extends Expr {
 	public String getString(String tabs) {
 		return toString();
 	}
+	public abstract void close() throws SQLException;
 }

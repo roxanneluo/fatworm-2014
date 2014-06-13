@@ -1,9 +1,73 @@
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: use acm
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:32 CST 2014] [Thread0] Executing: create index idx0 on student(id)
-[Thu Jun 05 22:41:32 CST 2014] [Thread Time] 0
-[Thu Jun 05 22:41:32 CST 2014] [Total Time] 1
-[Thu Jun 05 22:41:32 CST 2014] [Result] Wrong Answer
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: use acm
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: create index idx0 on student(id)
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: drop index idx0 on student
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: create index idx1 on fatworm(groupid)
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select name, groupid from fatworm where groupid = 'Z'
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 12
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: drop index idx1 on fatworm
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: create index ind on E(id)
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: select * from A, E where A.id = E.id
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 3 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 4 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: SELECT * FROM E as E1 WHERE id >= ALL(select ID from E where E1.id <= E.id)
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Type 2 is 1
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] Executing: drop index ind on E
+[Fri Jun 13 23:59:21 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:21 CST 2014] [Thread Time] 24
+[Fri Jun 13 23:59:21 CST 2014] [Total Time] 31
+[Fri Jun 13 23:59:21 CST 2014] [Result] Correct

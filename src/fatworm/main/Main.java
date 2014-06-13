@@ -21,8 +21,9 @@ class Main {
 //		try {
 			
 			Class.forName("fatworm.driver.Driver");
-			String folder  = "testsuit/triii/";
-			String[] files = {new String(folder+"fatworm-create.fwt"), new String(folder+"fatworm-select.fwt")};
+			String folder  = "testsuit/infraTest/";
+			String[] files = {new String(folder+"isVarCharStable2.fwt")};
+//			String[] files = {new String(folder+"fatworm-create.fwt"), new String(folder+"fatworm-update.fwt")};
 			for (int i = 0; i < files.length; ++i) {
 				execute(files[i]);
 			}
@@ -41,7 +42,7 @@ class Main {
 	}
 	
 	private static void execute(String flname) throws IOException, SQLException {
-		fatworm.driver.Connection conn = (Connection) DriverManager.getConnection("jdbc:fatworm://localhost:3306/test");
+		fatworm.driver.Connection conn = (Connection) DriverManager.getConnection("jdbc:fatworm:/fatworm");
 		File file = new File(flname);
 		@SuppressWarnings("resource")
 		BufferedReader reader = new BufferedReader(new FileReader(file));

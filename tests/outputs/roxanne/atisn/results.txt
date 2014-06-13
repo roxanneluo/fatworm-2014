@@ -7,3 +7,27 @@ roxanne	query3	Wrong Answer	2
 roxanne	query4	Wrong Answer	7
 date: Thu Jun 05 22:08:42 CST 2014
 roxanne	create	Correct	81
+date: Fri Jun 13 15:07:57 CST 2014
+roxanne	create	Correct	523
+roxanne	insert	Correct	2000
+roxanne	query3	Wrong Answer	36
+date: Fri Jun 13 15:25:28 CST 2014
+roxanne	create	Correct	525
+roxanne	insert	Correct	2140
+roxanne	query3	Correct	31
+date: Fri Jun 13 21:03:12 CST 2014
+roxanne	create	Correct	586
+roxanne	insert	Correct	2119
+roxanne	query3	Correct	33
+date: Fri Jun 13 23:35:00 CST 2014
+roxanne	create	Correct	600
+roxanne	insert	Correct	2344
+roxanne	query3	Correct	37
+date: Fri Jun 13 23:49:11 CST 2014
+roxanne	create	Correct	634
+roxanne	insert	Correct	2382
+roxanne	query3	Correct	28
+date: Fri Jun 13 23:55:52 CST 2014
+roxanne	create	Correct	419
+roxanne	insert	Correct	2197
+roxanne	query3	Correct	36

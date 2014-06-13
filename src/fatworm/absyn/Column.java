@@ -13,8 +13,8 @@ public class Column extends Attribute {
 //	so far I think table is useless FIXME
 	
 	public Column(String tableName, String colName) {
-		this.tableName = tableName;
-		this.colName = colName;
+		this.tableName = tableName == null? null:tableName.toLowerCase();
+		this.colName = colName == null? null:colName.toLowerCase();
 		idx = null;
 		type = null;
 	}
@@ -22,7 +22,7 @@ public class Column extends Attribute {
 		this(null, colName);
 	}
 	public Column(Attribute attr, Table table2) {
-		colName = new String(attr.colName);
+		colName = new String(attr.colName).toLowerCase();
 		idx = new Integer(attr.idx);
 		type = (Field) attr.type.clone();
 		notNull = attr.notNull;

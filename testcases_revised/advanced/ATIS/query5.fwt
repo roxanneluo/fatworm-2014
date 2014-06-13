@@ -1,7 +1,7 @@
-
+@NEW_THREAD
 use ATIS
 ;
 
-
+@UN_ORDERED_SELECT
 select flight.flightcode,aircraft.aircrafttype from flight,aircraft where flight.aircraftcode=aircraft.aircraftcode
 ;

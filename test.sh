@@ -1,14 +1,14 @@
-# testcase="arno"
-# echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
-# java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
+testcase="arno"
+echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
+java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 
-# testcase="ATIS"
-# echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
-# java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
+testcase="ATIS"
+echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
+java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 
-# testcase="atisn"
-# echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
-# java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
+testcase="atisn"
+echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
+java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 
 testcase="basic1"
 echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
@@ -22,9 +22,9 @@ testcase="crash"
 echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
 java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 
-# testcase="indexTest"
-# echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
-# java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
+testcase="indexTest"
+echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
+java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 
 testcase="infraTest"
 echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
@@ -38,9 +38,9 @@ testcase="naive"
 echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
 java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 
-# testcase="opt"
-# echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
-# java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
+testcase="opt"
+echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
+java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 
 testcase="sample-imba"
 echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
@@ -74,7 +74,7 @@ testcase="types"
 echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
 java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 
-# testcase="wisconsin"
-# echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
-# java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
+testcase="wisconsin"
+echo "~~~~~~~~~~~~~~~~~~~~~~~"$testcase"~~~~~~~~~~~~~~~~~~~~~"
+java -cp fatjudger.jar:fatworm.jar org.acmclass.fatworm.test.TestTool -ts $testcase -tm roxanne
 

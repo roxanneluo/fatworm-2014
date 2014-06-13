@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g 2014-05-31 10:39:03
+// $ANTLR 3.4 /Users/roxanne/repos/workspace/Fatworm/src/fatworm/parser/Fatworm.g 2014-06-12 19:36:28
  package fatworm.parser; 
 
 import org.antlr.runtime.*;
@@ -789,7 +789,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: tbl_name, create_definition
+                    // elements: create_definition, tbl_name
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -1932,7 +1932,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) stream_values_clause.add(values_clause73.getTree());
 
                     // AST REWRITE
-                    // elements: tbl_name, col_name, values_clause
+                    // elements: col_name, values_clause, tbl_name
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2497,7 +2497,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_value.add(value99.getTree());
 
             // AST REWRITE
-            // elements: col_name, value
+            // elements: value, col_name
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2712,7 +2712,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: tbl_name, col_name, index_name
+                    // elements: index_name, col_name, tbl_name
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2799,7 +2799,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: tbl_name, col_name, index_name
+                    // elements: col_name, index_name, tbl_name
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3090,7 +3090,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: select_suffix, SELECT, select_expr
+                    // elements: select_expr, SELECT, select_suffix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 

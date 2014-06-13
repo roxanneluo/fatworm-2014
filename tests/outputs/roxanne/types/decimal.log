@@ -1,30 +1,30 @@
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: drop database fatwormTypes
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: create database fatwormTypes
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: use fatwormTypes
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: create table test1(a int, d decimal(40))
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(1,1234567891011121314)
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: insert into test1 values(2,123456789101112131415161718192021223)
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: select * from test1 where d>10
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 2 is 3
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 4
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 2 is 3
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Executing: select d from test1 order by d
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] isQuery? true
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 3
-[Thu Jun 05 22:41:33 CST 2014] [Thread0] Type 1 is 3
-[Thu Jun 05 22:41:33 CST 2014] [Thread Time] 7
-[Thu Jun 05 22:41:33 CST 2014] [Total Time] 13
-[Thu Jun 05 22:41:33 CST 2014] [Result] Correct
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: drop database fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: create database fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: use fatwormTypes
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: create table test1(a int, d decimal(40))
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(1,1234567891011121314)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: insert into test1 values(2,123456789101112131415161718192021223)
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: select * from test1 where d>10
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 3
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 4
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 2 is 3
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Executing: select d from test1 order by d
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] isQuery? true
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Query executed, begin to fetch and check result
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 3
+[Fri Jun 13 23:59:33 CST 2014] [Thread0] Type 1 is 3
+[Fri Jun 13 23:59:33 CST 2014] [Thread Time] 57
+[Fri Jun 13 23:59:33 CST 2014] [Total Time] 73
+[Fri Jun 13 23:59:33 CST 2014] [Result] Correct

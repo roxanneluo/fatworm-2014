@@ -20,3 +20,16 @@ date: Thu Jun 05 22:07:42 CST 2014
 roxanne	create	Correct	67
 date: Thu Jun 05 22:07:54 CST 2014
 roxanne	create	Correct	69
+date: Fri Jun 13 21:06:58 CST 2014
+roxanne	create	Correct	199
+roxanne	insert	Correct	5604
+roxanne	t1	Correct	974
+roxanne	t3	Correct	557
+roxanne	useless	Correct	96
+date: Fri Jun 13 23:38:52 CST 2014
+date: Fri Jun 13 23:59:33 CST 2014
+roxanne	create	Correct	400
+roxanne	insert	Correct	7048
+roxanne	t1	Correct	1139
+roxanne	t3	Correct	678
+roxanne	useless	Correct	59

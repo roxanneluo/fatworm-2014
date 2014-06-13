@@ -2,8 +2,8 @@ package fatworm.driver;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Random;
+import java.io.File;
 
 import fatworm.field.Field;
 
@@ -13,14 +13,22 @@ public class Table {
 	public ArrayList<Tuple> table = new ArrayList<Tuple>();	// TODO: actually this should be a table scan I think
 	private Random rand;
 	private static int tempNum = 0;
+	public File file = null;
+	public boolean readComplete;
 	
 	public Table() {
 		name = new String("/temp"+(tempNum++));
+		readComplete = true;
 	}
-	
+	public Table(String name, Schema schema, File file) {
+		this(name, schema);
+		this.file = file;
+		readComplete = false;
+	}
 	public Table(String name, Schema schema) {
 		this.name = name.toLowerCase();
 		this.schema = schema;
+		readComplete = true;
 	}
 	
 	public boolean clear() {
@@ -37,9 +45,9 @@ public class Table {
 		table.add(t);
 		return true;
 	}
-	public void sort(ArrayList<Integer> by, ArrayList<Boolean> asc) {
+	public void sort(ArrayList<Integer> by, ArrayList<Boolean> asc, int size) {
 		rand = new Random();
-		sort(0, table.size()-1, by, asc);
+		sort(0, size-1, by, asc);
 	}
 
 	public int size() {

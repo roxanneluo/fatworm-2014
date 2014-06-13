@@ -1,0 +1,54 @@
+package fatworm.io;
+
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
+
+import fatworm.driver.Schema;
+import fatworm.util.Constant;
+
+public class WriteBuffer {
+	public LinkedList<Block> blocks = new LinkedList<Block>();
+	public HashMap<Long, Block> map = new HashMap<Long, Block>();
+	public RandomAccessFile ra;
+	public WriteBuffer(RandomAccessFile ra) {
+		this.ra = ra;
+	}
+	public void add(Block b) {
+		Block exist = map.get(b.idx);
+		if (exist != null)
+			return;
+		blocks.add(b);
+		map.put(b.idx, b);
+	}
+	public Block get(long addr, boolean fix, int tupleSize, Schema schema) throws IOException {
+		return get(addr, fix, tupleSize, 0, schema);
+	}
+	public Block get(long addr, boolean fix, int tupleSize, int start, Schema schema) throws IOException {
+		Block b = map.get(addr);
+		if (b != null) return b;
+		byte[] bytes = new byte[Constant.BLOCKSIZE];
+		ra.seek(addr & ~(Constant.BLOCKSIZE-1)); //get idx*BLOCKSIZE
+		ra.read(bytes);
+		if (fix) {
+			b = new FixBlock(addr >> Constant.BLOCKSHIFT, bytes, tupleSize, start, schema);
+			add(b);
+			return b;
+		} 
+		return null;//TODO varBlock;
+		
+	}
+	public void output() {
+		Collections.sort(blocks);
+		try {
+			for (Block b: blocks) {
+				ra.seek(b.idx*Constant.BLOCKSIZE);
+				ra.write(b.bytes);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

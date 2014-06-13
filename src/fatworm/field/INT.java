@@ -2,6 +2,9 @@ package fatworm.field;
 
 import java.sql.SQLException;
 
+import fatworm.util.Constant;
+import fatworm.util.Util;
+
 public class INT extends Field{
 
 	/**
@@ -73,5 +76,21 @@ public class INT extends Field{
 	
 	public Integer getVal() {
 		return v;
+	}
+	@Override
+	public Field bytes2Field(byte[] bytes, int start, int l) {
+		return new INT(Util.bytes2int(bytes, start));
+	}
+	@Override
+	public int maxSize() {
+		return Constant.INT_SIZE;
+	}
+	@Override
+	public byte[] toBytes() {
+		return Util.int2bytes(v);
+	}
+	@Override
+	public boolean fix() {
+		return true;
 	}
 }

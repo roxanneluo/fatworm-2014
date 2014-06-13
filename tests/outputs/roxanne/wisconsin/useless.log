@@ -1,22 +1,36 @@
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Connecting jdbc:fatworm://E:/fatjudger/tmp?user=root&password=fatworm
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Connection established.
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: USE winsconsin
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] isQuery? false
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: insert into tenk1 values (10001, 74001, 0, 2, 0, 10, 50, 688, 1950, 4950, 9950, 1, 100, 'ron may choi','jae kwang choi', 'u. c. berkeley')
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: insert into tenk1 values (19991, 60001, 0, 2, 0, 10, 50, 688, 1950, 4950, 9950, 1, 100, 'ron may choi','jae kwang choi', 'u. c. berkeley')
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: delete from tenk1 where tenk1.unique2 = 877
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: delete from tenk1 where tenk1.unique2 = 876
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10001 where tenk1.unique2 =1491
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10023 where tenk1.unique2 =1480
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: insert into tenk1  values (20002, 70002, 0, 2, 0, 10, 50, 688, 1950, 4950, 9950, 1, 100, 'ron may choi', 'jae kwang choi', 'u. c. berkeley')
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: insert into tenk1  values (50002, 40002, 0, 2, 0, 10, 50, 688, 1950, 4950, 9950, 1, 100, 'ron may choi', 'jae kwang choi', 'u. c. berkeley')
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: delete from tenk1 where tenk1.unique2 = 10001
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: delete from tenk1 where tenk1.unique2 = 900
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10088 where tenk1.unique2 =187
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10003 where tenk1.unique2 =2000
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10020 where tenk1.unique2 =1974
-[Thu Jun 05 22:05:08 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 16001 where tenk1.unique2 =1140
-[Thu Jun 05 22:05:08 CST 2014] [Thread Time] 3
-[Thu Jun 05 22:05:08 CST 2014] [Total Time] 5
-[Thu Jun 05 22:05:08 CST 2014] [Result] Correct
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Connecting jdbc:fatworm:/fatworm?user=root&password=fatworm
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Connection established.
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Setting AUTO_COMMIT mode as false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: USE winsconsin
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: insert into tenk1 values (10001, 74001, 0, 2, 0, 10, 50, 688, 1950, 4950, 9950, 1, 100, 'ron may choi','jae kwang choi', 'u. c. berkeley')
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: insert into tenk1 values (19991, 60001, 0, 2, 0, 10, 50, 688, 1950, 4950, 9950, 1, 100, 'ron may choi','jae kwang choi', 'u. c. berkeley')
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: delete from tenk1 where tenk1.unique2 = 877
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: delete from tenk1 where tenk1.unique2 = 876
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10001 where tenk1.unique2 =1491
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10023 where tenk1.unique2 =1480
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: insert into tenk1  values (20002, 70002, 0, 2, 0, 10, 50, 688, 1950, 4950, 9950, 1, 100, 'ron may choi', 'jae kwang choi', 'u. c. berkeley')
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: insert into tenk1  values (50002, 40002, 0, 2, 0, 10, 50, 688, 1950, 4950, 9950, 1, 100, 'ron may choi', 'jae kwang choi', 'u. c. berkeley')
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: delete from tenk1 where tenk1.unique2 = 10001
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: delete from tenk1 where tenk1.unique2 = 900
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10088 where tenk1.unique2 =187
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10003 where tenk1.unique2 =2000
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 10020 where tenk1.unique2 =1974
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] Executing: update tenk1 set unique2 = 16001 where tenk1.unique2 =1140
+[Fri Jun 13 23:59:43 CST 2014] [Thread0] isQuery? false
+[Fri Jun 13 23:59:43 CST 2014] [Thread Time] 59
+[Fri Jun 13 23:59:43 CST 2014] [Total Time] 59
+[Fri Jun 13 23:59:43 CST 2014] [Result] Correct

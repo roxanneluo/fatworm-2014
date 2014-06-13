@@ -2,6 +2,6 @@
 use ATIS
 ;
 
-@ORDERED_SELECT;
+@ORDERED_SELECT
 select citycode, avg(groundfare) as avgfare from groundservice where groundfare<>0 group by citycode order by citycode ASC
 ;
